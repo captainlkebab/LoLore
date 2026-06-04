@@ -1,0 +1,4533 @@
+{
+  "meta": {
+    "total_nodes": 173,
+    "total_edges": 552
+  },
+  "nodes": [
+    {
+      "id": "Aatrox",
+      "label": "Aatrox",
+      "title": "the Darkin Blade",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/da41f44e7ab5b24f336e8c6198e04fdb13ee5554-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Kayn",
+      "label": "Kayn",
+      "title": "the Shadow Reaper",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/6513f8a9eb12f5a3c06601b0d75b8b05542b2296-1920x1134.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Varus",
+      "label": "Varus",
+      "title": "the Arrow of Retribution",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/c4f1197764d67a050281377f366587334f5fc61a-1920x1133.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Tryndamere",
+      "label": "Tryndamere",
+      "title": "the Barbarian King",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/8970e87a25dae74a9f48448fe2fa984f20c49a46-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Ahri",
+      "label": "Ahri",
+      "title": "the Nine-Tailed Fox",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe_live/9e99dedf6a6e2c1e74bdfb81bd5a0a23b3ff4200-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Yasuo",
+      "label": "Yasuo",
+      "title": "the Unforgiven",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/0b19bbfa3272f9625762f9b5974429bedc345008-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Lillia",
+      "label": "Lillia",
+      "title": "the Bashful Bloom",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/582b71a9d168d66687558c98d0140a571fe6332c-1920x1133.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Wukong",
+      "label": "Wukong",
+      "title": "the Monkey King",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/55a17baa4556728c30e3997f1a5d4624835cfd1d-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Akali",
+      "label": "Akali",
+      "title": "the Rogue Assassin",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/40f31a2bd25a32f90183e28bf304ea2bf764d38c-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Kennen",
+      "label": "Kennen",
+      "title": "the Heart of the Tempest",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/84f760ba5344b243d0cb24a8ecd69eabb31e773f-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Shen",
+      "label": "Shen",
+      "title": "the Eye of Twilight",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/6cb82fdaf892111de0b767513f45cf82be59909d-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Zed",
+      "label": "Zed",
+      "title": "the Master of Shadows",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/db24370ba8674557039c865f6ce0d92128881326-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Jhin",
+      "label": "Jhin",
+      "title": "the Virtuoso",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/087251eea63def0d4a457624b3cd5c36b8cb52d0-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Akshan",
+      "label": "Akshan",
+      "title": "the Rogue Sentinel",
+      "faction": "shurima",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/07c43e3534cea074a4dbcf273dfcf3220cfc40b7-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Lucian",
+      "label": "Lucian",
+      "title": "the Purifier",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe_live/5a752c276c2b99c1a0bee1c1f81ea0bc156fd589-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Senna",
+      "label": "Senna",
+      "title": "the Redeemer",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/7b4fb4db8e95126fb6c5a6a8ba6d181523992b4a-1900x1121.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Viego",
+      "label": "Viego",
+      "title": "the Ruined King",
+      "faction": "shadow-isles",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/3766d90650c9eddd2e1405489365c1ec7ef9f2be-1900x1127.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Gwen",
+      "label": "Gwen",
+      "title": "the Hallowed Seamstress",
+      "faction": "shadow-isles",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/d50fc331a7e80a6609df4220310ab08124d62131-1920x1133.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Alistar",
+      "label": "Alistar",
+      "title": "the Minotaur",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/c80ba28d8903e2279bca02b0d3b0192b11dc0f96-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Xin Zhao",
+      "label": "Xin Zhao",
+      "title": "the Seneschal of Demacia",
+      "faction": "demacia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe_live/012f791aeeff7d8270f5576abe72990277d38b1d-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Ambessa",
+      "label": "Ambessa",
+      "title": "the Matriarch of War",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/fe4125e7d5135486c5bb6941641e53316fb90c59-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Mel",
+      "label": "Mel",
+      "title": "the Soul's Reflection",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/4de677b45fdaaa7874a030c6c8865e9ffdb6a0ba-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Caitlyn",
+      "label": "Caitlyn",
+      "title": "the Sheriff of Piltover",
+      "faction": "piltover",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/09b3e27b82ad338c0fe2dd7699bc3883c7281c33-1920x1133.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "LeBlanc",
+      "label": "LeBlanc",
+      "title": "the Deceiver",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/77ad3202bc6d32f9c03eba63a7ad14e4383bb5b7-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Amumu",
+      "label": "Amumu",
+      "title": "the Sad Mummy",
+      "faction": "shurima",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/bd6e23113bfc701f4b5e05ed94811a44f62ae723-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Anivia",
+      "label": "Anivia",
+      "title": "the Cryophoenix",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/9c05e1b1637da1f1a26dfb122aa049875c49598c-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Ornn",
+      "label": "Ornn",
+      "title": "the Fire Below the Mountain",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/ad854e752c3a8ae0a5c7245b97211d751a5a29d4-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Volibear",
+      "label": "Volibear",
+      "title": "the Relentless Storm",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/5d4a8a9ddc929ac0f301ac5ecb3eae4baed8ba08-1922x1131.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Ashe",
+      "label": "Ashe",
+      "title": "the Frost Archer",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/ea9b9dbb6d0ee8234f67ff97872729a16333acb2-1920x974.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Nunu & Willump",
+      "label": "Nunu & Willump",
+      "title": "the Boy and His Yeti",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/c76c72ca933a0d685bd928dd45db8ee8cab5b2ff-1920x1150.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Annie",
+      "label": "Annie",
+      "title": "the Dark Child",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/1ef1763d5ea8eea5c5661a362571cbf655c4b716-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Aphelios",
+      "label": "Aphelios",
+      "title": "the Weapon of the Faithful",
+      "faction": "mount-targon",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/13d6778903fe6ab73298998e20405e15130fca5f-1900x1122.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Diana",
+      "label": "Diana",
+      "title": "Scorn of the Moon",
+      "faction": "mount-targon",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/c3c3198b3ffb3d419b0963c5a5a631a4aa9a831b-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Leona",
+      "label": "Leona",
+      "title": "the Radiant Dawn",
+      "faction": "mount-targon",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/bd31d8599bfa6d1a64e1a6ecde13548356ea525c-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Sejuani",
+      "label": "Sejuani",
+      "title": "the Winter's Wrath",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe_live/64b4bcfccb7b88cad98a2345e15aa9427ba20c73-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Braum",
+      "label": "Braum",
+      "title": "the Heart of the Freljord",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/f7efbb8b5e1d43ac6de01ed939464e845ddbd6f2-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Lissandra",
+      "label": "Lissandra",
+      "title": "the Ice Witch",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/7f1fa446e45698fa9b6b69c3005871d049293197-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Aurelion Sol",
+      "label": "Aurelion Sol",
+      "title": "The Star Forger",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/216b65d9b80814d4ca010d3068cfb84c785e4ad4-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Soraka",
+      "label": "Soraka",
+      "title": "the Starchild",
+      "faction": "mount-targon",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/b2796a7c60fc816f1bfc91f39495d3387cc43bbb-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Aurora",
+      "label": "Aurora",
+      "title": "the Witch between Worlds",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/40ab29f8f4bc653f3c7bd6e904e85fb51225f52d-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Udyr",
+      "label": "Udyr",
+      "title": "the Spirit Walker",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/b0994c859b52c86c12a5bb57a7b22e1c3b9b70c0-1974x1087.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Azir",
+      "label": "Azir",
+      "title": "the Emperor of the Sands",
+      "faction": "shurima",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/869c235b670785d9b5910217f20383812c05e822-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Nasus",
+      "label": "Nasus",
+      "title": "the Curator of the Sands",
+      "faction": "shurima",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/bff6b7362b42e604dca1fcaac70b557ce5e92f97-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Sivir",
+      "label": "Sivir",
+      "title": "the Battle Mistress",
+      "faction": "shurima",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/0c05de7cba9f8cfbfab361a10d8719e36ee69fb1-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Xerath",
+      "label": "Xerath",
+      "title": "the Magus Ascendant",
+      "faction": "shurima",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/ecd9c2d112f827ac51c797d3bd0acd4b77632704-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Renekton",
+      "label": "Renekton",
+      "title": "the Butcher of the Sands",
+      "faction": "shurima",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/631c08061ddf52c0b6986407c28011b4e93e5397-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Taliyah",
+      "label": "Taliyah",
+      "title": "the Stoneweaver",
+      "faction": "shurima",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/0c12d269b7ef51c4b52eee81713e372e4405650f-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Cassiopeia",
+      "label": "Cassiopeia",
+      "title": "the Serpent's Embrace",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/f1991d2eb2a3f9543897c95278c31f6e56670588-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Bard",
+      "label": "Bard",
+      "title": "the Wandering Caretaker",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/2a460d21993eb31e98d6b3ec7f389b545ff27d7e-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Ryze",
+      "label": "Ryze",
+      "title": "the Rune Mage",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/c6112f9c04cd531982b94e51b719d359e8755365-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Bel’Veth",
+      "label": "Bel’Veth",
+      "title": "the Empress of the Void",
+      "faction": "void",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/c9a52ab3970010a032421150e5e011192aa7cfb9-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Kai'Sa",
+      "label": "Kai'Sa",
+      "title": "Daughter of the Void",
+      "faction": "void",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/33ac4d0acbbdb7f6d3b36520c0a78873052d271a-1920x1133.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Malzahar",
+      "label": "Malzahar",
+      "title": "the Prophet of the Void",
+      "faction": "void",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/4d00c991cdb0d9f22cf71a0c5536173df37abafa-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Vel'Koz",
+      "label": "Vel'Koz",
+      "title": "the Eye of the Void",
+      "faction": "void",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/bd055ac14b71d4bb5f3b083183b995d8d2dca9ad-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Blitzcrank",
+      "label": "Blitzcrank",
+      "title": "the Great Steam Golem",
+      "faction": "zaun",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/e165a4174e70d52733061f4aa784d9f489e4fc58-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Orianna",
+      "label": "Orianna",
+      "title": "the Lady of Clockwork",
+      "faction": "piltover",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/579d1d523bc2feb2057400ffe05b4282d022671d-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Viktor",
+      "label": "Viktor",
+      "title": "Herald of the Arcane",
+      "faction": "zaun",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/abcda83c096e738c624a4abe79b8e7beb121f299-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Brand",
+      "label": "Brand",
+      "title": "the Burning Vengeance",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/16a4f24c55fc3559a62622038b66997f0f7c4092-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Briar",
+      "label": "Briar",
+      "title": "the Restrained Hunger",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/731da6d8643ac159faee6cb308706bbf25230083-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Sion",
+      "label": "Sion",
+      "title": "the Undead Juggernaut",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe_live/718640b1b39f711e775596ec5d09a31fdd95820e-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Swain",
+      "label": "Swain",
+      "title": "the Noxian Grand General",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/881860c2fe466f1f5b2f1775e352faa08d51de48-1920x1133.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Talon",
+      "label": "Talon",
+      "title": "the Blade's Shadow",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/c32976e06ac05ca62ee2516d6f572a367c57da2c-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Vladimir",
+      "label": "Vladimir",
+      "title": "the Crimson Reaper",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/b16ed6e512c850aac0a258909c3b025de42396bd-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Vi",
+      "label": "Vi",
+      "title": "the Piltover Enforcer",
+      "faction": "piltover",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/4134b6611e0aab2e9d647d67c8cc75a4639cbda9-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Jinx",
+      "label": "Jinx",
+      "title": "the Loose Cannon",
+      "faction": "zaun",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/d0550188a6e83cb2e5def4a4a0bf8025baf57a0c-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Camille",
+      "label": "Camille",
+      "title": "the Steel Shadow",
+      "faction": "piltover",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/c5706cb3e60e90c8a80edc4630f66fb9967a7b2c-1024x616.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Ezreal",
+      "label": "Ezreal",
+      "title": "the Prodigal Explorer",
+      "faction": "piltover",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/6d2749153a330bca0d30d7cb2cef9e4d7bc6c475-1920x1094.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Jayce",
+      "label": "Jayce",
+      "title": "the Defender of Tomorrow",
+      "faction": "piltover",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/0dc3d5cacb41b3dfb73bcc8255bb22e9984f5a68-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Ekko",
+      "label": "Ekko",
+      "title": "the Boy Who Shattered Time",
+      "faction": "zaun",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/582abd081125c2ef8f47609bc42a9f1bb71782fb-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Warwick",
+      "label": "Warwick",
+      "title": "The Uncaged Wrath of Zaun",
+      "faction": "zaun",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/ac704d3cfcb7feca54486db45add3e1f96cb0eab-1280x783.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Katarina",
+      "label": "Katarina",
+      "title": "the Sinister Blade",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/0b61440f72501d55b2a1b02752b74c28680ee09d-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Cho'Gath",
+      "label": "Cho'Gath",
+      "title": "the Terror of the Void",
+      "faction": "void",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/b5b1910f31e78d7b71c828da516b417146b62d4a-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Kog'Maw",
+      "label": "Kog'Maw",
+      "title": "the Mouth of the Abyss",
+      "faction": "void",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/a1c2d280e545046c1587ec1a9bddc7561af55c55-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Kha'Zix",
+      "label": "Kha'Zix",
+      "title": "the Voidreaver",
+      "faction": "void",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe_live/2d0ccab8e48ffc2daf3cfc0a9482c52601616ca7-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Corki",
+      "label": "Corki",
+      "title": "the Daring Bombardier",
+      "faction": "bandle-city",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/5bf51137ae5bdf98b83e2e791f6c288d6121470d-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Heimerdinger",
+      "label": "Heimerdinger",
+      "title": "the Revered Inventor",
+      "faction": "piltover",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/a97cdd0274bc58ccb6e4260a9b782f9c635e5b1c-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Veigar",
+      "label": "Veigar",
+      "title": "the Tiny Master of Evil",
+      "faction": "bandle-city",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/34b61751da58c5ccdb657faf8b606007070c41b0-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Darius",
+      "label": "Darius",
+      "title": "the Hand of Noxus",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/bd6bd9efb4295687e683fd97d67a509d3ed6c26f-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Draven",
+      "label": "Draven",
+      "title": "the Glorious Executioner",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/1b9079d79643c08bc25c143418b96c5883d48b52-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Taric",
+      "label": "Taric",
+      "title": "the Shield of Valoran",
+      "faction": "mount-targon",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/08e9f794f7bb45bf947e2196cca27b1abb5959f8-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Zoe",
+      "label": "Zoe",
+      "title": "the Aspect of Twilight",
+      "faction": "mount-targon",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/6e574007f48ff528ad0f58e0bdd7c7e465c6be2e-1920x1135.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Pantheon",
+      "label": "Pantheon",
+      "title": "The Unbreakable Spear",
+      "faction": "mount-targon",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/3e0453881b8d408fbb02fabb4a02e09a34c69310-1080x637.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Dr. Mundo",
+      "label": "Dr. Mundo",
+      "title": "the Madman of Zaun",
+      "faction": "zaun",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/326545c5cf571981bff487ab158bca6b08c9d28d-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Janna",
+      "label": "Janna",
+      "title": "the Storm's Fury",
+      "faction": "zaun",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/d1cd8492b5f8ddebe92117ca3923126a3e588c3d-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Elise",
+      "label": "Elise",
+      "title": "the Spider Queen",
+      "faction": "shadow-isles",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/7b72ce48ede875d47c4877de71f8aa53da8b8bbb-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Evelynn",
+      "label": "Evelynn",
+      "title": "Agony's Embrace",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/2f8ee3f69973dd73de75eb3367d5d8efadf4a5d7-1920x1133.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Vayne",
+      "label": "Vayne",
+      "title": "the Night Hunter",
+      "faction": "demacia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/beb13350daed0456c1f0feb6b0e8175c23443ebe-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Tahm Kench",
+      "label": "Tahm Kench",
+      "title": "the River King",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/d91032cb4c9d79b936a5de191e3e4465986c6994-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Kassadin",
+      "label": "Kassadin",
+      "title": "the Void Walker",
+      "faction": "void",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/9ddaf7680feaafa16f01dbc34743a5fc3e969e1d-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Lux",
+      "label": "Lux",
+      "title": "the Lady of Luminosity",
+      "faction": "demacia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/7dae022eb3726b7b351cf90ad8351731907229a1-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Rek'Sai",
+      "label": "Rek'Sai",
+      "title": "the Void Burrower",
+      "faction": "void",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/298275b2e868fb0bd93d04484e8ae523484e63ec-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Fiddlesticks",
+      "label": "Fiddlesticks",
+      "title": "the Ancient Fear",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/5c2c7802b029fbf7cf8cd3eb1c65aabf10e17e42-1920x1129.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Nocturne",
+      "label": "Nocturne",
+      "title": "the Eternal Nightmare",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/5e51c3cdd1e26e920b981369c207a8bbc27b9579-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Shaco",
+      "label": "Shaco",
+      "title": "the Demon Jester",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/499c2b9a55b61f4fe9f400ec6b5f456eabe57983-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Fiora",
+      "label": "Fiora",
+      "title": "the Grand Duelist",
+      "faction": "demacia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/2243b24de875e9db0e20903e111a569ba00f91b7-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Jarvan IV",
+      "label": "Jarvan IV",
+      "title": "the Exemplar of Demacia",
+      "faction": "demacia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/a078dc1670a0b2565aaaf9d50d3e10ec2d583498-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Garen",
+      "label": "Garen",
+      "title": "The Might of Demacia",
+      "faction": "demacia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/1bdf6576f5940b47f7eecc73545d8c80050cbd80-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Jax",
+      "label": "Jax",
+      "title": "Grandmaster at Arms",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/a8d3b960b33b5850f5c3b8e65a0afb54fde80e11-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Fizz",
+      "label": "Fizz",
+      "title": "the Tidal Trickster",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/8ed5d60b5f205046b4df4a6310e7338fe4c023f0-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Illaoi",
+      "label": "Illaoi",
+      "title": "the Kraken Priestess",
+      "faction": "bilgewater",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/9f60e89d1d62bd7458132f72d021be21abd54890-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Nami",
+      "label": "Nami",
+      "title": "the Tidecaller",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/e42e42fb196ed82d51fb13b9d01f985bc28bb16c-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Nautilus",
+      "label": "Nautilus",
+      "title": "the Titan of the Depths",
+      "faction": "bilgewater",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/0381e43e608994c7c4cd30b4bea8b2af00b44401-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Galio",
+      "label": "Galio",
+      "title": "the Colossus",
+      "faction": "demacia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/453347eabd10e239e18bdaf2431f3471d1011dbd-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Kayle",
+      "label": "Kayle",
+      "title": "The Righteous",
+      "faction": "demacia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/e542dbab1925ff2d1fdddaf60a8412b6095ee316-1920x1149.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Morgana",
+      "label": "Morgana",
+      "title": "The Fallen",
+      "faction": "demacia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/dc1bbb10a4d5ed7946d6a7eb12de7324309be314-1920x1149.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Sylas",
+      "label": "Sylas",
+      "title": "the Unshackled",
+      "faction": "demacia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/e653368823aa1fbaf7955ce92bca15a81abc8440-1920x1190.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Gangplank",
+      "label": "Gangplank",
+      "title": "the Saltwater Scourge",
+      "faction": "bilgewater",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/56398a8fa872cb9b195e5b78b611b3952bf1108a-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Miss Fortune",
+      "label": "Miss Fortune",
+      "title": "the Bounty Hunter",
+      "faction": "bilgewater",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/7a7dfab84bcd6b60f46152918923ef939b9ddb6a-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Twisted Fate",
+      "label": "Twisted Fate",
+      "title": "the Card Master",
+      "faction": "bilgewater",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/ccfc7af0638ea63366f9ecb156b38919f0e1e515-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Graves",
+      "label": "Graves",
+      "title": "the Outlaw",
+      "faction": "bilgewater",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/e98c383d56b9f60ae73cf0a24653dba19a6556a1-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Quinn",
+      "label": "Quinn",
+      "title": "Demacia's Wings",
+      "faction": "demacia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/c184e107070eb49041d26b2d681424d120abe1b6-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Gnar",
+      "label": "Gnar",
+      "title": "the Missing Link",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/9905f7f1e16accc24dcb062abddd3ccf9ea09528-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Rengar",
+      "label": "Rengar",
+      "title": "the Pridestalker",
+      "faction": "ixtal",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/9eca7c212374e6363e336ac7323862c6e5427943-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Gragas",
+      "label": "Gragas",
+      "title": "the Rabble Rouser",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/b26aba4beee0dbf6c0fddde83f405e2e9a8239fd-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Yorick",
+      "label": "Yorick",
+      "title": "Shepherd of Souls",
+      "faction": "shadow-isles",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/5d642e95630ab270c062f516f06104119e4230ec-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Hecarim",
+      "label": "Hecarim",
+      "title": "the Shadow of War",
+      "faction": "shadow-isles",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/ae7f0f18a2032a08eeb1983cde9422ad25d8e981-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Kalista",
+      "label": "Kalista",
+      "title": "the Spear of Vengeance",
+      "faction": "shadow-isles",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/7c9c407e5fefbe90cf2cca88aef5410cac72f164-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Thresh",
+      "label": "Thresh",
+      "title": "the Chain Warden",
+      "faction": "shadow-isles",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe_live/81ee3c3a300d102ecd650a0fb8e57738b12ead78-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Ziggs",
+      "label": "Ziggs",
+      "title": "the Hexplosives Expert",
+      "faction": "zaun",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/9bb7865270e3193e631619fb53d6287d2d341b35-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Rumble",
+      "label": "Rumble",
+      "title": "the Mechanized Menace",
+      "faction": "bandle-city",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/96575d035661d8c3238a1a8f098aebefb5641862-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Hwei",
+      "label": "Hwei",
+      "title": "the Visionary",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/097c165ef2a832f04f6f7302203f4b7b40a82cb0-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Irelia",
+      "label": "Irelia",
+      "title": "the Blade Dancer",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/3530078042f4933c89949ad02fbd1dd281812d95-1920x1071.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Karma",
+      "label": "Karma",
+      "title": "the Enlightened One",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/d55c76e8c8a67dd290192f51eaa0576d90dd0261-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Ivern",
+      "label": "Ivern",
+      "title": "the Green Father",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/0eefbfee5b5d494c950d5566f2cb093fa50e877a-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Urgot",
+      "label": "Urgot",
+      "title": "the Dreadnought",
+      "faction": "zaun",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/a9154da6f79debea531974e95820661e3431ea80-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Shyvana",
+      "label": "Shyvana",
+      "title": "the Half-Dragon",
+      "faction": "demacia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe_live/08b9f96ca366a0b095ce2c1860184587710d459d-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Zilean",
+      "label": "Zilean",
+      "title": "the Chronokeeper",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/ed34d635dda272fbcfcba29ce3cea255c22fa8f1-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Skarner",
+      "label": "Skarner",
+      "title": "the Primordial Sovereign",
+      "faction": "ixtal",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/2aac05bb1f597369b121684cc09103dc3e408653-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Lee Sin",
+      "label": "Lee Sin",
+      "title": "the Blind Monk",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/dd13baac33f9d14817a84fc280974caeb64a5dce-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Karthus",
+      "label": "Karthus",
+      "title": "the Deathsinger",
+      "faction": "shadow-isles",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/e0895a900b25fa6a017496fc3cbeee49262edc11-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Mordekaiser",
+      "label": "Mordekaiser",
+      "title": "the Iron Revenant",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/501b0517a4a07fc650d6b9e1d8e5a330d85249da-1920x1038.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Kindred",
+      "label": "Kindred",
+      "title": "The Eternal Hunters",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/2ac0d07605a4cb49058640a3477274f90003265f-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Kled",
+      "label": "Kled",
+      "title": "the Cantankerous Cavalier",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/cf210d9c39fbc4728ca6c75233d8a9e7682db74d-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Tristana",
+      "label": "Tristana",
+      "title": "the Yordle Gunner",
+      "faction": "bandle-city",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/1c1cbd9b934a2c5ff23e5340ca774f62712d28f4-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "K’Sante",
+      "label": "K’Sante",
+      "title": "the Pride of Nazumah",
+      "faction": "shurima",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/2f7e81a667a238ce3649d8bd47152df60e7a5c55-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Olaf",
+      "label": "Olaf",
+      "title": "the Berserker",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/06a08b09079b9ec0a51149bb42fc2377fa5ce9d8-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Lulu",
+      "label": "Lulu",
+      "title": "the Fae Sorceress",
+      "faction": "bandle-city",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/8cadd76b5624b8dab1cafbdfe04ee285197dd594-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Malphite",
+      "label": "Malphite",
+      "title": "Shard of the Monolith",
+      "faction": "ixtal",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/70ed76c744fd83c25375002f986940511c166d72-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Qiyana",
+      "label": "Qiyana",
+      "title": "The Empress of Elements",
+      "faction": "ixtal",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/701238dd7451fe3f836ded843c6d869c43f24261-4000x2348.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Maokai",
+      "label": "Maokai",
+      "title": "the Twisted Treant",
+      "faction": "shadow-isles",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/84c4c1903f629fad7cd061476ec81c1b6d913140-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Zyra",
+      "label": "Zyra",
+      "title": "Rise of the Thorns",
+      "faction": "ixtal",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/35938ca5eed918f72a683ee4ce8fce265cdf2a53-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Master Yi",
+      "label": "Master Yi",
+      "title": "the Wuju Bladesman",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/80e5b987ed8bf072e8987afc3e5f75f02f5c2c84-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Singed",
+      "label": "Singed",
+      "title": "the Mad Chemist",
+      "faction": "zaun",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/fb56a344c527f0f3321ca3896082607cca49a672-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Milio",
+      "label": "Milio",
+      "title": "the Gentle Flame",
+      "faction": "ixtal",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/dd4af82c030747102e172282ad11f694c4a52562-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Neeko",
+      "label": "Neeko",
+      "title": "the Curious Chameleon",
+      "faction": "ixtal",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/30f1dc432e9e268ceccfae9259d7675fe7ed5740-1920x1133.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Nidalee",
+      "label": "Nidalee",
+      "title": "the Bestial Huntress",
+      "faction": "ixtal",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/ce81792e63289284421213175eaff353fc6c456d-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Naafiri",
+      "label": "Naafiri",
+      "title": "the Hound of a Hundred Bites",
+      "faction": "shurima",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/b366641d047f674c3f13569f830acccf65b081e3-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Nilah",
+      "label": "Nilah",
+      "title": "the Joy Unbound",
+      "faction": "bilgewater",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/0b63dba67e71846815d071f4cc0b55188bc7651e-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Poppy",
+      "label": "Poppy",
+      "title": "Keeper of the Hammer",
+      "faction": "demacia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/0fb0e7692c05c9b0ab8b4d3e53fafcdf4bbdf985-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Pyke",
+      "label": "Pyke",
+      "title": "the Bloodharbor Ripper",
+      "faction": "bilgewater",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/f1abbdb3239280e314a8d5d5834a0303b25d2495-4000x2250.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Sona",
+      "label": "Sona",
+      "title": "Maven of the Strings",
+      "faction": "demacia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/5244dd28bd065e6247105381854a18df3900ec73-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Rakan",
+      "label": "Rakan",
+      "title": "the Charmer",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/f5202263b1685fbaaa6aab44868ac08b53bb786b-2181x844.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Xayah",
+      "label": "Xayah",
+      "title": "the Rebel",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/7dc493395d5c991557d7b0657253bb201f85143b-2181x844.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Rammus",
+      "label": "Rammus",
+      "title": "the Armordillo",
+      "faction": "shurima",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/60bbb4069192b33c83dafa45c6c3fa97e03f9903-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Rell",
+      "label": "Rell",
+      "title": "the Iron Maiden",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/b7f15606fa7d091ba540cadd2b8f2c168ea740b9-1919x1038.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Samira",
+      "label": "Samira",
+      "title": "the Desert Rose",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/4f2e41d8c16101ea4859ca228c0b5ca79cba9988-1898x1120.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Renata Glasc",
+      "label": "Renata Glasc",
+      "title": "the Chem-Baroness",
+      "faction": "zaun",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/74f48d016cce3f38f35d3c165ac2847c22a643ef-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Zeri",
+      "label": "Zeri",
+      "title": "the Spark of Zaun",
+      "faction": "zaun",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/316a7a9cb13ca9f24238b10722bcdf0e134dabab-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Riven",
+      "label": "Riven",
+      "title": "the Exile",
+      "faction": "noxus",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/26bb1d87fa015cef986d05249f533426383e7198-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Teemo",
+      "label": "Teemo",
+      "title": "the Swift Scout",
+      "faction": "bandle-city",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/cbec5c5ced03b21b745997294e4a391d77cf6720-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Trundle",
+      "label": "Trundle",
+      "title": "the Troll King",
+      "faction": "freljord",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/b4171832dc2ac886f2240e723ab9d07e5335f538-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Seraphine",
+      "label": "Seraphine",
+      "title": "the Starry-Eyed Songstress",
+      "faction": "piltover",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/049ea1265dcc9822deda1915f4d0654f0c667e2b-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Sett",
+      "label": "Sett",
+      "title": "the Boss",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/ed30a9687c5c05d36d5bd73588c8e79b58e8f864-1900x1092.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Smolder",
+      "label": "Smolder",
+      "title": "the Fiery Fledgling",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/8da8f09d7aa765b162684c9970850af4fb8e3b95-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Syndra",
+      "label": "Syndra",
+      "title": "the Dark Sovereign",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/f292e53a2a59925e3c10bc4ee9917f92d35aec03-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Twitch",
+      "label": "Twitch",
+      "title": "the Plague Rat",
+      "faction": "zaun",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/643dd74ace9a448d80783d98d584e77ce2fa9625-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Zac",
+      "label": "Zac",
+      "title": "the Secret Weapon",
+      "faction": "zaun",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/fac08eb25622a7289c44e175ccbed817c32db718-1215x717.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Vex",
+      "label": "Vex",
+      "title": "the Gloomist",
+      "faction": "shadow-isles",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/5bbb4cc7211394f0f8d93e65f6919710894315b7-1920x1064.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Yunara",
+      "label": "Yunara",
+      "title": "The Unbroken Faith",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe_live/7438b87454595bc3d3582056d4d1a45dcb9e97c9-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Yone",
+      "label": "Yone",
+      "title": "the Unforgotten",
+      "faction": "ionia",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/0e7b421f83e58b69bc071fd2658019effc9c464b-1920x1100.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Yuumi",
+      "label": "Yuumi",
+      "title": "the Magical Cat",
+      "faction": "bandle-city",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe/a6229d0ef91811bbe60b4bae20956ac581633fa8-1920x1204.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Norra",
+      "label": "Norra",
+      "title": "The Portal Mistress",
+      "faction": "bandle-city",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe_live/11e3f6bb92001305252d12841d9c763454967118-1920x1080.jpg?accountingTag=LoL"
+    },
+    {
+      "id": "Zaahen",
+      "label": "Zaahen",
+      "title": "The Unsundered ",
+      "faction": "unaffiliated",
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe_live/df2839a9368239f91af5f94190c806654301e2a7-1920x1080.jpg?accountingTag=LoL"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_Aatrox_Kayn",
+      "source": "Aatrox",
+      "target": "Kayn",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Aatrox_Varus",
+      "source": "Aatrox",
+      "target": "Varus",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Aatrox_Tryndamere",
+      "source": "Aatrox",
+      "target": "Tryndamere",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kayn_Aatrox",
+      "source": "Kayn",
+      "target": "Aatrox",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kayn_Varus",
+      "source": "Kayn",
+      "target": "Varus",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kayn_Zed",
+      "source": "Kayn",
+      "target": "Zed",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kayn_Darius",
+      "source": "Kayn",
+      "target": "Darius",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Varus_Aatrox",
+      "source": "Varus",
+      "target": "Aatrox",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Varus_Kayn",
+      "source": "Varus",
+      "target": "Kayn",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Tryndamere_Ashe",
+      "source": "Tryndamere",
+      "target": "Ashe",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Tryndamere_Braum",
+      "source": "Tryndamere",
+      "target": "Braum",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Tryndamere_Aatrox",
+      "source": "Tryndamere",
+      "target": "Aatrox",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ahri_Yasuo",
+      "source": "Ahri",
+      "target": "Yasuo",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Ahri_Lillia",
+      "source": "Ahri",
+      "target": "Lillia",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ahri_Wukong",
+      "source": "Ahri",
+      "target": "Wukong",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Yasuo_Yone",
+      "source": "Yasuo",
+      "target": "Yone",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Yasuo_Taliyah",
+      "source": "Yasuo",
+      "target": "Taliyah",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Yasuo_Riven",
+      "source": "Yasuo",
+      "target": "Riven",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Lillia_Ivern",
+      "source": "Lillia",
+      "target": "Ivern",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Lillia_Ahri",
+      "source": "Lillia",
+      "target": "Ahri",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Lillia_Yasuo",
+      "source": "Lillia",
+      "target": "Yasuo",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Wukong_Master Yi",
+      "source": "Wukong",
+      "target": "Master Yi",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Wukong_Ahri",
+      "source": "Wukong",
+      "target": "Ahri",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Akali_Kennen",
+      "source": "Akali",
+      "target": "Kennen",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Akali_Shen",
+      "source": "Akali",
+      "target": "Shen",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Akali_Zed",
+      "source": "Akali",
+      "target": "Zed",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Akali_Jhin",
+      "source": "Akali",
+      "target": "Jhin",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kennen_Akali",
+      "source": "Kennen",
+      "target": "Akali",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kennen_Shen",
+      "source": "Kennen",
+      "target": "Shen",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kennen_Zed",
+      "source": "Kennen",
+      "target": "Zed",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Shen_Kennen",
+      "source": "Shen",
+      "target": "Kennen",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Shen_Akali",
+      "source": "Shen",
+      "target": "Akali",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Shen_Zed",
+      "source": "Shen",
+      "target": "Zed",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Shen_Jhin",
+      "source": "Shen",
+      "target": "Jhin",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Zed_Shen",
+      "source": "Zed",
+      "target": "Shen",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Zed_Akali",
+      "source": "Zed",
+      "target": "Akali",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Zed_Kennen",
+      "source": "Zed",
+      "target": "Kennen",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Zed_Gangplank",
+      "source": "Zed",
+      "target": "Gangplank",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Zed_Jhin",
+      "source": "Zed",
+      "target": "Jhin",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Zed_Kayn",
+      "source": "Zed",
+      "target": "Kayn",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jhin_Shen",
+      "source": "Jhin",
+      "target": "Shen",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jhin_Zed",
+      "source": "Jhin",
+      "target": "Zed",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jhin_Akali",
+      "source": "Jhin",
+      "target": "Akali",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jhin_Hwei",
+      "source": "Jhin",
+      "target": "Hwei",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Akshan_Lucian",
+      "source": "Akshan",
+      "target": "Lucian",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Akshan_Senna",
+      "source": "Akshan",
+      "target": "Senna",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Akshan_Viego",
+      "source": "Akshan",
+      "target": "Viego",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Akshan_Gwen",
+      "source": "Akshan",
+      "target": "Gwen",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Lucian_Thresh",
+      "source": "Lucian",
+      "target": "Thresh",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Lucian_Miss Fortune",
+      "source": "Lucian",
+      "target": "Miss Fortune",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Lucian_Olaf",
+      "source": "Lucian",
+      "target": "Olaf",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Lucian_Hecarim",
+      "source": "Lucian",
+      "target": "Hecarim",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Senna_Lucian",
+      "source": "Senna",
+      "target": "Lucian",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Senna_Thresh",
+      "source": "Senna",
+      "target": "Thresh",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Senna_Hecarim",
+      "source": "Senna",
+      "target": "Hecarim",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Viego_Hecarim",
+      "source": "Viego",
+      "target": "Hecarim",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Viego_Kalista",
+      "source": "Viego",
+      "target": "Kalista",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Viego_Senna",
+      "source": "Viego",
+      "target": "Senna",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Viego_Thresh",
+      "source": "Viego",
+      "target": "Thresh",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Viego_Vladimir",
+      "source": "Viego",
+      "target": "Vladimir",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Viego_Yorick",
+      "source": "Viego",
+      "target": "Yorick",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Gwen_Viego",
+      "source": "Gwen",
+      "target": "Viego",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Gwen_Senna",
+      "source": "Gwen",
+      "target": "Senna",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Gwen_Yorick",
+      "source": "Gwen",
+      "target": "Yorick",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Alistar_Xin Zhao",
+      "source": "Alistar",
+      "target": "Xin Zhao",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Xin Zhao_Jarvan IV",
+      "source": "Xin Zhao",
+      "target": "Jarvan IV",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Xin Zhao_Yunara",
+      "source": "Xin Zhao",
+      "target": "Yunara",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Xin Zhao_Sona",
+      "source": "Xin Zhao",
+      "target": "Sona",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ambessa_Mel",
+      "source": "Ambessa",
+      "target": "Mel",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ambessa_Caitlyn",
+      "source": "Ambessa",
+      "target": "Caitlyn",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Ambessa_LeBlanc",
+      "source": "Ambessa",
+      "target": "LeBlanc",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Mel_Ambessa",
+      "source": "Mel",
+      "target": "Ambessa",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Mel_Jayce",
+      "source": "Mel",
+      "target": "Jayce",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Mel_LeBlanc",
+      "source": "Mel",
+      "target": "LeBlanc",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Caitlyn_Vi",
+      "source": "Caitlyn",
+      "target": "Vi",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Caitlyn_Jinx",
+      "source": "Caitlyn",
+      "target": "Jinx",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_LeBlanc_Vladimir",
+      "source": "LeBlanc",
+      "target": "Vladimir",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_LeBlanc_Mel",
+      "source": "LeBlanc",
+      "target": "Mel",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_LeBlanc_Mordekaiser",
+      "source": "LeBlanc",
+      "target": "Mordekaiser",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Anivia_Ornn",
+      "source": "Anivia",
+      "target": "Ornn",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Anivia_Volibear",
+      "source": "Anivia",
+      "target": "Volibear",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Anivia_Ashe",
+      "source": "Anivia",
+      "target": "Ashe",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Anivia_Nunu & Willump",
+      "source": "Anivia",
+      "target": "Nunu & Willump",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ornn_Volibear",
+      "source": "Ornn",
+      "target": "Volibear",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ornn_Anivia",
+      "source": "Ornn",
+      "target": "Anivia",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ornn_Braum",
+      "source": "Ornn",
+      "target": "Braum",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Volibear_Ornn",
+      "source": "Volibear",
+      "target": "Ornn",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Volibear_Anivia",
+      "source": "Volibear",
+      "target": "Anivia",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Volibear_Lissandra",
+      "source": "Volibear",
+      "target": "Lissandra",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Ashe_Sejuani",
+      "source": "Ashe",
+      "target": "Sejuani",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ashe_Tryndamere",
+      "source": "Ashe",
+      "target": "Tryndamere",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ashe_Braum",
+      "source": "Ashe",
+      "target": "Braum",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ashe_Lissandra",
+      "source": "Ashe",
+      "target": "Lissandra",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Nunu & Willump_Lissandra",
+      "source": "Nunu & Willump",
+      "target": "Lissandra",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Nunu & Willump_Anivia",
+      "source": "Nunu & Willump",
+      "target": "Anivia",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Aphelios_Diana",
+      "source": "Aphelios",
+      "target": "Diana",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Aphelios_Leona",
+      "source": "Aphelios",
+      "target": "Leona",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Diana_Leona",
+      "source": "Diana",
+      "target": "Leona",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Diana_Taric",
+      "source": "Diana",
+      "target": "Taric",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Diana_Zoe",
+      "source": "Diana",
+      "target": "Zoe",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Diana_Pantheon",
+      "source": "Diana",
+      "target": "Pantheon",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Leona_Diana",
+      "source": "Leona",
+      "target": "Diana",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Leona_Taric",
+      "source": "Leona",
+      "target": "Taric",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Leona_Aurelion Sol",
+      "source": "Leona",
+      "target": "Aurelion Sol",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Leona_Pantheon",
+      "source": "Leona",
+      "target": "Pantheon",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Sejuani_Ashe",
+      "source": "Sejuani",
+      "target": "Ashe",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Sejuani_Lissandra",
+      "source": "Sejuani",
+      "target": "Lissandra",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Sejuani_Olaf",
+      "source": "Sejuani",
+      "target": "Olaf",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Braum_Ashe",
+      "source": "Braum",
+      "target": "Ashe",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Braum_Tryndamere",
+      "source": "Braum",
+      "target": "Tryndamere",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Braum_Lissandra",
+      "source": "Braum",
+      "target": "Lissandra",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Braum_Ornn",
+      "source": "Braum",
+      "target": "Ornn",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Lissandra_Ashe",
+      "source": "Lissandra",
+      "target": "Ashe",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Lissandra_Sejuani",
+      "source": "Lissandra",
+      "target": "Sejuani",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Lissandra_Nunu & Willump",
+      "source": "Lissandra",
+      "target": "Nunu & Willump",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Aurelion Sol_Soraka",
+      "source": "Aurelion Sol",
+      "target": "Soraka",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Aurelion Sol_Leona",
+      "source": "Aurelion Sol",
+      "target": "Leona",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Aurelion Sol_Diana",
+      "source": "Aurelion Sol",
+      "target": "Diana",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Soraka_Aurelion Sol",
+      "source": "Soraka",
+      "target": "Aurelion Sol",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Soraka_Syndra",
+      "source": "Soraka",
+      "target": "Syndra",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Soraka_Warwick",
+      "source": "Soraka",
+      "target": "Warwick",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Aurora_Ornn",
+      "source": "Aurora",
+      "target": "Ornn",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Aurora_Udyr",
+      "source": "Aurora",
+      "target": "Udyr",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Aurora_Anivia",
+      "source": "Aurora",
+      "target": "Anivia",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Aurora_Volibear",
+      "source": "Aurora",
+      "target": "Volibear",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Udyr_Lee Sin",
+      "source": "Udyr",
+      "target": "Lee Sin",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Udyr_Sejuani",
+      "source": "Udyr",
+      "target": "Sejuani",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Udyr_Volibear",
+      "source": "Udyr",
+      "target": "Volibear",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Azir_Nasus",
+      "source": "Azir",
+      "target": "Nasus",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Azir_Sivir",
+      "source": "Azir",
+      "target": "Sivir",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Azir_Xerath",
+      "source": "Azir",
+      "target": "Xerath",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Azir_Renekton",
+      "source": "Azir",
+      "target": "Renekton",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Azir_Taliyah",
+      "source": "Azir",
+      "target": "Taliyah",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Azir_Cassiopeia",
+      "source": "Azir",
+      "target": "Cassiopeia",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Nasus_Renekton",
+      "source": "Nasus",
+      "target": "Renekton",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Nasus_Azir",
+      "source": "Nasus",
+      "target": "Azir",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Nasus_Xerath",
+      "source": "Nasus",
+      "target": "Xerath",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Nasus_Sivir",
+      "source": "Nasus",
+      "target": "Sivir",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Sivir_Azir",
+      "source": "Sivir",
+      "target": "Azir",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Sivir_Nasus",
+      "source": "Sivir",
+      "target": "Nasus",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Sivir_Taliyah",
+      "source": "Sivir",
+      "target": "Taliyah",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Xerath_Renekton",
+      "source": "Xerath",
+      "target": "Renekton",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Xerath_Cassiopeia",
+      "source": "Xerath",
+      "target": "Cassiopeia",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Xerath_Nasus",
+      "source": "Xerath",
+      "target": "Nasus",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Xerath_Azir",
+      "source": "Xerath",
+      "target": "Azir",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Xerath_Sivir",
+      "source": "Xerath",
+      "target": "Sivir",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Xerath_Taliyah",
+      "source": "Xerath",
+      "target": "Taliyah",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Xerath_Brand",
+      "source": "Xerath",
+      "target": "Brand",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Renekton_Nasus",
+      "source": "Renekton",
+      "target": "Nasus",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Renekton_Azir",
+      "source": "Renekton",
+      "target": "Azir",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Renekton_Xerath",
+      "source": "Renekton",
+      "target": "Xerath",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Renekton_Sivir",
+      "source": "Renekton",
+      "target": "Sivir",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Taliyah_Yasuo",
+      "source": "Taliyah",
+      "target": "Yasuo",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Taliyah_Azir",
+      "source": "Taliyah",
+      "target": "Azir",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Taliyah_Nasus",
+      "source": "Taliyah",
+      "target": "Nasus",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Taliyah_Sivir",
+      "source": "Taliyah",
+      "target": "Sivir",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Taliyah_Xerath",
+      "source": "Taliyah",
+      "target": "Xerath",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Cassiopeia_Katarina",
+      "source": "Cassiopeia",
+      "target": "Katarina",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Cassiopeia_Renekton",
+      "source": "Cassiopeia",
+      "target": "Renekton",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Cassiopeia_Nasus",
+      "source": "Cassiopeia",
+      "target": "Nasus",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Cassiopeia_Xerath",
+      "source": "Cassiopeia",
+      "target": "Xerath",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Cassiopeia_Sivir",
+      "source": "Cassiopeia",
+      "target": "Sivir",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Cassiopeia_Azir",
+      "source": "Cassiopeia",
+      "target": "Azir",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Cassiopeia_Talon",
+      "source": "Cassiopeia",
+      "target": "Talon",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Bard_Aurelion Sol",
+      "source": "Bard",
+      "target": "Aurelion Sol",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Bard_Ryze",
+      "source": "Bard",
+      "target": "Ryze",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Ryze_Brand",
+      "source": "Ryze",
+      "target": "Brand",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ryze_Miss Fortune",
+      "source": "Ryze",
+      "target": "Miss Fortune",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ryze_Trundle",
+      "source": "Ryze",
+      "target": "Trundle",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ryze_Sona",
+      "source": "Ryze",
+      "target": "Sona",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ryze_Nasus",
+      "source": "Ryze",
+      "target": "Nasus",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Ryze_Galio",
+      "source": "Ryze",
+      "target": "Galio",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Ryze_Malzahar",
+      "source": "Ryze",
+      "target": "Malzahar",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Bel’Veth_Kai'Sa",
+      "source": "Bel’Veth",
+      "target": "Kai'Sa",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Bel’Veth_Lissandra",
+      "source": "Bel’Veth",
+      "target": "Lissandra",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Bel’Veth_Malzahar",
+      "source": "Bel’Veth",
+      "target": "Malzahar",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Bel’Veth_Vel'Koz",
+      "source": "Bel’Veth",
+      "target": "Vel'Koz",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Kai'Sa_Malzahar",
+      "source": "Kai'Sa",
+      "target": "Malzahar",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Malzahar_Kassadin",
+      "source": "Malzahar",
+      "target": "Kassadin",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Malzahar_Kai'Sa",
+      "source": "Malzahar",
+      "target": "Kai'Sa",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Vel'Koz_Kha'Zix",
+      "source": "Vel'Koz",
+      "target": "Kha'Zix",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Vel'Koz_Cho'Gath",
+      "source": "Vel'Koz",
+      "target": "Cho'Gath",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Vel'Koz_Kog'Maw",
+      "source": "Vel'Koz",
+      "target": "Kog'Maw",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Vel'Koz_Rek'Sai",
+      "source": "Vel'Koz",
+      "target": "Rek'Sai",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Blitzcrank_Orianna",
+      "source": "Blitzcrank",
+      "target": "Orianna",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Blitzcrank_Viktor",
+      "source": "Blitzcrank",
+      "target": "Viktor",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Orianna_Blitzcrank",
+      "source": "Orianna",
+      "target": "Blitzcrank",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Orianna_Camille",
+      "source": "Orianna",
+      "target": "Camille",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Orianna_Skarner",
+      "source": "Orianna",
+      "target": "Skarner",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Viktor_Jayce",
+      "source": "Viktor",
+      "target": "Jayce",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Viktor_Heimerdinger",
+      "source": "Viktor",
+      "target": "Heimerdinger",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Viktor_Blitzcrank",
+      "source": "Viktor",
+      "target": "Blitzcrank",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Brand_Ryze",
+      "source": "Brand",
+      "target": "Ryze",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Brand_Anivia",
+      "source": "Brand",
+      "target": "Anivia",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Brand_Lissandra",
+      "source": "Brand",
+      "target": "Lissandra",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Brand_Nasus",
+      "source": "Brand",
+      "target": "Nasus",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Brand_Renekton",
+      "source": "Brand",
+      "target": "Renekton",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Brand_Xerath",
+      "source": "Brand",
+      "target": "Xerath",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Briar_Sion",
+      "source": "Briar",
+      "target": "Sion",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Briar_Swain",
+      "source": "Briar",
+      "target": "Swain",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Briar_Talon",
+      "source": "Briar",
+      "target": "Talon",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Briar_Vladimir",
+      "source": "Briar",
+      "target": "Vladimir",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Sion_Swain",
+      "source": "Sion",
+      "target": "Swain",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Sion_Jarvan IV",
+      "source": "Sion",
+      "target": "Jarvan IV",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Sion_LeBlanc",
+      "source": "Sion",
+      "target": "LeBlanc",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Swain_LeBlanc",
+      "source": "Swain",
+      "target": "LeBlanc",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Swain_Darius",
+      "source": "Swain",
+      "target": "Darius",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Swain_Katarina",
+      "source": "Swain",
+      "target": "Katarina",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Swain_Draven",
+      "source": "Swain",
+      "target": "Draven",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Swain_Vladimir",
+      "source": "Swain",
+      "target": "Vladimir",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Talon_Katarina",
+      "source": "Talon",
+      "target": "Katarina",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Talon_Quinn",
+      "source": "Talon",
+      "target": "Quinn",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Talon_Cassiopeia",
+      "source": "Talon",
+      "target": "Cassiopeia",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Vladimir_Swain",
+      "source": "Vladimir",
+      "target": "Swain",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Vladimir_LeBlanc",
+      "source": "Vladimir",
+      "target": "LeBlanc",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Vladimir_Elise",
+      "source": "Vladimir",
+      "target": "Elise",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Vladimir_Kayn",
+      "source": "Vladimir",
+      "target": "Kayn",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Vi_Caitlyn",
+      "source": "Vi",
+      "target": "Caitlyn",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Vi_Jinx",
+      "source": "Vi",
+      "target": "Jinx",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Vi_Ekko",
+      "source": "Vi",
+      "target": "Ekko",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jinx_Caitlyn",
+      "source": "Jinx",
+      "target": "Caitlyn",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jinx_Vi",
+      "source": "Jinx",
+      "target": "Vi",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jinx_Ekko",
+      "source": "Jinx",
+      "target": "Ekko",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Camille_Caitlyn",
+      "source": "Camille",
+      "target": "Caitlyn",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Camille_Ezreal",
+      "source": "Camille",
+      "target": "Ezreal",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Camille_Jayce",
+      "source": "Camille",
+      "target": "Jayce",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Camille_Viktor",
+      "source": "Camille",
+      "target": "Viktor",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Camille_Vi",
+      "source": "Camille",
+      "target": "Vi",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Camille_Ekko",
+      "source": "Camille",
+      "target": "Ekko",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Camille_Orianna",
+      "source": "Camille",
+      "target": "Orianna",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Camille_Warwick",
+      "source": "Camille",
+      "target": "Warwick",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ezreal_Kassadin",
+      "source": "Ezreal",
+      "target": "Kassadin",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ezreal_Lux",
+      "source": "Ezreal",
+      "target": "Lux",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Ezreal_Rek'Sai",
+      "source": "Ezreal",
+      "target": "Rek'Sai",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Jayce_Ezreal",
+      "source": "Jayce",
+      "target": "Ezreal",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Jayce_Camille",
+      "source": "Jayce",
+      "target": "Camille",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jayce_Caitlyn",
+      "source": "Jayce",
+      "target": "Caitlyn",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Jayce_Vi",
+      "source": "Jayce",
+      "target": "Vi",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Jayce_Viktor",
+      "source": "Jayce",
+      "target": "Viktor",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jayce_Skarner",
+      "source": "Jayce",
+      "target": "Skarner",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Ekko_Jinx",
+      "source": "Ekko",
+      "target": "Jinx",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ekko_Camille",
+      "source": "Ekko",
+      "target": "Camille",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ekko_Vi",
+      "source": "Ekko",
+      "target": "Vi",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ekko_Viktor",
+      "source": "Ekko",
+      "target": "Viktor",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Ekko_Caitlyn",
+      "source": "Ekko",
+      "target": "Caitlyn",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Ekko_Jayce",
+      "source": "Ekko",
+      "target": "Jayce",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Ekko_Janna",
+      "source": "Ekko",
+      "target": "Janna",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Warwick_Camille",
+      "source": "Warwick",
+      "target": "Camille",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Warwick_Singed",
+      "source": "Warwick",
+      "target": "Singed",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Warwick_Vayne",
+      "source": "Warwick",
+      "target": "Vayne",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Katarina_Cassiopeia",
+      "source": "Katarina",
+      "target": "Cassiopeia",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Katarina_Sion",
+      "source": "Katarina",
+      "target": "Sion",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Katarina_Talon",
+      "source": "Katarina",
+      "target": "Talon",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Katarina_Garen",
+      "source": "Katarina",
+      "target": "Garen",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Katarina_Swain",
+      "source": "Katarina",
+      "target": "Swain",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Katarina_Darius",
+      "source": "Katarina",
+      "target": "Darius",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Cho'Gath_Kog'Maw",
+      "source": "Cho'Gath",
+      "target": "Kog'Maw",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Cho'Gath_Kha'Zix",
+      "source": "Cho'Gath",
+      "target": "Kha'Zix",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Cho'Gath_Vel'Koz",
+      "source": "Cho'Gath",
+      "target": "Vel'Koz",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kog'Maw_Malzahar",
+      "source": "Kog'Maw",
+      "target": "Malzahar",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Kog'Maw_Kha'Zix",
+      "source": "Kog'Maw",
+      "target": "Kha'Zix",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kog'Maw_Cho'Gath",
+      "source": "Kog'Maw",
+      "target": "Cho'Gath",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kog'Maw_Vel'Koz",
+      "source": "Kog'Maw",
+      "target": "Vel'Koz",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kha'Zix_Cho'Gath",
+      "source": "Kha'Zix",
+      "target": "Cho'Gath",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kha'Zix_Kog'Maw",
+      "source": "Kha'Zix",
+      "target": "Kog'Maw",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kha'Zix_Rengar",
+      "source": "Kha'Zix",
+      "target": "Rengar",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kha'Zix_Vel'Koz",
+      "source": "Kha'Zix",
+      "target": "Vel'Koz",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Corki_Heimerdinger",
+      "source": "Corki",
+      "target": "Heimerdinger",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Corki_Veigar",
+      "source": "Corki",
+      "target": "Veigar",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Heimerdinger_Corki",
+      "source": "Heimerdinger",
+      "target": "Corki",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Heimerdinger_Gnar",
+      "source": "Heimerdinger",
+      "target": "Gnar",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Heimerdinger_Ziggs",
+      "source": "Heimerdinger",
+      "target": "Ziggs",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Heimerdinger_Rumble",
+      "source": "Heimerdinger",
+      "target": "Rumble",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Heimerdinger_Veigar",
+      "source": "Heimerdinger",
+      "target": "Veigar",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Veigar_Mordekaiser",
+      "source": "Veigar",
+      "target": "Mordekaiser",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Veigar_LeBlanc",
+      "source": "Veigar",
+      "target": "LeBlanc",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Darius_Draven",
+      "source": "Darius",
+      "target": "Draven",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Darius_Katarina",
+      "source": "Darius",
+      "target": "Katarina",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Darius_Swain",
+      "source": "Darius",
+      "target": "Swain",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Darius_Vladimir",
+      "source": "Darius",
+      "target": "Vladimir",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Draven_Darius",
+      "source": "Draven",
+      "target": "Darius",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Draven_Swain",
+      "source": "Draven",
+      "target": "Swain",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Taric_Garen",
+      "source": "Taric",
+      "target": "Garen",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Taric_Leona",
+      "source": "Taric",
+      "target": "Leona",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Taric_Diana",
+      "source": "Taric",
+      "target": "Diana",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Taric_Zoe",
+      "source": "Taric",
+      "target": "Zoe",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Zoe_Aurelion Sol",
+      "source": "Zoe",
+      "target": "Aurelion Sol",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Zoe_Pantheon",
+      "source": "Zoe",
+      "target": "Pantheon",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Pantheon_Aatrox",
+      "source": "Pantheon",
+      "target": "Aatrox",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Pantheon_Aurelion Sol",
+      "source": "Pantheon",
+      "target": "Aurelion Sol",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Pantheon_Leona",
+      "source": "Pantheon",
+      "target": "Leona",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Dr. Mundo_Ekko",
+      "source": "Dr. Mundo",
+      "target": "Ekko",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Janna_Ekko",
+      "source": "Janna",
+      "target": "Ekko",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Janna_Jinx",
+      "source": "Janna",
+      "target": "Jinx",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Janna_Vi",
+      "source": "Janna",
+      "target": "Vi",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Janna_Urgot",
+      "source": "Janna",
+      "target": "Urgot",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Elise_LeBlanc",
+      "source": "Elise",
+      "target": "LeBlanc",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Elise_Vladimir",
+      "source": "Elise",
+      "target": "Vladimir",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Evelynn_Vayne",
+      "source": "Evelynn",
+      "target": "Vayne",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Evelynn_Tahm Kench",
+      "source": "Evelynn",
+      "target": "Tahm Kench",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Evelynn_Ryze",
+      "source": "Evelynn",
+      "target": "Ryze",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Vayne_Evelynn",
+      "source": "Vayne",
+      "target": "Evelynn",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Vayne_Shaco",
+      "source": "Vayne",
+      "target": "Shaco",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Vayne_Fiddlesticks",
+      "source": "Vayne",
+      "target": "Fiddlesticks",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Tahm Kench_Evelynn",
+      "source": "Tahm Kench",
+      "target": "Evelynn",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Tahm Kench_Fizz",
+      "source": "Tahm Kench",
+      "target": "Fizz",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Tahm Kench_Nautilus",
+      "source": "Tahm Kench",
+      "target": "Nautilus",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Tahm Kench_Pyke",
+      "source": "Tahm Kench",
+      "target": "Pyke",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Kassadin_Malzahar",
+      "source": "Kassadin",
+      "target": "Malzahar",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kassadin_Ezreal",
+      "source": "Kassadin",
+      "target": "Ezreal",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Lux_Garen",
+      "source": "Lux",
+      "target": "Garen",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Lux_Jarvan IV",
+      "source": "Lux",
+      "target": "Jarvan IV",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Lux_Galio",
+      "source": "Lux",
+      "target": "Galio",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Rek'Sai_Skarner",
+      "source": "Rek'Sai",
+      "target": "Skarner",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Fiddlesticks_Nocturne",
+      "source": "Fiddlesticks",
+      "target": "Nocturne",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Fiddlesticks_Shaco",
+      "source": "Fiddlesticks",
+      "target": "Shaco",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Nocturne_Evelynn",
+      "source": "Nocturne",
+      "target": "Evelynn",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Nocturne_Tahm Kench",
+      "source": "Nocturne",
+      "target": "Tahm Kench",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Nocturne_Zed",
+      "source": "Nocturne",
+      "target": "Zed",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Shaco_Fiddlesticks",
+      "source": "Shaco",
+      "target": "Fiddlesticks",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Shaco_Nocturne",
+      "source": "Shaco",
+      "target": "Nocturne",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Fiora_Jarvan IV",
+      "source": "Fiora",
+      "target": "Jarvan IV",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Fiora_Garen",
+      "source": "Fiora",
+      "target": "Garen",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Fiora_Jax",
+      "source": "Fiora",
+      "target": "Jax",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jarvan IV_Garen",
+      "source": "Jarvan IV",
+      "target": "Garen",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jarvan IV_Shyvana",
+      "source": "Jarvan IV",
+      "target": "Shyvana",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jarvan IV_Xin Zhao",
+      "source": "Jarvan IV",
+      "target": "Xin Zhao",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jarvan IV_Lux",
+      "source": "Jarvan IV",
+      "target": "Lux",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Garen_Lux",
+      "source": "Garen",
+      "target": "Lux",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Garen_Jarvan IV",
+      "source": "Garen",
+      "target": "Jarvan IV",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Garen_Quinn",
+      "source": "Garen",
+      "target": "Quinn",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jax_Aatrox",
+      "source": "Jax",
+      "target": "Aatrox",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Jax_Fiora",
+      "source": "Jax",
+      "target": "Fiora",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Jax_Kassadin",
+      "source": "Jax",
+      "target": "Kassadin",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Jax_Zilean",
+      "source": "Jax",
+      "target": "Zilean",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Fizz_Illaoi",
+      "source": "Fizz",
+      "target": "Illaoi",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Fizz_Nami",
+      "source": "Fizz",
+      "target": "Nami",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Fizz_Nautilus",
+      "source": "Fizz",
+      "target": "Nautilus",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Illaoi_Gangplank",
+      "source": "Illaoi",
+      "target": "Gangplank",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Illaoi_Miss Fortune",
+      "source": "Illaoi",
+      "target": "Miss Fortune",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Illaoi_Hecarim",
+      "source": "Illaoi",
+      "target": "Hecarim",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Nami_Fizz",
+      "source": "Nami",
+      "target": "Fizz",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Nami_Nautilus",
+      "source": "Nami",
+      "target": "Nautilus",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Nautilus_Fizz",
+      "source": "Nautilus",
+      "target": "Fizz",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Nautilus_Illaoi",
+      "source": "Nautilus",
+      "target": "Illaoi",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Nautilus_Nami",
+      "source": "Nautilus",
+      "target": "Nami",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Nautilus_Tahm Kench",
+      "source": "Nautilus",
+      "target": "Tahm Kench",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Galio_Kayle",
+      "source": "Galio",
+      "target": "Kayle",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Galio_Morgana",
+      "source": "Galio",
+      "target": "Morgana",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Galio_Lux",
+      "source": "Galio",
+      "target": "Lux",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Galio_Sylas",
+      "source": "Galio",
+      "target": "Sylas",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kayle_Galio",
+      "source": "Kayle",
+      "target": "Galio",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kayle_Morgana",
+      "source": "Kayle",
+      "target": "Morgana",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kayle_Taric",
+      "source": "Kayle",
+      "target": "Taric",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Morgana_Kayle",
+      "source": "Morgana",
+      "target": "Kayle",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Morgana_Galio",
+      "source": "Morgana",
+      "target": "Galio",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Morgana_Taric",
+      "source": "Morgana",
+      "target": "Taric",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Sylas_Lux",
+      "source": "Sylas",
+      "target": "Lux",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Sylas_Galio",
+      "source": "Sylas",
+      "target": "Galio",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Gangplank_Miss Fortune",
+      "source": "Gangplank",
+      "target": "Miss Fortune",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Gangplank_Swain",
+      "source": "Gangplank",
+      "target": "Swain",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Gangplank_Zed",
+      "source": "Gangplank",
+      "target": "Zed",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Gangplank_Illaoi",
+      "source": "Gangplank",
+      "target": "Illaoi",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Gangplank_Twisted Fate",
+      "source": "Gangplank",
+      "target": "Twisted Fate",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Gangplank_Graves",
+      "source": "Gangplank",
+      "target": "Graves",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Miss Fortune_Gangplank",
+      "source": "Miss Fortune",
+      "target": "Gangplank",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Miss Fortune_Illaoi",
+      "source": "Miss Fortune",
+      "target": "Illaoi",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Miss Fortune_Twisted Fate",
+      "source": "Miss Fortune",
+      "target": "Twisted Fate",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Miss Fortune_Graves",
+      "source": "Miss Fortune",
+      "target": "Graves",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Miss Fortune_Lucian",
+      "source": "Miss Fortune",
+      "target": "Lucian",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Miss Fortune_Olaf",
+      "source": "Miss Fortune",
+      "target": "Olaf",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Miss Fortune_Hecarim",
+      "source": "Miss Fortune",
+      "target": "Hecarim",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Miss Fortune_Ryze",
+      "source": "Miss Fortune",
+      "target": "Ryze",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Twisted Fate_Graves",
+      "source": "Twisted Fate",
+      "target": "Graves",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Twisted Fate_Gangplank",
+      "source": "Twisted Fate",
+      "target": "Gangplank",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Twisted Fate_Miss Fortune",
+      "source": "Twisted Fate",
+      "target": "Miss Fortune",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Graves_Twisted Fate",
+      "source": "Graves",
+      "target": "Twisted Fate",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Graves_Gangplank",
+      "source": "Graves",
+      "target": "Gangplank",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Graves_Miss Fortune",
+      "source": "Graves",
+      "target": "Miss Fortune",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Quinn_Jarvan IV",
+      "source": "Quinn",
+      "target": "Jarvan IV",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Quinn_Garen",
+      "source": "Quinn",
+      "target": "Garen",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Quinn_Sona",
+      "source": "Quinn",
+      "target": "Sona",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Gnar_Nunu & Willump",
+      "source": "Gnar",
+      "target": "Nunu & Willump",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Gnar_Rengar",
+      "source": "Gnar",
+      "target": "Rengar",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Rengar_Kha'Zix",
+      "source": "Rengar",
+      "target": "Kha'Zix",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Rengar_Nidalee",
+      "source": "Rengar",
+      "target": "Nidalee",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Rengar_Gnar",
+      "source": "Rengar",
+      "target": "Gnar",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Gragas_Tryndamere",
+      "source": "Gragas",
+      "target": "Tryndamere",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Gragas_Braum",
+      "source": "Gragas",
+      "target": "Braum",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Gragas_Jax",
+      "source": "Gragas",
+      "target": "Jax",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Gragas_Ashe",
+      "source": "Gragas",
+      "target": "Ashe",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Yorick_Hecarim",
+      "source": "Yorick",
+      "target": "Hecarim",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Yorick_Kalista",
+      "source": "Yorick",
+      "target": "Kalista",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Yorick_Thresh",
+      "source": "Yorick",
+      "target": "Thresh",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Yorick_Karthus",
+      "source": "Yorick",
+      "target": "Karthus",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Yorick_Maokai",
+      "source": "Yorick",
+      "target": "Maokai",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Yorick_Kindred",
+      "source": "Yorick",
+      "target": "Kindred",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Hecarim_Kalista",
+      "source": "Hecarim",
+      "target": "Kalista",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Hecarim_Thresh",
+      "source": "Hecarim",
+      "target": "Thresh",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Hecarim_Yorick",
+      "source": "Hecarim",
+      "target": "Yorick",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kalista_Hecarim",
+      "source": "Kalista",
+      "target": "Hecarim",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kalista_Thresh",
+      "source": "Kalista",
+      "target": "Thresh",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kalista_Yorick",
+      "source": "Kalista",
+      "target": "Yorick",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Thresh_Hecarim",
+      "source": "Thresh",
+      "target": "Hecarim",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Thresh_Karthus",
+      "source": "Thresh",
+      "target": "Karthus",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Thresh_Lucian",
+      "source": "Thresh",
+      "target": "Lucian",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Thresh_Kalista",
+      "source": "Thresh",
+      "target": "Kalista",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Thresh_Yorick",
+      "source": "Thresh",
+      "target": "Yorick",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ziggs_Heimerdinger",
+      "source": "Ziggs",
+      "target": "Heimerdinger",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ziggs_Rumble",
+      "source": "Ziggs",
+      "target": "Rumble",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ziggs_Veigar",
+      "source": "Ziggs",
+      "target": "Veigar",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Rumble_Tristana",
+      "source": "Rumble",
+      "target": "Tristana",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Rumble_Ziggs",
+      "source": "Rumble",
+      "target": "Ziggs",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Rumble_Heimerdinger",
+      "source": "Rumble",
+      "target": "Heimerdinger",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Rumble_Teemo",
+      "source": "Rumble",
+      "target": "Teemo",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Rumble_Veigar",
+      "source": "Rumble",
+      "target": "Veigar",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Hwei_Jhin",
+      "source": "Hwei",
+      "target": "Jhin",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Hwei_Shen",
+      "source": "Hwei",
+      "target": "Shen",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Hwei_Zed",
+      "source": "Hwei",
+      "target": "Zed",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Irelia_Karma",
+      "source": "Irelia",
+      "target": "Karma",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Irelia_Swain",
+      "source": "Irelia",
+      "target": "Swain",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Karma_Irelia",
+      "source": "Karma",
+      "target": "Irelia",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Karma_Lee Sin",
+      "source": "Karma",
+      "target": "Lee Sin",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Ivern_Lillia",
+      "source": "Ivern",
+      "target": "Lillia",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Urgot_Swain",
+      "source": "Urgot",
+      "target": "Swain",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Urgot_Ekko",
+      "source": "Urgot",
+      "target": "Ekko",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Urgot_Camille",
+      "source": "Urgot",
+      "target": "Camille",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Urgot_Darius",
+      "source": "Urgot",
+      "target": "Darius",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Shyvana_Jarvan IV",
+      "source": "Shyvana",
+      "target": "Jarvan IV",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Shyvana_Quinn",
+      "source": "Shyvana",
+      "target": "Quinn",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Shyvana_Sona",
+      "source": "Shyvana",
+      "target": "Sona",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Zilean_Aatrox",
+      "source": "Zilean",
+      "target": "Aatrox",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Zilean_Jax",
+      "source": "Zilean",
+      "target": "Jax",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Zilean_Vel'Koz",
+      "source": "Zilean",
+      "target": "Vel'Koz",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Skarner_Malphite",
+      "source": "Skarner",
+      "target": "Malphite",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Skarner_Qiyana",
+      "source": "Skarner",
+      "target": "Qiyana",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Skarner_Milio",
+      "source": "Skarner",
+      "target": "Milio",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Lee Sin_Karma",
+      "source": "Lee Sin",
+      "target": "Karma",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Lee Sin_Udyr",
+      "source": "Lee Sin",
+      "target": "Udyr",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Karthus_Mordekaiser",
+      "source": "Karthus",
+      "target": "Mordekaiser",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Karthus_Thresh",
+      "source": "Karthus",
+      "target": "Thresh",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Karthus_Yorick",
+      "source": "Karthus",
+      "target": "Yorick",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Karthus_Soraka",
+      "source": "Karthus",
+      "target": "Soraka",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Karthus_Kindred",
+      "source": "Karthus",
+      "target": "Kindred",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Mordekaiser_LeBlanc",
+      "source": "Mordekaiser",
+      "target": "LeBlanc",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Mordekaiser_Veigar",
+      "source": "Mordekaiser",
+      "target": "Veigar",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Mordekaiser_Vladimir",
+      "source": "Mordekaiser",
+      "target": "Vladimir",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Kindred_Karthus",
+      "source": "Kindred",
+      "target": "Karthus",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kindred_Mordekaiser",
+      "source": "Kindred",
+      "target": "Mordekaiser",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Kindred_Yorick",
+      "source": "Kindred",
+      "target": "Yorick",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Kled_Swain",
+      "source": "Kled",
+      "target": "Swain",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Kled_Darius",
+      "source": "Kled",
+      "target": "Darius",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Kled_Tristana",
+      "source": "Kled",
+      "target": "Tristana",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Kled_Elise",
+      "source": "Kled",
+      "target": "Elise",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Tristana_Teemo",
+      "source": "Tristana",
+      "target": "Teemo",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Tristana_Rumble",
+      "source": "Tristana",
+      "target": "Rumble",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_K’Sante_Azir",
+      "source": "K’Sante",
+      "target": "Azir",
+      "type": "directed"
+    },
+    {
+      "id": "edge_K’Sante_Renekton",
+      "source": "K’Sante",
+      "target": "Renekton",
+      "type": "directed"
+    },
+    {
+      "id": "edge_K’Sante_Xerath",
+      "source": "K’Sante",
+      "target": "Xerath",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Olaf_Sejuani",
+      "source": "Olaf",
+      "target": "Sejuani",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Olaf_Volibear",
+      "source": "Olaf",
+      "target": "Volibear",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Olaf_Miss Fortune",
+      "source": "Olaf",
+      "target": "Miss Fortune",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Olaf_Lucian",
+      "source": "Olaf",
+      "target": "Lucian",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Lulu_Veigar",
+      "source": "Lulu",
+      "target": "Veigar",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Lulu_Gnar",
+      "source": "Lulu",
+      "target": "Gnar",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Malphite_Ezreal",
+      "source": "Malphite",
+      "target": "Ezreal",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Malphite_Kassadin",
+      "source": "Malphite",
+      "target": "Kassadin",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Malphite_Qiyana",
+      "source": "Malphite",
+      "target": "Qiyana",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Malphite_Taliyah",
+      "source": "Malphite",
+      "target": "Taliyah",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Qiyana_Malphite",
+      "source": "Qiyana",
+      "target": "Malphite",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Qiyana_Rengar",
+      "source": "Qiyana",
+      "target": "Rengar",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Qiyana_Zyra",
+      "source": "Qiyana",
+      "target": "Zyra",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Maokai_Malphite",
+      "source": "Maokai",
+      "target": "Malphite",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Maokai_Zyra",
+      "source": "Maokai",
+      "target": "Zyra",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Maokai_Yorick",
+      "source": "Maokai",
+      "target": "Yorick",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Zyra_Ivern",
+      "source": "Zyra",
+      "target": "Ivern",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Zyra_Nidalee",
+      "source": "Zyra",
+      "target": "Nidalee",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Master Yi_Wukong",
+      "source": "Master Yi",
+      "target": "Wukong",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Master Yi_Singed",
+      "source": "Master Yi",
+      "target": "Singed",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Singed_Warwick",
+      "source": "Singed",
+      "target": "Warwick",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Singed_Riven",
+      "source": "Singed",
+      "target": "Riven",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Singed_Master Yi",
+      "source": "Singed",
+      "target": "Master Yi",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Milio_Neeko",
+      "source": "Milio",
+      "target": "Neeko",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Milio_Nidalee",
+      "source": "Milio",
+      "target": "Nidalee",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Milio_Qiyana",
+      "source": "Milio",
+      "target": "Qiyana",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Neeko_Nidalee",
+      "source": "Neeko",
+      "target": "Nidalee",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Neeko_Rengar",
+      "source": "Neeko",
+      "target": "Rengar",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Neeko_Ezreal",
+      "source": "Neeko",
+      "target": "Ezreal",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Nidalee_Neeko",
+      "source": "Nidalee",
+      "target": "Neeko",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Nidalee_Rengar",
+      "source": "Nidalee",
+      "target": "Rengar",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Naafiri_Aatrox",
+      "source": "Naafiri",
+      "target": "Aatrox",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Naafiri_Kayn",
+      "source": "Naafiri",
+      "target": "Kayn",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Naafiri_Varus",
+      "source": "Naafiri",
+      "target": "Varus",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Nilah_Graves",
+      "source": "Nilah",
+      "target": "Graves",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Nilah_Illaoi",
+      "source": "Nilah",
+      "target": "Illaoi",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Nilah_Viego",
+      "source": "Nilah",
+      "target": "Viego",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Nilah_Fiddlesticks",
+      "source": "Nilah",
+      "target": "Fiddlesticks",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Poppy_Galio",
+      "source": "Poppy",
+      "target": "Galio",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Poppy_Shyvana",
+      "source": "Poppy",
+      "target": "Shyvana",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Pyke_Gangplank",
+      "source": "Pyke",
+      "target": "Gangplank",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Pyke_Miss Fortune",
+      "source": "Pyke",
+      "target": "Miss Fortune",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Sona_Taric",
+      "source": "Sona",
+      "target": "Taric",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Sona_Xin Zhao",
+      "source": "Sona",
+      "target": "Xin Zhao",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Sona_Ryze",
+      "source": "Sona",
+      "target": "Ryze",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Rakan_Xayah",
+      "source": "Rakan",
+      "target": "Xayah",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Rakan_Zed",
+      "source": "Rakan",
+      "target": "Zed",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Xayah_Rakan",
+      "source": "Xayah",
+      "target": "Rakan",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Xayah_Zed",
+      "source": "Xayah",
+      "target": "Zed",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Rell_LeBlanc",
+      "source": "Rell",
+      "target": "LeBlanc",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Rell_Samira",
+      "source": "Rell",
+      "target": "Samira",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Samira_Darius",
+      "source": "Samira",
+      "target": "Darius",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Samira_LeBlanc",
+      "source": "Samira",
+      "target": "LeBlanc",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Renata Glasc_Camille",
+      "source": "Renata Glasc",
+      "target": "Camille",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Renata Glasc_Ekko",
+      "source": "Renata Glasc",
+      "target": "Ekko",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Renata Glasc_Viktor",
+      "source": "Renata Glasc",
+      "target": "Viktor",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Renata Glasc_Zeri",
+      "source": "Renata Glasc",
+      "target": "Zeri",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Zeri_Ekko",
+      "source": "Zeri",
+      "target": "Ekko",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Riven_LeBlanc",
+      "source": "Riven",
+      "target": "LeBlanc",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Riven_Yasuo",
+      "source": "Riven",
+      "target": "Yasuo",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Teemo_Tristana",
+      "source": "Teemo",
+      "target": "Tristana",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Teemo_Lulu",
+      "source": "Teemo",
+      "target": "Lulu",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Teemo_Corki",
+      "source": "Teemo",
+      "target": "Corki",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Trundle_Lissandra",
+      "source": "Trundle",
+      "target": "Lissandra",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Trundle_Ashe",
+      "source": "Trundle",
+      "target": "Ashe",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Trundle_Sejuani",
+      "source": "Trundle",
+      "target": "Sejuani",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Trundle_Ryze",
+      "source": "Trundle",
+      "target": "Ryze",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Seraphine_Skarner",
+      "source": "Seraphine",
+      "target": "Skarner",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Sett_Alistar",
+      "source": "Sett",
+      "target": "Alistar",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Sett_Draven",
+      "source": "Sett",
+      "target": "Draven",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Smolder_Viego",
+      "source": "Smolder",
+      "target": "Viego",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Smolder_Shyvana",
+      "source": "Smolder",
+      "target": "Shyvana",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Smolder_Aurelion Sol",
+      "source": "Smolder",
+      "target": "Aurelion Sol",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Syndra_Irelia",
+      "source": "Syndra",
+      "target": "Irelia",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Syndra_Karma",
+      "source": "Syndra",
+      "target": "Karma",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Twitch_Zac",
+      "source": "Twitch",
+      "target": "Zac",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Zac_Twitch",
+      "source": "Zac",
+      "target": "Twitch",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Vex_Lucian",
+      "source": "Vex",
+      "target": "Lucian",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Vex_Senna",
+      "source": "Vex",
+      "target": "Senna",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Vex_Thresh",
+      "source": "Vex",
+      "target": "Thresh",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Vex_Viego",
+      "source": "Vex",
+      "target": "Viego",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Yunara_Xin Zhao",
+      "source": "Yunara",
+      "target": "Xin Zhao",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Yunara_Kennen",
+      "source": "Yunara",
+      "target": "Kennen",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Yone_Yasuo",
+      "source": "Yone",
+      "target": "Yasuo",
+      "type": "mutual"
+    },
+    {
+      "id": "edge_Yone_Lillia",
+      "source": "Yone",
+      "target": "Lillia",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Yuumi_Norra",
+      "source": "Yuumi",
+      "target": "Norra",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Yuumi_Lulu",
+      "source": "Yuumi",
+      "target": "Lulu",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Yuumi_Tristana",
+      "source": "Yuumi",
+      "target": "Tristana",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Yuumi_Teemo",
+      "source": "Yuumi",
+      "target": "Teemo",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Zaahen_Xin Zhao",
+      "source": "Zaahen",
+      "target": "Xin Zhao",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Zaahen_Yunara",
+      "source": "Zaahen",
+      "target": "Yunara",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Zaahen_Kayn",
+      "source": "Zaahen",
+      "target": "Kayn",
+      "type": "directed"
+    },
+    {
+      "id": "edge_Zaahen_Varus",
+      "source": "Zaahen",
+      "target": "Varus",
+      "type": "directed"
+    }
+  ]
+}

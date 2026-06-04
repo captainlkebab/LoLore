@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trollpicks</title>
+    <title>LoL Theorycrafter</title>
+    <link rel="stylesheet" href="https://unpkg.com/vis-network/standalone/umd/vis-network.min.css" />
+    
     <style>
         body { font-family: sans-serif; background: #121212; color: #fff; padding: 20px; }
         .search-box { margin-bottom: 20px; background: #1f1f1f; padding: 15px; border-radius: 8px; }
@@ -16,12 +18,44 @@
         .tab-content { display: none; }
         .tab-content.active { display: block; }
 
+        /* Neue Dashboard-Strukturen */
+        .dashboard-section { margin-top: 30px; background: #191919; padding: 20px; border-radius: 8px; border-left: 4px solid #007bff; }
+        .dashboard-section.never { border-left-color: #6c757d; }
+        .dashboard-section.levelup { border-left-color: #28a745; }
+        .dashboard-section.least { border-left-color: #dc3545; }
+        
+        .champion-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+        .champion-card { background: #252525; padding: 10px 15px; border-radius: 6px; border: 1px solid #333; min-width: 150px; }
+        .champion-card .name { font-weight: bold; color: #007bff; }
+        .champion-card .details { font-size: 12px; color: #bbb; margin-top: 5px; }
+
         table { width: 100%; border-collapse: collapse; margin-top: 20px; }
         th, td { border: 1px solid #333; padding: 12px; text-align: left; }
         th { background: #1f1f1f; cursor: pointer; user-select: none; }
         th:hover { background: #333; }
         tr:nth-child(even) { background: #1a1a1a; }
         #loading { color: #ffc107; font-weight: bold; margin: 10px 0; }
+        h3 { margin-top: 0; margin-bottom: 10px; }
+
+        /* --- STYLES FÜR DAS BUBBLE-NETZWERK --- */
+        #lore-network-container {
+            width: 100%;
+            height: 650px;
+            background-color: #111111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+        .graph-legend {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            z-index: 10;
+            pointer-events: none;
+        }
+        .graph-legend p { margin: 0; color: #aaa; font-size: 13px; }
     </style>
 </head>
 <body>
@@ -31,7 +65,7 @@
     <div class="tab-navigation">
         <button class="tab-button active" onclick="openTab('mastery-tab', this)">My Mastery</button>
         <button class="tab-button" onclick="openTab('builds-tab', this)">Off-Meta Builds</button>
-        <button class="tab-button" onclick="openTab('relations-tab', this)">Factions</button>
+        <button class="tab-button" onclick="openTab('relations-tab', this)">Factions & Lore</button>
     </div>
 
     <div id="mastery-tab" class="tab-content active">
@@ -56,18 +90,43 @@
 
         <div id="loading" style="display:none;">Fetching live data from the Rift... Please wait.</div>
 
-        <table id="masteryTable" style="display:none;">
-            <thead>
-                <tr>
-                    <th onclick="sortTable('championName')">Champion Name ↕</th>
-                    <th onclick="sortTable('championLevel')">Level ↕</th>
-                    <th onclick="sortTable('championPoints')">Points ↕</th>
-                    <th onclick="sortTable('championPointsUntilNextLevel')">Points Until Level Up ↕</th>
-                    <th onclick="sortTable('lastPlayTime')">Last Played ↕</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody"></tbody>
-        </table>
+        <div id="masteryDashboard" style="display: none;">
+            <div class="dashboard-section">
+                <h3>🔥 Your Most Played Champions</h3>
+                <div class="champion-grid" id="mostPlayedGrid"></div>
+            </div>
+
+            <div class="dashboard-section levelup">
+                <h3>⚡ Champions Close Before Level Up</h3>
+                <div class="champion-grid" id="closeLevelUpGrid"></div>
+            </div>
+
+            <div class="dashboard-section least">
+                <h3>📉 Your Least Played Champions</h3>
+                <div class="champion-grid" id="leastPlayedGrid"></div>
+            </div>
+
+            <div class="dashboard-section never">
+                <h3>🌑 Never Played Champions</h3>
+                <div class="champion-grid" id="neverPlayedGrid"></div>
+            </div>
+
+            <div class="dashboard-section" style="border-left-color: #ffc107;">
+                <h3>📊 Full Champion Registry</h3>
+                <table id="masteryTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable('championName')">Champion Name ↕</th>
+                            <th onclick="sortTable('championLevel')">Level ↕</th>
+                            <th onclick="sortTable('championPoints')">Points ↕</th>
+                            <th onclick="sortTable('championPointsUntilNextLevel')">Points Until Level Up ↕</th>
+                            <th onclick="sortTable('lastPlayTime')">Last Played ↕</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
     <div id="builds-tab" class="tab-content">
@@ -76,25 +135,148 @@
     </div>
 
     <div id="relations-tab" class="tab-content">
-        <h3>Faction Alignments</h3>
-        <p>Filtering champions based on Shurima, Noxus, Ionia, etc. is coming up next!</p>
+    <div class="search-box" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-bottom: 15px;">
+        <div>
+            <label for="filterFaction" style="display:block; font-size:12px; color:#aaa; margin-bottom:5px;">Filter by Faction:</label>
+            <select id="filterFaction" onchange="applyFilters()" style="margin:0; width:180px;">
+                <option value="all">All Factions</option>
+                <option value="demacia">Demacia</option>
+                <option value="noxus">Noxus</option>
+                <option value="ionia">Ionia</option>
+                <option value="freljord">Freljord</option>
+                <option value="piltover">Piltover</option>
+                <option value="zaun">Zaun</option>
+                <option value="shadow_isles">Shadow Isles</option>
+                <option value="runeterra">Runeterra / Unknown</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="filterConnections" style="display:block; font-size:12px; color:#aaa; margin-bottom:5px;">Min. Connections: <span id="connValue" style="color:#007bff; font-weight:bold;">0</span></label>
+            <input type="range" id="filterConnections" min="0" max="10" value="0" oninput="document.getElementById('connValue').innerText = this.value; applyFilters();" style="width:200px; margin:5px 0;">
+        </div>
     </div>
 
+    <div id="lore-network-container">
+        <div class="graph-legend" style="background: rgba(18, 18, 18, 0.85); padding: 12px; border-radius: 6px; border: 1px solid #333; pointer-events: auto;">
+            <h3 style="color: #007bff; margin: 0 0 8px 0; font-size: 16px;">LoL Lore Netzwerk</h3>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; font-size: 11px;">
+                <div style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; background:#93b2cc; border-radius:50%;"></span> Demacia</div>
+                <div style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; background:#912d2d; border-radius:50%;"></span> Noxus</div>
+                <div style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; background:#dc92b6; border-radius:50%;"></span> Ionia</div>
+                <div style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; background:#86d2f3; border-radius:50%;"></span> Freljord</div>
+                <div style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; background:#eec590; border-radius:50%;"></span> Piltover</div>
+                <div style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; background:#7fff00; border-radius:50%;"></span> Zaun</div>
+                <div style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; background:#00ffcc; border-radius:50%;"></span> Shadow Isles</div>
+                <div style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; background:#007bff; border-radius:50%;"></span> Runeterra</div>
+            </div>
+        </div>
+        <div id="mynetwork" style="width: 100%; height: 100%;"></div>
+    </div>
+</div>
+
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
     <script>
-        // REPLACE THIS URL WITH YOUR LIVE BACKEND LINK FROM RENDER
-        const BACKEND_URL = "https://trollpicks.vercel.app/"; 
+        const BACKEND_URL = ""; 
 
         let masteryData = [];
         let currentSortKey = '';
         let isAscending = true;
+        let isGraphInitialized = false; // Flag, damit das Netzwerk nur einmal geladen wird
 
         function openTab(tabId, btn) {
             document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
             document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
             document.getElementById(tabId).classList.add('active');
             btn.classList.add('active');
+
+            // Sobald der User auf den Relations-Tab klickt, initialisieren wir das Netzwerk
+            if (tabId === 'relations-tab' && !isGraphInitialized) {
+                initLoreGraph();
+            }
         }
 
+        // --- VIS.JS LORE GRAPH INITIALISIERUNG ---
+        function initLoreGraph() {
+            isGraphInitialized = true;
+            
+            // Holt sich die JSON aus dem statischen Vercel-Pfad
+            fetch('/static/relationship_model.json')
+                .then(response => {
+                    if (!response.ok) throw new Error("Modell-Datei nicht gefunden.");
+                    return response.json();
+                })
+                .then(data => {
+                    // Nodes mappen
+                    const formattedNodes = data.nodes.map(node => ({
+                        id: node.id,
+                        label: node.label,
+                        shape: 'circularImage',
+                        image: node.image || 'https://via.placeholder.com/150',
+                        size: 24,
+                        borderWidth: 2,
+                        color: {
+                            border: getColorByFaction(node.faction),
+                            background: '#191919',
+                            highlight: { border: '#007bff', background: '#252525' }
+                        },
+                        font: { color: '#ffffff', size: 11, strokeWidth: 3, strokeColor: '#121212' }
+                    }));
+
+                    // Edges mappen
+                    const formattedEdges = data.edges.map(edge => ({
+                        id: edge.id,
+                        from: edge.source,
+                        to: edge.target,
+                        arrows: edge.type === 'directed' ? 'to' : '',
+                        color: { color: '#444444', highlight: '#007bff', hover: '#666666' },
+                        width: edge.type === 'mutual' ? 2 : 1
+                    }));
+
+                    const container = document.getElementById('mynetwork');
+                    const graphData = {
+                        nodes: new vis.DataSet(formattedNodes),
+                        edges: new vis.DataSet(formattedEdges)
+                    };
+
+                    const options = {
+                        physics: {
+                            solver: 'forceAtlas2Based',
+                            forceAtlas2Based: {
+                                gravitationalConstant: -90,
+                                centralGravity: 0.015,
+                                springLength: 80,
+                                springConstant: 0.05
+                            }
+                        },
+                        interaction: { hover: true, dragNodes: true, zoomView: true, dragView: true }
+                    };
+
+                    new vis.Network(container, graphData, options);
+                })
+                .catch(error => {
+                    console.error("Fehler beim Laden des Beziehungsmodells:", error);
+                    document.getElementById('mynetwork').innerHTML = 
+                        `<p style="color: #dc3545; padding: 20px;">Fehler beim Laden des Beziehungsnetzwerks. Liegt die Datei unter /static/relationship_model.json?</p>`;
+                });
+        }
+
+        function getColorByFaction(faction) {
+            const colors = {
+                "demacia": "#93b2cc",
+                "noxus": "#912d2d",
+                "ionia": "#dc92b6",
+                "shadow_isles": "#00ffcc",
+                "zaun": "#7fff00",
+                "piltover": "#eec590",
+                "freljord": "#86d2f3",
+                "runeterra": "#007bff"
+            };
+            return colors[faction.toLowerCase()] || "#666666";
+        }
+
+        // --- BESTEHENDE MASTERY LOGIK (UNVERÄNDERT) ---
         async function fetchMastery() {
             const name = document.getElementById('gameName').value.trim();
             const tag = document.getElementById('tagLine').value.trim();
@@ -102,55 +284,69 @@
             const platform = document.getElementById('platformRegion').value;
             
             const loading = document.getElementById('loading');
-            const table = document.getElementById('masteryTable');
+            const dashboard = document.getElementById('masteryDashboard');
             
             if(!name || !tag) return alert("Please enter both a Game Name and a Tag Line!");
 
             loading.style.display = 'block';
-            table.style.display = 'none';
-
-            console.log("=== API REQUEST DEBUG ===");
-            console.log(`Target Backend: ${BACKEND_URL}`);
-            console.log(`Player: ${name}#${tag}`);
-            console.log(`Regions: Routing=${routing} | Platform=${platform}`);
+            dashboard.style.display = 'none';
 
             try {
-                // Formatting request queries to match the English API specifications
                 const url = `${BACKEND_URL}/api/mastery?name=${encodeURIComponent(name)}&tag=${encodeURIComponent(tag)}&routing=${routing}&platform=${platform}`;
-                console.log(`Full Request URL: ${url}`);
                 const response = await fetch(url);
-                
-                console.log(`Response Status: ${response.status} ${response.statusText}`);
                 
                 if (!response.ok) {
                     const errData = await response.json();
-                    console.error("Backend returned an error payload:", errData);
-                    throw new Error(errData.error || `Server responded with status ${response.status}`);
+                    throw new Error(errData.error || "An error occurred while fetching data.");
                 }
                 
                 masteryData = await response.json();
-                console.log("Successfully fetched mastery data. Rows:", masteryData.length);
+                buildDashboardGroups();
                 renderTable();
                 
                 loading.style.display = 'none';
-                table.style.display = 'table';
+                dashboard.style.display = 'block';
             } catch (error) {
-                console.error("=== FETCH FAILED CROSS-EXAMINATION ===");
-                console.error("Error Object:", error);
-                console.error("Error Message:", error.message);
-
-
-
-                if (error.message.includes("Failed to fetch") || error.name === "TypeError") {
-                    console.warn("DIAGNOSIS POSSIBLE CAUSES:");
-                    console.warn("1. CORS Blocked: Your backend didn't send 'Access-Control-Allow-Origin' headers.");
-                    console.warn("2. Wrong URL: The BACKEND_URL variable has a typo or a trailing slash '/' that broke the path.");
-                    console.warn("3. Server Down: Your Render app is sleeping (Free Tier spin-up takes up to 50 seconds) or crashed.");
-                    console.warn("4. Mixed Content: You are visiting an HTTPS page (GitHub) but trying to fetch HTTP (local server without SSL).");
-                }
                 alert(error.message);
                 loading.style.display = 'none';
             }
+        }
+
+        function buildDashboardGroups() {
+            const playedChamps = masteryData.filter(c => c.championPoints > 0);
+            const neverPlayedChamps = masteryData.filter(c => c.championPoints === 0);
+            const mostPlayed = [...playedChamps].sort((a, b) => b.championPoints - a.championPoints).slice(0, 5);
+            const leastPlayed = [...playedChamps].sort((a, b) => a.championPoints - b.championPoints).slice(0, 5);
+            const closeToLevelUp = playedChamps.filter(c => c.championPointsUntilNextLevel > 0 && c.championPointsUntilNextLevel <= 3000)
+                                               .sort((a, b) => a.championPointsUntilNextLevel - b.championPointsUntilNextLevel);
+
+            fillGrid('mostPlayedGrid', mostPlayed, true);
+            fillGrid('leastPlayedGrid', leastPlayed, true);
+            fillGrid('neverPlayedGrid', neverPlayedChamps, false);
+            fillGrid('closeLevelUpGrid', closeToLevelUp, false, true);
+        }
+
+        function fillGrid(elementId, champions, showPoints, showTokensLeft = false) {
+            const grid = document.getElementById(elementId);
+            grid.innerHTML = '';
+            
+            if(champions.length === 0) {
+                grid.innerHTML = '<p style="color: #6c757d; font-style: italic;">No champions found for this category.</p>';
+                return;
+            }
+
+            champions.forEach(champ => {
+                let detailText = `Lvl ${champ.championLevel}`;
+                if (showPoints) detailText += ` | ${champ.championPoints.toLocaleString()} Pts`;
+                if (showTokensLeft) detailText += ` | Need: <span style="color: #28a745; font-weight:bold;">${champ.championPointsUntilNextLevel.toLocaleString()}</span>`;
+
+                grid.innerHTML += `
+                    <div class="champion-card">
+                        <div class="name">${champ.championName}</div>
+                        <div class="details">${detailText}</div>
+                    </div>
+                `;
+            });
         }
 
         function renderTable() {
