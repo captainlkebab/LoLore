@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trollpicks</title>
+    <style>
+        body { font-family: sans-serif; background: #121212; color: #fff; padding: 20px; }
+        .search-box { margin-bottom: 20px; background: #1f1f1f; padding: 15px; border-radius: 8px; }
+        select, input, button { padding: 10px; margin: 5px 5px 5px 0; background: #222; color: #fff; border: 1px solid #444; border-radius: 4px; }
+        button { background: #007bff; cursor: pointer; border: none; font-weight: bold; }
+        button:hover { background: #0056b3; }
+        
+        .tab-navigation { border-bottom: 2px solid #333; margin-bottom: 20px; }
+        .tab-button { background: none; border: none; color: #aaa; padding: 10px 20px; cursor: pointer; font-size: 16px; }
+        .tab-button.active { color: #007bff; border-bottom: 2px solid #007bff; font-weight: bold; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #333; padding: 12px; text-align: left; }
+        th { background: #1f1f1f; cursor: pointer; user-select: none; }
+        th:hover { background: #333; }
+        tr:nth-child(even) { background: #1a1a1a; }
+        #loading { color: #ffc107; font-weight: bold; margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>LoL Mastery & Theorycrafting</h1>
+    
+    <div class="tab-navigation">
+        <button class="tab-button active" onclick="openTab('mastery-tab', this)">My Mastery</button>
+        <button class="tab-button" onclick="openTab('builds-tab', this)">Off-Meta Builds</button>
+        <button class="tab-button" onclick="openTab('relations-tab', this)">Factions</button>
+    </div>
+
+    <div id="mastery-tab" class="tab-content active">
+        <div class="search-box">
+            <select id="routingRegion">
+                <option value="europe">Europe (Account)</option>
+                <option value="americas">Americas (Account)</option>
+                <option value="asia">Asia (Account)</option>
+            </select>
+            
+            <select id="platformRegion">
+                <option value="euw1">EU West (EUW)</option>
+                <option value="eun1">EU Nordic & East (EUNE)</option>
+                <option value="na1">North America (NA)</option>
+                <option value="kr">Korea (KR)</option>
+            </select>
+
+            <input type="text" id="gameName" placeholder="Name (e.g. Hide on bush)">
+            <input type="text" id="tagLine" placeholder="Tag (e.g. KR1)">
+            <button onclick="fetchMastery()">Run</button>
+        </div>
+
+        <div id="loading" style="display:none;">Fetching live data from the Rift... Please wait.</div>
+
+        <table id="masteryTable" style="display:none;">
+            <thead>
+                <tr>
+                    <th onclick="sortTable('championName')">Champion Name ↕</th>
+                    <th onclick="sortTable('championLevel')">Level ↕</th>
+                    <th onclick="sortTable('championPoints')">Points ↕</th>
+                    <th onclick="sortTable('championPointsUntilNextLevel')">Points Until Level Up ↕</th>
+                    <th onclick="sortTable('lastPlayTime')">Last Played ↕</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <div id="builds-tab" class="tab-content">
+        <h3>Off-Meta Challenges</h3>
+        <p>Unconventional setup suggestions will appear here soon.</p>
+    </div>
+
+    <div id="relations-tab" class="tab-content">
+        <h3>Faction Alignments</h3>
+        <p>Filtering champions based on Shurima, Noxus, Ionia, etc. is coming up next!</p>
+    </div>
+
+    <script>
+        // REPLACE THIS URL WITH YOUR LIVE BACKEND LINK FROM RENDER
+        const BACKEND_URL = "https://trollpicks.onrender.com"; 
+
+        let masteryData = [];
+        let currentSortKey = '';
+        let isAscending = true;
+
+        function openTab(tabId, btn) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            btn.classList.add('active');
+        }
+
+        async function fetchMastery() {
+            const name = document.getElementById('gameName').value.trim();
+            const tag = document.getElementById('tagLine').value.trim();
+            const routing = document.getElementById('routingRegion').value;
+            const platform = document.getElementById('platformRegion').value;
+            
+            const loading = document.getElementById('loading');
+            const table = document.getElementById('masteryTable');
+            
+            if(!name || !tag) return alert("Please enter both a Game Name and a Tag Line!");
+
+            loading.style.display = 'block';
+            table.style.display = 'none';
+
+            console.log("=== API REQUEST DEBUG ===");
+            console.log(`Target Backend: ${BACKEND_URL}`);
+            console.log(`Player: ${name}#${tag}`);
+            console.log(`Regions: Routing=${routing} | Platform=${platform}`);
+
+            try {
+                // Formatting request queries to match the English API specifications
+                const url = `${BACKEND_URL}/api/mastery?name=${encodeURIComponent(name)}&tag=${encodeURIComponent(tag)}&routing=${routing}&platform=${platform}`;
+                console.log(`Full Request URL: ${url}`);
+                const response = await fetch(url);
+                
+                console.log(`Response Status: ${response.status} ${response.statusText}`);
+                
+                if (!response.ok) {
+                    const errData = await response.json();
+                    console.error("Backend returned an error payload:", errData);
+                    throw new Error(errData.error || `Server responded with status ${response.status}`);
+                }
+                
+                masteryData = await response.json();
+                console.log("Successfully fetched mastery data. Rows:", masteryData.length);
+                renderTable();
+                
+                loading.style.display = 'none';
+                table.style.display = 'table';
+            } catch (error) {
+                console.error("=== FETCH FAILED CROSS-EXAMINATION ===");
+                console.error("Error Object:", error);
+                console.error("Error Message:", error.message);
+
+
+
+                if (error.message.includes("Failed to fetch") || error.name === "TypeError") {
+                    console.warn("DIAGNOSIS POSSIBLE CAUSES:");
+                    console.warn("1. CORS Blocked: Your backend didn't send 'Access-Control-Allow-Origin' headers.");
+                    console.warn("2. Wrong URL: The BACKEND_URL variable has a typo or a trailing slash '/' that broke the path.");
+                    console.warn("3. Server Down: Your Render app is sleeping (Free Tier spin-up takes up to 50 seconds) or crashed.");
+                    console.warn("4. Mixed Content: You are visiting an HTTPS page (GitHub) but trying to fetch HTTP (local server without SSL).");
+                }
+                alert(error.message);
+                loading.style.display = 'none';
+            }
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            masteryData.forEach(champ => {
+                tbody.innerHTML += `<tr>
+                    <td><strong>${champ.championName}</strong></td>
+                    <td>${champ.championLevel}</td>
+                    <td>${champ.championPoints.toLocaleString()}</td>
+                    <td>${champ.championPointsUntilNextLevel.toLocaleString()}</td>
+                    <td>${champ.lastPlayTime}</td>
+                </tr>`;
+            });
+        }
+
+        function sortTable(key) {
+            if (currentSortKey === key) isAscending = !isAscending;
+            else { currentSortKey = key; isAscending = true; }
+
+            masteryData.sort((a, b) => {
+                let valA = a[key]; let valB = b[key];
+                if (key === 'lastPlayTime') {
+                    if (valA === '-') return isAscending ? 1 : -1;
+                    if (valB === '-') return isAscending ? -1 : 1;
+                }
+                if (typeof valA === 'string') return isAscending ? valA.localeCompare(valB) : valB.localeCompare(valA);
+                else return isAscending ? valA - valB : valB - valA;
+            });
+            renderTable();
+        }
+    </script>
+</body>
+</html>
