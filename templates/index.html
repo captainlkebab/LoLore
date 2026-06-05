@@ -7,161 +7,10 @@
       rel="stylesheet"
       href="https://unpkg.com/vis-network/standalone/umd/vis-network.min.css"
     />
-
-    <style>
-      body {
-        font-family: sans-serif;
-        background: #121212;
-        color: #fff;
-        padding: 20px;
-      }
-      .search-box {
-        margin-bottom: 20px;
-        background: #1f1f1f;
-        padding: 15px;
-        border-radius: 8px;
-      }
-      select,
-      input,
-      button {
-        padding: 10px;
-        margin: 5px 5px 5px 0;
-        background: #222;
-        color: #fff;
-        border: 1px solid #444;
-        border-radius: 4px;
-      }
-      button {
-        background: #007bff;
-        cursor: pointer;
-        border: none;
-        font-weight: bold;
-      }
-      button:hover {
-        background: #0056b3;
-      }
-
-      .tab-navigation {
-        border-bottom: 2px solid #333;
-        margin-bottom: 20px;
-      }
-      .tab-button {
-        background: none;
-        border: none;
-        color: #aaa;
-        padding: 10px 20px;
-        cursor: pointer;
-        font-size: 16px;
-      }
-      .tab-button.active {
-        color: #007bff;
-        border-bottom: 2px solid #007bff;
-        font-weight: bold;
-      }
-      .tab-content {
-        display: none;
-      }
-      .tab-content.active {
-        display: block;
-      }
-
-      /* Neue Dashboard-Strukturen */
-      .dashboard-section {
-        margin-top: 30px;
-        background: #191919;
-        padding: 20px;
-        border-radius: 8px;
-        border-left: 4px solid #007bff;
-      }
-      .dashboard-section.never {
-        border-left-color: #6c757d;
-      }
-      .dashboard-section.levelup {
-        border-left-color: #28a745;
-      }
-      .dashboard-section.least {
-        border-left-color: #dc3545;
-      }
-
-      .champion-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 10px;
-      }
-      .champion-card {
-        background: #252525;
-        padding: 10px 15px;
-        border-radius: 6px;
-        border: 1px solid #333;
-        min-width: 150px;
-      }
-      .champion-card .name {
-        font-weight: bold;
-        color: #007bff;
-      }
-      .champion-card .details {
-        font-size: 12px;
-        color: #bbb;
-        margin-top: 5px;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-      }
-      th,
-      td {
-        border: 1px solid #333;
-        padding: 12px;
-        text-align: left;
-      }
-      th {
-        background: #1f1f1f;
-        cursor: pointer;
-        user-select: none;
-      }
-      th:hover {
-        background: #333;
-      }
-      tr:nth-child(even) {
-        background: #1a1a1a;
-      }
-      #loading {
-        color: #ffc107;
-        font-weight: bold;
-        margin: 10px 0;
-      }
-      h3 {
-        margin-top: 0;
-        margin-bottom: 10px;
-      }
-
-      /* --- STYLES FÜR DAS BUBBLE-NETZWERK --- */
-      #lore-network-container {
-        width: 100%;
-        height: 650px;
-        background-color: #111111;
-        border: 1px solid #333;
-        border-radius: 8px;
-        position: relative;
-        overflow: hidden;
-        margin-top: 15px;
-      }
-      .graph-legend {
-        position: absolute;
-        top: 15px;
-        left: 20px;
-        z-index: 10;
-        pointer-events: none;
-      }
-      .graph-legend p {
-        margin: 0;
-        color: #aaa;
-        font-size: 13px;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
   </head>
   <body>
     <h1>LoL Mastery & Theorycrafting</h1>
@@ -171,7 +20,7 @@
         My Mastery
       </button>
       <button class="tab-button" onclick="openTab('builds-tab', this)">
-        Off-Meta Builds
+        Alternative Picks
       </button>
       <button class="tab-button" onclick="openTab('relations-tab', this)">
         Factions & Lore
@@ -211,22 +60,18 @@
           <h3>🔥 Your Most Played Champions</h3>
           <div class="champion-grid" id="mostPlayedGrid"></div>
         </div>
-
         <div class="dashboard-section levelup">
           <h3>⚡ Champions Close Before Level Up</h3>
           <div class="champion-grid" id="closeLevelUpGrid"></div>
         </div>
-
         <div class="dashboard-section least">
           <h3>📉 Your Least Played Champions</h3>
           <div class="champion-grid" id="leastPlayedGrid"></div>
         </div>
-
         <div class="dashboard-section never">
           <h3>🌑 Never Played Champions</h3>
           <div class="champion-grid" id="neverPlayedGrid"></div>
         </div>
-
         <div class="dashboard-section" style="border-left-color: #ffc107">
           <h3>📊 Full Champion Registry</h3>
           <table id="masteryTable">
@@ -253,583 +98,64 @@
     </div>
 
     <div id="relations-tab" class="tab-content">
-      <!-- Filter Bar -->
-<div class="search-box" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-bottom: 15px;">
-    <div>
-        <label for="filterFaction" style="display:block; font-size:12px; color:#aaa; margin-bottom:5px;">Filter by Faction:</label>
-        <!-- Wird dynamisch befüllt -->
-        <select id="filterFaction" onchange="applyFilters()" style="margin:0; width:180px;">
+      <div class="search-box filter-bar">
+        <div>
+          <label for="filterFaction">Filter by Faction:</label>
+          <select id="filterFaction" onchange="applyFilters()">
             <option value="all">All Factions</option>
-        </select>
-    </div>
-    
-    <div>
-        <label for="filterConnections" style="display:block; font-size:12px; color:#aaa; margin-bottom:5px;">Min. Connections: <span id="connValue" style="color:#007bff; font-weight:bold;">0</span></label>
-        <input type="range" id="filterConnections" min="0" max="10" value="0" oninput="document.getElementById('connValue').innerText = this.value; applyFilters();" style="width:200px; margin:5px 0;">
-    </div>
-</div>
+          </select>
+        </div>
+        <div>
+          <label for="filterConnections"
+            >Min. Connections: <span id="connValue">0</span></label
+          >
+          <input
+            type="range"
+            id="filterConnections"
+            min="0"
+            max="10"
+            value="0"
+            oninput="
+              document.getElementById('connValue').innerText = this.value;
+              applyFilters();
+            "
+          />
+        </div>
+      </div>
 
-<div id="lore-network-container">
-    <!-- Interaktive Legende -->
-    <div class="graph-legend" style="background: rgba(18, 18, 18, 0.85); padding: 12px; border-radius: 6px; border: 1px solid #333; pointer-events: auto;">
-        <h3 style="color: #007bff; margin: 0 0 8px 0; font-size: 16px;">LoL Lore Netzwerk</h3>
-        <!-- Wird dynamisch befüllt -->
-        <div id="dynamicLegend" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; font-size: 11px;"></div>
-    </div>
-    <div id="mynetwork" style="width: 100%; height: 100%;"></div>
-</div>
-
-    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
-
-    <script>
-      const BACKEND_URL = "";
-
-      let masteryData = [];
-      let currentSortKey = "";
-      let isAscending = true;
-      let isGraphInitialized = false; // Flag, damit das Netzwerk nur einmal geladen wird
-
-      function openTab(tabId, btn) {
-        document
-          .querySelectorAll(".tab-content")
-          .forEach((t) => t.classList.remove("active"));
-        document
-          .querySelectorAll(".tab-button")
-          .forEach((b) => b.classList.remove("active"));
-        document.getElementById(tabId).classList.add("active");
-        btn.classList.add("active");
-
-        // Sobald der User auf den Relations-Tab klickt, initialisieren wir das Netzwerk
-        if (tabId === "relations-tab" && !isGraphInitialized) {
-          initLoreGraph();
-        }
-      }
-
-      let networkNodes = null;  
-let networkEdges = null;  
-let rawNodesData = [];    
-let connectionCounts = {}; 
-
-// Eine erweiterbare Farbpalette für bekannte Factions. 
-// Neue Factions bekommen automatisch eine generierte Farbe.
-const factionColors = {
-    "demacia": "#93b2cc",
-    "noxus": "#912d2d",
-    "ionia": "#dc92b6",
-    "shadow_isles": "#00ffcc",
-    "zaun": "#7fff00",
-    "piltover": "#eec590",
-    "freljord": "#86d2f3",
-    "shurima": "#e5c158",
-    "targon": "#565ca9",
-    "ixtal": "#1ca673",
-    "void": "#8932a8",
-    "bilgewater": "#c45d31",
-    "runeterra": "#007bff"
-};
-
-function initLoreGraph() {
-    isGraphInitialized = true;
-    
-    fetch('/static/relationship_model.json')
-        .then(response => {
-            if (!response.ok) throw new Error("Modell-Datei nicht gefunden.");
-            return response.json();
-        })
-        .then(data => {
-            rawNodesData = data.nodes;
-            
-            // 1. Factions dynamisch auslesen und UI aufbauen
-            buildDynamicFactionUI(rawNodesData);
-
-            // 2. Connection-Berechnung
-            connectionCounts = {};
-            rawNodesData.forEach(n => connectionCounts[n.id] = 0);
-            data.edges.forEach(edge => {
-                if (connectionCounts[edge.source] !== undefined) connectionCounts[edge.source]++;
-                if (connectionCounts[edge.target] !== undefined) connectionCounts[edge.target]++;
-            });
-
-            const maxConnections = Math.max(...Object.values(connectionCounts), 1);
-            const slider = document.getElementById('filterConnections');
-            if(slider) slider.max = maxConnections;
-
-            // 3. Nodes konvertieren
-            const formattedNodes = data.nodes.map(node => ({
-                id: node.id,
-                label: node.label,
-                shape: 'circularImage',
-                image: node.image || 'https://via.placeholder.com/150',
-                size: 24,
-                borderWidth: 2,
-                color: {
-                    border: getColorByFaction(node.faction),
-                    background: '#191919',
-                    highlight: { border: '#007bff', background: '#252525' }
-                },
-                font: { color: '#ffffff', size: 11, strokeWidth: 3, strokeColor: '#121212' }
-            }));
-
-            // 4. Edges konvertieren (KORRIGIERT: Holt sich jetzt die Farbe der Ursprungs-Faction)
-            const formattedEdges = data.edges.map(edge => {
-                // Finde die Ursprungs-Node, um deren Faction-Farbe für die Kante zu nutzen
-                const sourceNode = data.nodes.find(n => n.id === edge.source);
-                const edgeColor = sourceNode ? getColorByFaction(sourceNode.faction) : '#444444';
-
-                return {
-                    id: edge.id,
-                    from: edge.source,
-                    to: edge.target,
-                    arrows: edge.type === 'directed' ? 'to' : '',
-                    color: { 
-                        color: edgeColor, 
-                        highlight: '#007bff', 
-                        hover: '#666666',
-                        opacity: 0.4 // Grund-Transparenz für ein sauberes Gesamtbild
-                    },
-                    width: edge.type === 'mutual' ? 2 : 1
-                };
-            });
-
-            const container = document.getElementById('mynetwork');
-            networkNodes = new vis.DataSet(formattedNodes);
-            networkEdges = new vis.DataSet(formattedEdges);
-
-            const graphData = { nodes: networkNodes, edges: networkEdges };
-
-            const options = {
-                physics: {
-                    solver: 'forceAtlas2Based',
-                    forceAtlas2Based: {
-                        gravitationalConstant: -150, 
-                        centralGravity: 0.03,         
-                        springLength: 45,            
-                        springConstant: 0.04
-                    }
-                },
-                interaction: { hover: true, dragNodes: true, zoomView: true, dragView: true }
-            };
-
-            const network = new vis.Network(container, graphData, options);
-            
-           // Zeigt den Tooltip an der Position des Klicks/der Node an
-            network.on("click", function (params) {
-                if (params.nodes.length > 0) {
-                    const nodeId = params.nodes[0];
-                    const champion = rawNodesData.find(n => n.id === nodeId);
-                    
-                    if (champion) {
-                        document.getElementById('modalImg').src = champion.image || 'https://via.placeholder.com/150';
-                        document.getElementById('modalName').innerText = champion.label || champion.id;
-                        document.getElementById('modalTitle').innerText = champion.title || "The Champion";
-                        document.getElementById('modalFaction').innerText = normalizeFactionName(champion.faction);
-                        document.getElementById('modalRoles').innerText = champion.roles ? champion.roles.join(', ') : 'Unknown';
-                        document.getElementById('modalRelease').innerText = champion.release_date || 'Unknown';
-                        
-                        const tooltip = document.getElementById('championModal');
-                        
-                        // Positionierung relativ zum Mauszeiger im DOM-Container
-                        // Ein kleiner Offset von 15px verhindert, dass der Tooltip direkt unter dem Cursor flackert
-                        tooltip.style.left = (params.pointer.DOM.x + 15) + "px";
-                        tooltip.style.top = (params.pointer.DOM.y + 15) + "px";
-                        tooltip.style.display = 'block';
-                    }
-                } else {
-                    // Wenn ins Leere geklickt wird, Tooltip verstecken
-                    document.getElementById('championModal').style.display = 'none';
-                }
-            });
-
-            // Zusätzlicher Schutz: Schließen beim Verschieben der Map
-            network.on("dragStart", function () {
-                document.getElementById('championModal').style.display = 'none';
-            });
-
-            applyFilters();
-        })
-        .catch(error => {
-            console.error("Fehler beim Laden des Beziehungsmodells:", error);
-        });
-}
-function applyFilters() {
-    // Falls das Netzwerk noch nicht bereit ist, abbrechen
-    if (!networkNodes || !networkEdges) return;
-
-    // Werte aus der UI auslesen
-    const selectedFaction = document.getElementById('filterFaction').value;
-    const minConnections = parseInt(document.getElementById('filterConnections').value, 10) || 0;
-
-    // Prüfen, ob überhaupt ein Faction-Filter aktiv ist
-    const isFactionFilterActive = (selectedFaction !== 'all');
-
-    // 1. Filter-Logik für die Nodes (Champions)
-    const updatedNodes = rawNodesData.map(node => {
-        const cleanedFaction = cleanFactionString(node.faction);
-        const connections = connectionCounts[node.id] || 0;
-
-        // Bedingungen prüfen
-        const matchesFaction = (!isFactionFilterActive || cleanedFaction === selectedFaction);
-        const matchesConnections = (connections >= minConnections);
-        const isMatch = matchesFaction && matchesConnections;
-
-        // Standard-Werte für die Faction-Farbe holen
-        const factionColor = getColorByFaction(node.faction);
-
-        // Bestimme die Größe: 3x größer (24 * 3 = 72) wenn Faction explizit gematcht wird
-        // Wenn kein Filter aktiv ist oder die Node nicht matcht, bleibt sie Standard (24)
-        const targetSize = (isFactionFilterActive && isMatch) ? 72 : 24;
-
-        // Bestimme das Aussehen (Ausgegraut vs. Normal) via Farb-Opacity
-        let borderColor = factionColor;
-        let fontColor = '#ffffff';
-
-        if (!isMatch) {
-            // Ausgrauen: Nutze transparente Farben für Nodes, die nicht den Kriterien entsprechen
-            borderColor = 'rgba(85, 85, 85, 0.2)'; 
-            fontColor = 'rgba(255, 255, 255, 0.2)';
-        }
-
-        return {
-            id: node.id,
-            size: targetSize,
-            hidden: false, // Wichtig: Nicht mehr komplett verstecken!
-            color: {
-                border: borderColor,
-                background: !isMatch ? 'rgba(25, 25, 25, 0.2)' : '#191919',
-                highlight: { border: '#007bff', background: '#252525' }
-            },
-            font: { color: fontColor }
-        };
-    });
-
-    // Änderungen an das vis.js DataSet übergeben
-    networkNodes.update(updatedNodes);
-
-    // 2. Filter-Logik für die Edges (Verbindungen ausgrauen)
-    const currentNodesView = networkNodes.get();
-    
-    // Erstelle ein Set von IDs, die aktuell ausgegraut/unpassend sind
-    // Eine Node gilt als "unpassend", wenn ihre Schriftfarbe ausgegraut wurde
-    const fadedNodeIds = new Set(
-        currentNodesView.filter(n => n.font && n.font.color.includes('rgba')).map(n => n.id)
-    );
-
-    const updatedEdges = networkEdges.get().map(edge => {
-        const sourceNode = rawNodesData.find(n => n.id === edge.from);
-        const baseColor = sourceNode ? getColorByFaction(sourceNode.faction) : '#444444';
-        
-        // Wenn eine der beiden verbundenen Nodes ausgegraut ist, graue auch die Kante aus
-        const shouldFadeEdge = fadedNodeIds.has(edge.from) || fadedNodeIds.has(edge.to);
-
-        return {
-            id: edge.id,
-            hidden: false, // Kanten bleiben sichtbar
-            color: {
-                color: shouldFadeEdge ? 'rgba(68, 68, 68, 0.1)' : baseColor,
-                opacity: shouldFadeEdge ? 0.1 : 0.6
-            }
-        };
-    });
-
-    networkEdges.update(updatedEdges);
-}
-
-// --- DYNAMISCHER UI BUILDER ---
-function buildDynamicFactionUI(nodes) {
-    const uniqueFactions = new Set();
-    
-    // Alle Factions aus den Nodes sammeln und säubern
-    nodes.forEach(node => {
-        if (node.faction) {
-            uniqueFactions.add(cleanFactionString(node.faction));
-        }
-    });
-
-    const select = document.getElementById('filterFaction');
-    const legend = document.getElementById('dynamicLegend');
-    
-    // Zurücksetzen (außer der "All"-Option im Dropdown)
-    select.innerHTML = '<option value="all">All Factions</option>';
-    legend.innerHTML = '';
-
-    // Sortieren für eine saubere alphabetische Anzeige
-    const sortedFactions = Array.from(uniqueFactions).sort();
-
-    sortedFactions.forEach(faction => {
-        const readableName = normalizeFactionName(faction);
-        const color = getColorByFaction(faction);
-
-        // 1. Dropdown-Option hinzufügen
-        const option = document.createElement('option');
-        option.value = faction;
-        option.textContent = readableName;
-        select.appendChild(option);
-
-        // 2. Legenden-Eintrag hinzufügen
-        const legendItem = document.createElement('div');
-        legendItem.style.display = 'flex';
-        legendItem.style.alignItems = 'center';
-        legendItem.style.gap = '6px';
-        legendItem.innerHTML = `<span style="width:12px; height:12px; background:${color}; border-radius:50%; display:inline-block;"></span> ${readableName}`;
-        legend.appendChild(legendItem);
-    });
-}
-
-// Generiert eine zufällige Farbe, falls eine völlig neue Faction im JSON auftaucht
-function generateRandomColor() {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
-
-function getColorByFaction(faction) {
-    const cleaned = cleanFactionString(faction);
-    if (!factionColors[cleaned]) {
-        // Fallback: Falls die Faction unbekannt ist, weise ihr permanent eine Zufallsfarbe zu
-        factionColors[cleaned] = generateRandomColor();
-    }
-    return factionColors[cleaned];
-}
-
-function cleanFactionString(faction) {
-    if (!faction) return 'runeterra';
-    let f = faction.toLowerCase().trim();
-    if (f === 'shadow-isles' || f === 'shadow_isles') return 'shadow_isles';
-    if (f === 'unaffiliated' || f === 'runeterra') return 'runeterra';
-    return f;
-}
-
-function normalizeFactionName(faction) {
-    const names = {
-        "demacia": "Demacia",
-        "noxus": "Noxus",
-        "ionia": "Ionia",
-        "freljord": "Freljord",
-        "piltover": "Piltover",
-        "zaun": "Zaun",
-        "shadow_isles": "Shadow Isles",
-        "runeterra": "Runeterra / Unaffiliated",
-        "shurima": "Shurima",
-        "targon": "Mount Targon",
-        "ixtal": "Ixtal",
-        "void": "The Void",
-        "bilgewater": "Bilgewater"
-    };
-    
-    if (names[faction]) return names[faction];
-    // Falls ein unbekannter Name kommt, mache den ersten Buchstaben groß (z.B. "ixtal" -> "Ixtal")
-    const cleaned = cleanFactionString(faction);
-    return names[cleaned] || (cleaned.charAt(0).toUpperCase() + cleaned.slice(1));
-}
-      function closeModal() {
-        document.getElementById("championModal").style.display = "none";
-      }
-
-      window.onclick = function (event) {
-        const modal = document.getElementById("championModal");
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      };
-
-      // --- BESTEHENDE MASTERY LOGIK (UNVERÄNDERT) ---
-      async function fetchMastery() {
-        const name = document.getElementById("gameName").value.trim();
-        const tag = document.getElementById("tagLine").value.trim();
-        const routing = document.getElementById("routingRegion").value;
-        const platform = document.getElementById("platformRegion").value;
-
-        const loading = document.getElementById("loading");
-        const dashboard = document.getElementById("masteryDashboard");
-
-        if (!name || !tag)
-          return alert("Please enter both a Game Name and a Tag Line!");
-
-        loading.style.display = "block";
-        dashboard.style.display = "none";
-
-        try {
-          const url = `${BACKEND_URL}/api/mastery?name=${encodeURIComponent(name)}&tag=${encodeURIComponent(tag)}&routing=${routing}&platform=${platform}`;
-          const response = await fetch(url);
-
-          if (!response.ok) {
-            const errData = await response.json();
-            throw new Error(
-              errData.error || "An error occurred while fetching data.",
-            );
-          }
-
-          masteryData = await response.json();
-          buildDashboardGroups();
-          renderTable();
-
-          loading.style.display = "none";
-          dashboard.style.display = "block";
-        } catch (error) {
-          alert(error.message);
-          loading.style.display = "none";
-        }
-      }
-
-      function buildDashboardGroups() {
-        const playedChamps = masteryData.filter((c) => c.championPoints > 0);
-        const neverPlayedChamps = masteryData.filter(
-          (c) => c.championPoints === 0,
-        );
-        const mostPlayed = [...playedChamps]
-          .sort((a, b) => b.championPoints - a.championPoints)
-          .slice(0, 5);
-        const leastPlayed = [...playedChamps]
-          .sort((a, b) => a.championPoints - b.championPoints)
-          .slice(0, 5);
-        const closeToLevelUp = playedChamps
-          .filter(
-            (c) =>
-              c.championPointsUntilNextLevel > 0 &&
-              c.championPointsUntilNextLevel <= 3000,
-          )
-          .sort(
-            (a, b) =>
-              a.championPointsUntilNextLevel - b.championPointsUntilNextLevel,
-          );
-
-        fillGrid("mostPlayedGrid", mostPlayed, true);
-        fillGrid("leastPlayedGrid", leastPlayed, true);
-        fillGrid("neverPlayedGrid", neverPlayedChamps, false);
-        fillGrid("closeLevelUpGrid", closeToLevelUp, false, true);
-      }
-
-      function fillGrid(
-        elementId,
-        champions,
-        showPoints,
-        showTokensLeft = false,
-      ) {
-        const grid = document.getElementById(elementId);
-        grid.innerHTML = "";
-
-        if (champions.length === 0) {
-          grid.innerHTML =
-            '<p style="color: #6c757d; font-style: italic;">No champions found for this category.</p>';
-          return;
-        }
-
-        champions.forEach((champ) => {
-          let detailText = `Lvl ${champ.championLevel}`;
-          if (showPoints)
-            detailText += ` | ${champ.championPoints.toLocaleString()} Pts`;
-          if (showTokensLeft)
-            detailText += ` | Need: <span style="color: #28a745; font-weight:bold;">${champ.championPointsUntilNextLevel.toLocaleString()}</span>`;
-
-          grid.innerHTML += `
-                    <div class="champion-card">
-                        <div class="name">${champ.championName}</div>
-                        <div class="details">${detailText}</div>
-                    </div>
-                `;
-        });
-      }
-
-      function renderTable() {
-        const tbody = document.getElementById("tableBody");
-        tbody.innerHTML = "";
-        masteryData.forEach((champ) => {
-          tbody.innerHTML += `<tr>
-                    <td><strong>${champ.championName}</strong></td>
-                    <td>${champ.championLevel}</td>
-                    <td>${champ.championPoints.toLocaleString()}</td>
-                    <td>${champ.championPointsUntilNextLevel.toLocaleString()}</td>
-                    <td>${champ.lastPlayTime}</td>
-                </tr>`;
-        });
-      }
-
-      function sortTable(key) {
-        if (currentSortKey === key) isAscending = !isAscending;
-        else {
-          currentSortKey = key;
-          isAscending = true;
-        }
-
-        masteryData.sort((a, b) => {
-          let valA = a[key];
-          let valB = b[key];
-          if (key === "lastPlayTime") {
-            if (valA === "-") return isAscending ? 1 : -1;
-            if (valB === "-") return isAscending ? -1 : 1;
-          }
-          if (typeof valA === "string")
-            return isAscending
-              ? valA.localeCompare(valB)
-              : valB.localeCompare(valA);
-          else return isAscending ? valA - valB : valB - valA;
-        });
-        renderTable();
-      }
-    </script>
-    <!-- Champion Detail Tooltip -->
-<div
-  id="championModal"
-  style="
-    display: none;
-    position: absolute;
-    z-index: 1000;
-    pointer-events: none; /* Verhindert, dass der Tooltip das Klicken auf darunterliegende Nodes blockiert */
-    background: rgba(26, 26, 26, 0.95);
-    border: 2px solid #007bff;
-    border-radius: 8px;
-    padding: 15px;
-    width: 250px;
-    text-align: center;
-    color: white;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  "
->
-  <img
-    id="modalImg"
-    src=""
-    alt="Champion"
-    style="
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      border: 2px solid #007bff;
-      object-fit: cover;
-      margin-bottom: 8px;
-    "
-  />
-  <h3 id="modalName" style="margin: 0 0 2px 0; color: #fff; font-size: 16px;"></h3>
-  <p
-    id="modalTitle"
-    style="
-      margin: 0 0 8px 0;
-      font-style: italic;
-      color: #aaa;
-      font-size: 12px;
-    "
-  ></p>
-  <hr style="border: 0; border-top: 1px solid #333; margin-bottom: 8px" />
-  <div
-    style="
-      text-align: left;
-      font-size: 11px;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    "
-  >
-    <div>
-      <strong>Faction:</strong>
-      <span id="modalFaction" style="color: #007bff"></span>
-    </div>
-    <div><strong>Roles:</strong> <span id="modalRoles"></span></div>
-    <div><strong>Release:</strong> <span id="modalRelease"></span></div>
-  </div>
-</div>
+      <div id="lore-network-container">
+        <div class="graph-legend">
+          <h3>LoL Lore Netzwerk</h3>
+          <div id="dynamicLegend"></div>
+        </div>
+        <div id="mynetwork"></div>
       </div>
     </div>
+
+    <div id="championModal" class="tooltip-container">
+      <img id="modalImg" src="" alt="Champion" />
+      <h3 id="modalName"></h3>
+      <p id="modalTitle"></p>
+      <hr />
+      <div class="tooltip-details">
+        <div>
+          <strong>Faction:</strong>
+          <span id="modalFaction" style="color: #007bff"></span>
+        </div>
+        <div>
+          <strong>Connections:</strong>
+          <span
+            id="modalConnections"
+            style="color: #ffc107; font-weight: bold"
+          ></span>
+        </div>
+        <div><strong>Roles:</strong> <span id="modalRoles"></span></div>
+        <div><strong>Release:</strong> <span id="modalRelease"></span></div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <script src="{{ url_for('static', filename='graph.js') }}"></script>
   </body>
 </html>

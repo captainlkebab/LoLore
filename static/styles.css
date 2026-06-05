@@ -1,0 +1,221 @@
+body {
+  font-family: sans-serif;
+  background: #121212;
+  color: #fff;
+  padding: 20px;
+}
+.search-box {
+  margin-bottom: 20px;
+  background: #1f1f1f;
+  padding: 15px;
+  border-radius: 8px;
+}
+.filter-bar {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  align-items: center; 
+  margin-bottom: 15px;
+}
+.filter-bar label {
+  display: block; 
+  font-size: 12px; 
+  color: #aaa; 
+  margin-bottom: 5px;
+}
+.filter-bar select {
+  margin: 0; 
+  width: 180px;
+}
+.filter-bar input[type="range"] {
+  width: 200px; 
+  margin: 5px 0;
+}
+#connValue {
+  color: #007bff; 
+  font-weight: bold;
+}
+select, input, button {
+  padding: 10px;
+  margin: 5px 5px 5px 0;
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+button {
+  background: #007bff;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+button:hover {
+  background: #0056b3;
+}
+.tab-navigation {
+  border-bottom: 2px solid #333;
+  margin-bottom: 20px;
+}
+.tab-button {
+  background: none;
+  border: none;
+  color: #aaa;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.tab-button.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  font-weight: bold;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+.dashboard-section {
+  margin-top: 30px;
+  background: #191919;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+.dashboard-section.never { border-left-color: #6c757d; }
+.dashboard-section.levelup { border-left-color: #28a745; }
+.dashboard-section.least { border-left-color: #dc3545; }
+
+.champion-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.champion-card {
+  background: #252525;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  min-width: 150px;
+}
+.champion-card .name {
+  font-weight: bold;
+  color: #007bff;
+}
+.champion-card .details {
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  border: 1px solid #333;
+  padding: 12px;
+  text-align: left;
+}
+th {
+  background: #1f1f1f;
+  cursor: pointer;
+  user-select: none;
+}
+th:hover { background: #333; }
+tr:nth-child(even) { background: #1a1a1a; }
+#loading {
+  color: #ffc107;
+  font-weight: bold;
+  margin: 10px 0;
+}
+h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* --- BUBBLE-NETZWERK --- */
+#lore-network-container {
+  width: 100%;
+  height: 650px;
+  background-color: #111111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.graph-legend {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 10;
+  background: rgba(18, 18, 18, 0.85); 
+  padding: 12px; 
+  border-radius: 6px; 
+  border: 1px solid #333; 
+  pointer-events: auto;
+}
+.graph-legend h3 {
+  color: #007bff; 
+  margin: 0 0 8px 0; 
+  font-size: 16px;
+}
+#dynamicLegend {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 6px; 
+  font-size: 11px;
+}
+#mynetwork {
+  width: 100%; 
+  height: 100%;
+}
+
+/* --- TOOLTIP MODAL --- */
+.tooltip-container {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+  background: rgba(26, 26, 26, 0.95);
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+#modalImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+#modalName {
+  margin: 0 0 2px 0; 
+  color: #fff; 
+  font-size: 16px;
+}
+#modalTitle {
+  margin: 0 0 8px 0; 
+  font-style: italic; 
+  color: #aaa; 
+  font-size: 12px;
+}
+.tooltip-container hr {
+  border: 0; 
+  border-top: 1px solid #333; 
+  margin-bottom: 8px;
+}
+.tooltip-details {
+  text-align: left;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
