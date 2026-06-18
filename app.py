@@ -31,7 +31,11 @@ def get_mastery():
         return jsonify({"error": "Game name and tag line are required"}), 400
 
     try:
-        ddragon_url = "https://ddragon.leagueoflegends.com/cdn/16.11.1/data/en_US/champion.json"
+        # AKTUALISIERT: Holt die dynamisch aktuellste Version von DataDragon
+        versions_url = "https://ddragon.leagueoflegends.com/api/versions.json"
+        current_version = requests.get(versions_url).json()[0]
+
+        ddragon_url = f"https://ddragon.leagueoflegends.com/cdn/{current_version}/data/en_US/champion.json"
         response = requests.get(ddragon_url).json()
         champ_mapping = {int(data["key"]): data["name"] for data in response["data"].values()}
 

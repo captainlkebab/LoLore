@@ -1,4 +1,5 @@
-let isGraphInitialized = false;
+// Am Anfang global definieren, damit app.js es sicher sieht
+window.isGraphInitialized = false;
 let networkNodes = null;
 let networkEdges = null;
 let rawNodesData = [];
@@ -22,7 +23,7 @@ const factionColors = {
 };
 
 function initLoreGraph() {
-  isGraphInitialized = true;
+  window.isGraphInitialized = true;
 
   fetch("/static/relationship_modelv2.json")
     .then((response) => {
@@ -51,7 +52,7 @@ function initLoreGraph() {
 
       const formattedNodes = [];
 
-      // ⚡ NEU: Echte Fraktions-Hubs aus data.factions rendern
+      // Echte Fraktions-Hubs aus data.factions rendern
       data.factions.forEach((faction, index) => {
         const hasImage = faction.image && faction.image !== "";
 
@@ -63,9 +64,9 @@ function initLoreGraph() {
           label: faction.label,
           shape: hasImage ? "circularImage" : "dot",
           image: hasImage ? faction.image : undefined,
-          size: 30, // Normale, solide Größe für einen Hauptknoten
+          size: 30,
           borderWidth: 3,
-          mass: 3, // Leicht erhöht (Standard ist 1), damit sie das Zentrum des Clusters bilden
+          mass: 3,
           physics: true,
           color: {
             border: factionColors[faction.id] || "#888888",
@@ -74,7 +75,7 @@ function initLoreGraph() {
           },
           font: {
             color: "#ffffff",
-            size: 14, // Größere Schrift für Regionen
+            size: 14,
             bold: true,
             strokeWidth: 4,
             strokeColor: "#121212",
@@ -82,9 +83,8 @@ function initLoreGraph() {
         });
       });
 
-      // ⚡ ANPASSUNG: Champion-Nodes verarbeiten
+      // Champion-Nodes verarbeiten
       data.nodes.forEach((node) => {
-        // Da 'faction' jetzt ein Array ist, nehmen wir die primäre Fraktion für die Rahmenfarbe
         const primaryFaction =
           node.faction && node.faction.length > 0
             ? node.faction[0]
@@ -111,7 +111,7 @@ function initLoreGraph() {
         });
       });
 
-      // ⚡ ANPASSUNG: Echte Lore-Kanten (Verbindungen zwischen Champions)
+      // Echte Lore-Kanten
       const formattedEdges = data.edges.map((edge) => {
         const sourceNode = data.nodes.find((n) => n.id === edge.source);
         const targetNode = data.nodes.find((n) => n.id === edge.target);
@@ -122,7 +122,6 @@ function initLoreGraph() {
             : "runeterra";
         const edgeColor = getColorByFaction(srcFaction);
 
-        // Prüfen, ob sie mindestens eine gemeinsame Fraktion haben (Array-Schnittmenge)
         const hasSharedFaction =
           sourceNode &&
           targetNode &&
@@ -141,10 +140,8 @@ function initLoreGraph() {
           },
           width: edge.type === "mutual" ? 2 : 1,
           physics: true,
-
-          // ⚡ ZURÜCK AUF STANDARD: Keine extremen Verkürzungen mehr
-          length: undefined, // Nutzt automatisch das springLength (95) aus den Physik-Optionen
-          springConstant: undefined, // Nutzt die globale Stärke (0.04)
+          length: undefined,
+          springConstant: undefined,
         };
       });
 
@@ -158,8 +155,8 @@ function initLoreGraph() {
               from: node.id,
               to: `hub_${cleanedFaction}`,
               physics: true,
-              length: 50, // Etwas kürzer als normale Kanten, um Cluster zu bilden
-              springConstant: 0.04, // Exakt der Standard-Wert
+              length: 50,
+              springConstant: 0.04,
               color: { opacity: 0 },
               interaction: false,
             });
@@ -173,21 +170,20 @@ function initLoreGraph() {
 
       const graphData = { nodes: networkNodes, edges: networkEdges };
 
-      // Deine ausbalancierten Physik-Einstellungen
       const options = {
         physics: {
           enabled: true,
           solver: "barnesHut",
           barnesHut: {
-            gravitationalConstant: -2000, // Standard-Abstoßung der Knoten
-            centralGravity: 0.3, // Zieht das gesamte System sanft zur Mitte (Standard)
-            springLength: 95, // Standard-Länge für normale Kanten
-            springConstant: 0.04, // Standard-Federkraft
-            avoidOverlap: 0, // Auf 0 setzen (Standard). Höhere Werte erzeugen oft Jitter!
+            gravitationalConstant: -2000,
+            centralGravity: 0.3,
+            springLength: 95,
+            springConstant: 0.04,
+            avoidOverlap: 0,
           },
           stabilization: {
             enabled: true,
-            iterations: 1000, // Mehr Iterationen beim Laden, damit es stillsteht, wenn es erscheint
+            iterations: 1000,
             updateInterval: 50,
           },
         },
@@ -208,7 +204,6 @@ function initLoreGraph() {
 
       const network = new vis.Network(container, graphData, options);
 
-      // Weit herauszoomen blendet Labels aus (Performance-Schutz)
       network.on("zoom", function (params) {
         const currentZoom = network.getScale();
         if (currentZoom < 0.5) {
@@ -218,13 +213,11 @@ function initLoreGraph() {
         }
       });
 
-      // Klick-Event für das Modal (inklusive neuem Format für Rollen & Release)
       network.on("click", function (params) {
         if (params.nodes.length > 0) {
           const nodeId = params.nodes[0];
 
           if (nodeId.startsWith("hub_")) {
-            // Wenn man auf einen Hub klickt, Modal schließen oder optional Regions-Infos zeigen
             document.getElementById("championModal").style.display = "none";
             return;
           }
@@ -238,7 +231,6 @@ function initLoreGraph() {
             document.getElementById("modalTitle").innerText =
               champion.title || "The Champion";
 
-            // Zeigt alle Factions komma-separiert an
             const factionLabels = champion.faction.map((f) =>
               normalizeFactionName(f),
             );
@@ -248,12 +240,10 @@ function initLoreGraph() {
             document.getElementById("modalConnections").innerText =
               connectionCounts[champion.id] || 0;
 
-            // ⚡ NEU: Da Rollen jetzt direkt ein flaches Array ["Fighter", "Tank"] sind:
             document.getElementById("modalRoles").innerText = champion.roles
               ? champion.roles.join(", ")
               : "Unknown";
 
-            // Release-Date sauber kürzen (entfernt die Timestamp-Nullen, falls vorhanden)
             const release = champion.release_date
               ? champion.release_date.split("T")[0]
               : "Unknown";
@@ -276,7 +266,8 @@ function initLoreGraph() {
       applyFilters();
     })
     .catch((error) => {
-      print("Fehler beim Laden des Beziehungsmodells:", error);
+      // ⚡ REPARIERT: Kein print() mehr, sondern sauberes Logging!
+      console.error("Fehler beim Laden des Beziehungsmodells:", error);
     });
 }
 
@@ -291,7 +282,6 @@ function applyFilters() {
   const updatedNodes = rawNodesData.map((node) => {
     const connections = connectionCounts[node.id] || 0;
 
-    // Prüfen, ob die gewählte Fraktion im Array des Champions existiert
     const matchesFaction =
       !isFactionFilterActive ||
       (node.faction && node.faction.includes(selectedFaction));
@@ -324,7 +314,6 @@ function applyFilters() {
 
   networkNodes.update(updatedNodes);
 
-  // Kanten-Fading
   const currentNodesView = networkNodes.get();
   const fadedNodeIds = new Set(
     currentNodesView
@@ -398,6 +387,9 @@ function generateRandomColor() {
   }
   return color;
 }
+
+// Globaler machen für den Fallback-Zugriff
+window.getColorByFaction = getColorByFaction;
 
 function getColorByFaction(faction) {
   const cleaned = cleanFactionString(faction);

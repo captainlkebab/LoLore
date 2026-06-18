@@ -5,99 +5,47 @@
     <title>LoL Theorycrafter</title>
     <link
       rel="stylesheet"
-      href="https://unpkg.com/vis-network/standalone/umd/vis-network.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="{{ url_for('static', filename='styles.css') }}"
     />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/vis-network/standalone/umd/vis-network.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
   </head>
   <body>
     <h1>LoL Mastery & Theorycrafting</h1>
 
     <div class="tab-navigation">
-      <button class="tab-button active" onclick="openTab('mastery-tab', this)">
-        My Mastery
-      </button>
-      <button class="tab-button" onclick="openTab('builds-tab', this)">
-        Alternative Picks
-      </button>
-      <button class="tab-button" onclick="openTab('relations-tab', this)">
+      <button
+        id="btn-relations-tab"
+        class="tab-button active"
+        onclick="openTab('relations-tab', this)"
+      >
         Factions & Lore
       </button>
+      <button
+        id="btn-mastery-tab"
+        class="tab-button"
+        onclick="openTab('mastery-tab', this)"
+      >
+        My Mastery
+      </button>
+      <button
+        id="btn-builds-tab"
+        class="tab-button"
+        onclick="openTab('builds-tab', this)"
+      >
+        Alternative Picks
+      </button>
     </div>
 
-    <div id="mastery-tab" class="tab-content active">
-      <div class="search-box">
-        <select id="routingRegion">
-          <option value="europe">Europe (Account)</option>
-          <option value="americas">Americas (Account)</option>
-          <option value="asia">Asia (Account)</option>
-        </select>
-
-        <select id="platformRegion">
-          <option value="euw1">EU West (EUW)</option>
-          <option value="eun1">EU Nordic & East (EUNE)</option>
-          <option value="na1">North America (NA)</option>
-          <option value="kr">Korea (KR)</option>
-        </select>
-
-        <input
-          type="text"
-          id="gameName"
-          placeholder="Name (e.g. Hide on bush)"
-        />
-        <input type="text" id="tagLine" placeholder="Tag (e.g. KR1)" />
-        <button onclick="fetchMastery()">Run</button>
-      </div>
-
-      <div id="loading" style="display: none">
-        Fetching live data from the Rift... Please wait.
-      </div>
-
-      <div id="masteryDashboard" style="display: none">
-        <div class="dashboard-section">
-          <h3>🔥 Your Most Played Champions</h3>
-          <div class="champion-grid" id="mostPlayedGrid"></div>
-        </div>
-        <div class="dashboard-section levelup">
-          <h3>⚡ Champions Close Before Level Up</h3>
-          <div class="champion-grid" id="closeLevelUpGrid"></div>
-        </div>
-        <div class="dashboard-section least">
-          <h3>📉 Your Least Played Champions</h3>
-          <div class="champion-grid" id="leastPlayedGrid"></div>
-        </div>
-        <div class="dashboard-section never">
-          <h3>🌑 Never Played Champions</h3>
-          <div class="champion-grid" id="neverPlayedGrid"></div>
-        </div>
-        <div class="dashboard-section" style="border-left-color: #ffc107">
-          <h3>📊 Full Champion Registry</h3>
-          <table id="masteryTable">
-            <thead>
-              <tr>
-                <th onclick="sortTable('championName')">Champion Name ↕</th>
-                <th onclick="sortTable('championLevel')">Level ↕</th>
-                <th onclick="sortTable('championPoints')">Points ↕</th>
-                <th onclick="sortTable('championPointsUntilNextLevel')">
-                  Points Until Level Up ↕
-                </th>
-                <th onclick="sortTable('lastPlayTime')">Last Played ↕</th>
-              </tr>
-            </thead>
-            <tbody id="tableBody"></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <div id="builds-tab" class="tab-content">
-      <h3>Off-Meta Challenges</h3>
-      <p>Unconventional setup suggestions will appear here soon.</p>
-    </div>
-
-    <div id="relations-tab" class="tab-content">
+    <div id="relations-tab" class="tab-content active">
       <div class="search-box filter-bar">
         <div>
           <label for="filterFaction">Filter by Faction:</label>
@@ -132,7 +80,90 @@
       </div>
     </div>
 
-    <div id="championModal" class="tooltip-container">
+    <div id="mastery-tab" class="tab-content">
+      <div class="search-box">
+        <select id="routingRegion">
+          <option value="europe">Europe (Account)</option>
+          <option value="americas">Americas (Account)</option>
+          <option value="asia">Asia (Account)</option>
+        </select>
+
+        <select id="platformRegion">
+          <option value="euw1">EU West (EUW)</option>
+          <option value="eun1">EU Nordic & East (EUNE)</option>
+          <option value="na1">North America (NA)</option>
+          <option value="kr">Korea (KR)</option>
+        </select>
+
+        <input
+          type="text"
+          id="gameName"
+          placeholder="Name (e.g. Hide on bush)"
+        />
+        <input type="text" id="tagLine" placeholder="Tag (e.g. KR1)" />
+        <button onclick="fetchMastery()">Run</button>
+      </div>
+
+      <div id="loading" style="display: none">
+        Fetching live data from the Rift... Please wait.
+      </div>
+
+      <div id="masteryDashboard" style="display: none">
+        <div class="dashboard-section" style="border-left-color: #0ac8b9">
+          <h3>🌌 Champion Mastery Cosmos</h3>
+          <p
+            style="
+              color: #6c757d;
+              font-size: 0.9em;
+              margin-top: -5px;
+              margin-bottom: 15px;
+            "
+          >
+            Drag to toss bubbles around. Larger bubbles represent higher mastery
+            points. Hover for details.
+          </p>
+          <div
+            id="masteryBubbleContainer"
+            style="
+              width: 100%;
+              height: 500px;
+              background-color: #111318;
+              border: 1px solid #cdbe91;
+              border-radius: 4px;
+            "
+          ></div>
+        </div>
+
+        <div class="dashboard-section" style="border-left-color: #ffc107">
+          <h3>📊 Full Champion Registry</h3>
+          <table id="masteryTable">
+            <thead>
+              <tr>
+                <th onclick="sortTable('championName')">Champion Name ↕</th>
+                <th onclick="sortTable('championLevel')">Level ↕</th>
+                <th onclick="sortTable('championPoints')">Points ↕</th>
+                <th onclick="sortTable('championPointsUntilNextLevel')">
+                  Points Until Level Up ↕
+                </th>
+                <th onclick="sortTable('lastPlayTime')">Last Played ↕</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="builds-tab" class="tab-content">
+      <h3>Off-Meta Challenges</h3>
+      <p>Unconventional setup suggestions will appear here soon.</p>
+    </div>
+
+    <div
+      id="championModal"
+      class="tooltip-container"
+      style="display: none; position: absolute; z-index: 100"
+    >
       <img id="modalImg" src="" alt="Champion" />
       <h3 id="modalName"></h3>
       <p id="modalTitle"></p>
@@ -154,8 +185,8 @@
       </div>
     </div>
 
-    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
-    <script src="{{ url_for('static', filename='app.js') }}"></script>
-    <script src="{{ url_for('static', filename='graph.js') }}"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="{{ url_for('static', filename='lore.js') }}"></script>
+    <script src="{{ url_for('static', filename='mastery.js') }}"></script>
   </body>
 </html>
