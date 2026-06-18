@@ -1,0 +1,6266 @@
+{
+  "factions": [
+    {
+      "id": "bandle_city",
+      "label": "Bandle City",
+      "type": "hub",
+      "image": ""
+    },
+    {
+      "id": "bilgewater",
+      "label": "Bilgewater",
+      "type": "hub",
+      "image": ""
+    },
+    {
+      "id": "demacia",
+      "label": "Demacia",
+      "type": "hub",
+      "image": ""
+    },
+    {
+      "id": "freljord",
+      "label": "Freljord",
+      "type": "hub",
+      "image": ""
+    },
+    {
+      "id": "ionia",
+      "label": "Ionia",
+      "type": "hub",
+      "image": ""
+    },
+    {
+      "id": "ixtal",
+      "label": "Ixtal",
+      "type": "hub",
+      "image": ""
+    },
+    {
+      "id": "mount_targon",
+      "label": "Mount Targon",
+      "type": "hub",
+      "image": ""
+    },
+    {
+      "id": "noxus",
+      "label": "Noxus",
+      "type": "hub",
+      "image": ""
+    },
+    {
+      "id": "piltover",
+      "label": "Piltover",
+      "type": "hub",
+      "image": ""
+    },
+    {
+      "id": "runeterra",
+      "label": "Runeterra",
+      "type": "hub",
+      "image": ""
+    },
+    {
+      "id": "shadow_isles",
+      "label": "Shadow Isles",
+      "type": "hub",
+      "image": ""
+    },
+    {
+      "id": "shurima",
+      "label": "Shurima",
+      "type": "hub",
+      "image": ""
+    },
+    {
+      "id": "void",
+      "label": "Void",
+      "type": "hub",
+      "image": ""
+    },
+    {
+      "id": "zaun",
+      "label": "Zaun",
+      "type": "hub",
+      "image": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "Aatrox",
+      "label": "Aatrox",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Aatrox.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2013-06-13T19:43:26.000Z"
+    },
+    {
+      "id": "Kayn",
+      "label": "Kayn",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Kayn.png",
+      "roles": [
+        "Assassin"
+      ],
+      "release_date": "2017-07-10T00:00:00.000Z"
+    },
+    {
+      "id": "Varus",
+      "label": "Varus",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Varus.png",
+      "roles": [
+        "Marksman",
+        "Mage"
+      ],
+      "release_date": "2012-05-08T00:00:00.000Z"
+    },
+    {
+      "id": "Tryndamere",
+      "label": "Tryndamere",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Tryndamere.png",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "release_date": "2009-05-01T00:00:00.000Z"
+    },
+    {
+      "id": "Ahri",
+      "label": "Ahri",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Ahri.png",
+      "roles": [
+        "Mage",
+        "Assassin"
+      ],
+      "release_date": "2011-12-14T00:00:00.000Z"
+    },
+    {
+      "id": "Yasuo",
+      "label": "Yasuo",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Yasuo.png",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "release_date": "2013-12-13T00:00:00.000Z"
+    },
+    {
+      "id": "Lillia",
+      "label": "Lillia",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Lillia.png",
+      "roles": [
+        "Fighter"
+      ],
+      "release_date": "2020-07-07T00:00:00.000Z"
+    },
+    {
+      "id": "Wukong",
+      "label": "Wukong",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/MonkeyKing.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2011-07-26T00:00:00.000Z"
+    },
+    {
+      "id": "Akali",
+      "label": "Akali",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Akali.png",
+      "roles": [
+        "Assassin"
+      ],
+      "release_date": "2010-05-11T00:00:00.000Z"
+    },
+    {
+      "id": "Kennen",
+      "label": "Kennen",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Kennen.png",
+      "roles": [
+        "Mage",
+        "Marksman"
+      ],
+      "release_date": "2010-04-08T00:00:00.000Z"
+    },
+    {
+      "id": "Shen",
+      "label": "Shen",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Shen.png",
+      "roles": [
+        "Tank",
+        "Melee"
+      ],
+      "release_date": "2010-03-24T00:00:00.000Z"
+    },
+    {
+      "id": "Zed",
+      "label": "Zed",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Zed.png",
+      "roles": [
+        "Assassin",
+        "Fighter"
+      ],
+      "release_date": "2012-11-13T00:00:00.000Z"
+    },
+    {
+      "id": "Jhin",
+      "label": "Jhin",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Jhin.png",
+      "roles": [
+        "Marksman",
+        "Assassin"
+      ],
+      "release_date": "2016-02-01T00:00:00.000Z"
+    },
+    {
+      "id": "Akshan",
+      "label": "Akshan",
+      "faction": [
+        "shurima"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Akshan.png",
+      "roles": [
+        "Marksman",
+        "Assassin"
+      ],
+      "release_date": "2021-07-08T19:43:26.000Z"
+    },
+    {
+      "id": "Lucian",
+      "label": "Lucian",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Lucian.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2013-08-22T00:00:00.000Z"
+    },
+    {
+      "id": "Senna",
+      "label": "Senna",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Senna.png",
+      "roles": [
+        "Support",
+        "Marksman"
+      ],
+      "release_date": "2019-10-20T00:00:00.000Z"
+    },
+    {
+      "id": "Viego",
+      "label": "Viego",
+      "faction": [
+        "shadow_isles"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Viego.png",
+      "roles": [
+        "Assassin"
+      ],
+      "release_date": "2021-01-05T00:00:00.000Z"
+    },
+    {
+      "id": "Gwen",
+      "label": "Gwen",
+      "faction": [
+        "shadow_isles"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Gwen.png",
+      "roles": [
+        "Fighter"
+      ],
+      "release_date": "2021-03-30T00:00:00.000Z"
+    },
+    {
+      "id": "Alistar",
+      "label": "Alistar",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Alistar.png",
+      "roles": [
+        "Tank",
+        "Support"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Xin Zhao",
+      "label": "Xin Zhao",
+      "faction": [
+        "demacia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/XinZhao.png",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "release_date": "2010-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "Ambessa",
+      "label": "Ambessa",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Ambessa.png",
+      "roles": [
+        "Fighter"
+      ],
+      "release_date": "2024-10-28T18:00:00.000Z"
+    },
+    {
+      "id": "Mel",
+      "label": "Mel",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Mel.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2025-01-23T20:00:00.000Z"
+    },
+    {
+      "id": "Caitlyn",
+      "label": "Caitlyn",
+      "faction": [
+        "piltover"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Caitlyn.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2011-01-04T00:00:00.000Z"
+    },
+    {
+      "id": "LeBlanc",
+      "label": "LeBlanc",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Leblanc.png",
+      "roles": [
+        "Assassin",
+        "Mage"
+      ],
+      "release_date": "2010-11-02T00:00:00.000Z"
+    },
+    {
+      "id": "Amumu",
+      "label": "Amumu",
+      "faction": [
+        "shurima"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Amumu.png",
+      "roles": [
+        "Tank",
+        "Mage"
+      ],
+      "release_date": "2009-06-26T00:00:00.000Z"
+    },
+    {
+      "id": "Anivia",
+      "label": "Anivia",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Anivia.png",
+      "roles": [
+        "Mage",
+        "Support"
+      ],
+      "release_date": "2009-07-10T00:00:00.000Z"
+    },
+    {
+      "id": "Ornn",
+      "label": "Ornn",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Ornn.png",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "release_date": "2017-08-22T00:00:00.000Z"
+    },
+    {
+      "id": "Volibear",
+      "label": "Volibear",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Volibear.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2011-11-29T00:00:00.000Z"
+    },
+    {
+      "id": "Ashe",
+      "label": "Ashe",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Ashe.png",
+      "roles": [
+        "Marksman",
+        "Support"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Nunu & Willump",
+      "label": "Nunu & Willump",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Nunu.png",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Annie",
+      "label": "Annie",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Annie.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Aphelios",
+      "label": "Aphelios",
+      "faction": [
+        "mount_targon"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Aphelios.png",
+      "roles": [
+        "Marksman",
+        "Tank"
+      ],
+      "release_date": "2019-11-19T19:43:26.000Z"
+    },
+    {
+      "id": "Diana",
+      "label": "Diana",
+      "faction": [
+        "mount_targon"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Diana.png",
+      "roles": [
+        "Fighter",
+        "Mage"
+      ],
+      "release_date": "2012-08-07T00:00:00.000Z"
+    },
+    {
+      "id": "Leona",
+      "label": "Leona",
+      "faction": [
+        "mount_targon"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Leona.png",
+      "roles": [
+        "Tank",
+        "Support"
+      ],
+      "release_date": "2011-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "Sejuani",
+      "label": "Sejuani",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Sejuani.png",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "release_date": "2012-01-17T00:00:00.000Z"
+    },
+    {
+      "id": "Braum",
+      "label": "Braum",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Braum.png",
+      "roles": [
+        "Support",
+        "Tank"
+      ],
+      "release_date": "2014-05-12T00:00:00.000Z"
+    },
+    {
+      "id": "Lissandra",
+      "label": "Lissandra",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Lissandra.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2013-04-30T00:00:00.000Z"
+    },
+    {
+      "id": "Aurelion Sol",
+      "label": "Aurelion Sol",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/AurelionSol.png",
+      "roles": [
+        "Mage",
+        "Fighter"
+      ],
+      "release_date": "2016-03-24T00:00:00.000Z"
+    },
+    {
+      "id": "Soraka",
+      "label": "Soraka",
+      "faction": [
+        "mount_targon"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Soraka.png",
+      "roles": [
+        "Support",
+        "Mage"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Aurora",
+      "label": "Aurora",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Aurora.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2024-06-19T17:00:00.000Z"
+    },
+    {
+      "id": "Udyr",
+      "label": "Udyr",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Udyr.png",
+      "roles": [
+        "Fighter"
+      ],
+      "release_date": "2022-08-09T00:00:00.000Z"
+    },
+    {
+      "id": "Azir",
+      "label": "Azir",
+      "faction": [
+        "shurima"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Azir.png",
+      "roles": [
+        "Mage",
+        "Marksman"
+      ],
+      "release_date": "2014-09-16T00:00:00.000Z"
+    },
+    {
+      "id": "Nasus",
+      "label": "Nasus",
+      "faction": [
+        "shurima"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Nasus.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2009-10-01T00:00:00.000Z"
+    },
+    {
+      "id": "Sivir",
+      "label": "Sivir",
+      "faction": [
+        "shurima"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Sivir.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Xerath",
+      "label": "Xerath",
+      "faction": [
+        "shurima"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Xerath.png",
+      "roles": [
+        "Mage",
+        "Assassin"
+      ],
+      "release_date": "2011-10-05T00:00:00.000Z"
+    },
+    {
+      "id": "Renekton",
+      "label": "Renekton",
+      "faction": [
+        "shurima"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Renekton.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2011-01-18T00:00:00.000Z"
+    },
+    {
+      "id": "Taliyah",
+      "label": "Taliyah",
+      "faction": [
+        "shurima"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Taliyah.png",
+      "roles": [
+        "Mage",
+        "Support"
+      ],
+      "release_date": "2016-05-18T00:00:00.000Z"
+    },
+    {
+      "id": "Cassiopeia",
+      "label": "Cassiopeia",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Cassiopeia.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2010-12-14T00:00:00.000Z"
+    },
+    {
+      "id": "Bard",
+      "label": "Bard",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Bard.png",
+      "roles": [
+        "Support",
+        "Mage"
+      ],
+      "release_date": "2015-03-12T00:00:00.000Z"
+    },
+    {
+      "id": "Ryze",
+      "label": "Ryze",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Ryze.png",
+      "roles": [
+        "Mage",
+        "Fighter"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Bel’Veth",
+      "label": "Bel’Veth",
+      "faction": [
+        "void"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Belveth.png",
+      "roles": [
+        "Fighter"
+      ],
+      "release_date": "2022-05-20T17:00:00.000Z"
+    },
+    {
+      "id": "Kai'Sa",
+      "label": "Kai'Sa",
+      "faction": [
+        "void"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Kaisa.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2018-03-02T00:00:00.000Z"
+    },
+    {
+      "id": "Malzahar",
+      "label": "Malzahar",
+      "faction": [
+        "void"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Malzahar.png",
+      "roles": [
+        "Mage",
+        "Assassin"
+      ],
+      "release_date": "2010-06-01T00:00:00.000Z"
+    },
+    {
+      "id": "Vel'Koz",
+      "label": "Vel'Koz",
+      "faction": [
+        "void"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Velkoz.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2014-02-27T00:00:00.000Z"
+    },
+    {
+      "id": "Blitzcrank",
+      "label": "Blitzcrank",
+      "faction": [
+        "zaun"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Blitzcrank.png",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "release_date": "2009-09-02T00:00:00.000Z"
+    },
+    {
+      "id": "Orianna",
+      "label": "Orianna",
+      "faction": [
+        "piltover"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Orianna.png",
+      "roles": [
+        "Mage",
+        "Support"
+      ],
+      "release_date": "2011-06-01T00:00:00.000Z"
+    },
+    {
+      "id": "Viktor",
+      "label": "Viktor",
+      "faction": [
+        "zaun"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Viktor.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2011-12-29T00:00:00.000Z"
+    },
+    {
+      "id": "Brand",
+      "label": "Brand",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Brand.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2011-04-12T00:00:00.000Z"
+    },
+    {
+      "id": "Briar",
+      "label": "Briar",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Briar.png",
+      "roles": [
+        "Fighter"
+      ],
+      "release_date": "2023-08-28T17:00:00.000Z"
+    },
+    {
+      "id": "Sion",
+      "label": "Sion",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Sion.png",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Swain",
+      "label": "Swain",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Swain.png",
+      "roles": [
+        "Mage",
+        "Fighter"
+      ],
+      "release_date": "2010-10-05T00:00:00.000Z"
+    },
+    {
+      "id": "Talon",
+      "label": "Talon",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Talon.png",
+      "roles": [
+        "Assassin",
+        "Fighter"
+      ],
+      "release_date": "2011-08-24T00:00:00.000Z"
+    },
+    {
+      "id": "Vladimir",
+      "label": "Vladimir",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Vladimir.png",
+      "roles": [
+        "Mage",
+        "Tank"
+      ],
+      "release_date": "2010-07-27T00:00:00.000Z"
+    },
+    {
+      "id": "Vi",
+      "label": "Vi",
+      "faction": [
+        "piltover"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Vi.png",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "release_date": "2012-12-19T00:00:00.000Z"
+    },
+    {
+      "id": "Jinx",
+      "label": "Jinx",
+      "faction": [
+        "zaun"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Jinx.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2013-10-10T00:00:00.000Z"
+    },
+    {
+      "id": "Camille",
+      "label": "Camille",
+      "faction": [
+        "piltover"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Camille.png",
+      "roles": [
+        "Fighter"
+      ],
+      "release_date": "2016-11-28T00:00:00.000Z"
+    },
+    {
+      "id": "Ezreal",
+      "label": "Ezreal",
+      "faction": [
+        "piltover"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Ezreal.png",
+      "roles": [
+        "Marksman",
+        "Mage"
+      ],
+      "release_date": "2010-03-16T00:00:00.000Z"
+    },
+    {
+      "id": "Jayce",
+      "label": "Jayce",
+      "faction": [
+        "piltover"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Jayce.png",
+      "roles": [
+        "Fighter",
+        "Marksman"
+      ],
+      "release_date": "2012-07-07T00:00:00.000Z"
+    },
+    {
+      "id": "Ekko",
+      "label": "Ekko",
+      "faction": [
+        "zaun"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Ekko.png",
+      "roles": [
+        "Assassin",
+        "Fighter"
+      ],
+      "release_date": "2015-05-28T00:00:00.000Z"
+    },
+    {
+      "id": "Warwick",
+      "label": "Warwick",
+      "faction": [
+        "zaun"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Warwick.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Katarina",
+      "label": "Katarina",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Katarina.png",
+      "roles": [
+        "Assassin",
+        "Mage"
+      ],
+      "release_date": "2009-09-19T00:00:00.000Z"
+    },
+    {
+      "id": "Cho'Gath",
+      "label": "Cho'Gath",
+      "faction": [
+        "void"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Chogath.png",
+      "roles": [
+        "Tank",
+        "Mage"
+      ],
+      "release_date": "2009-06-26T00:00:00.000Z"
+    },
+    {
+      "id": "Kog'Maw",
+      "label": "Kog'Maw",
+      "faction": [
+        "void"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/KogMaw.png",
+      "roles": [
+        "Marksman",
+        "Mage"
+      ],
+      "release_date": "2010-06-24T00:00:00.000Z"
+    },
+    {
+      "id": "Kha'Zix",
+      "label": "Kha'Zix",
+      "faction": [
+        "void"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Khazix.png",
+      "roles": [
+        "Assassin",
+        "Fighter"
+      ],
+      "release_date": "2012-09-27T00:00:00.000Z"
+    },
+    {
+      "id": "Corki",
+      "label": "Corki",
+      "faction": [
+        "bandle_city"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Corki.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2009-09-19T00:00:00.000Z"
+    },
+    {
+      "id": "Heimerdinger",
+      "label": "Heimerdinger",
+      "faction": [
+        "piltover"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Heimerdinger.png",
+      "roles": [
+        "Mage",
+        "Support"
+      ],
+      "release_date": "2009-10-10T00:00:00.000Z"
+    },
+    {
+      "id": "Veigar",
+      "label": "Veigar",
+      "faction": [
+        "bandle_city"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Veigar.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2009-07-24T00:00:00.000Z"
+    },
+    {
+      "id": "Darius",
+      "label": "Darius",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Darius.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2012-05-23T00:00:00.000Z"
+    },
+    {
+      "id": "Draven",
+      "label": "Draven",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Draven.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2012-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "Taric",
+      "label": "Taric",
+      "faction": [
+        "mount_targon"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Taric.png",
+      "roles": [
+        "Support",
+        "Fighter"
+      ],
+      "release_date": "2009-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "Zoe",
+      "label": "Zoe",
+      "faction": [
+        "mount_targon"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Zoe.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2017-11-09T00:00:00.000Z"
+    },
+    {
+      "id": "Pantheon",
+      "label": "Pantheon",
+      "faction": [
+        "mount_targon"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Pantheon.png",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "release_date": "2010-02-02T00:00:00.000Z"
+    },
+    {
+      "id": "Dr. Mundo",
+      "label": "Dr. Mundo",
+      "faction": [
+        "zaun"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/DrMundo.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2009-09-02T00:00:00.000Z"
+    },
+    {
+      "id": "Janna",
+      "label": "Janna",
+      "faction": [
+        "zaun"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Janna.png",
+      "roles": [
+        "Support",
+        "Mage"
+      ],
+      "release_date": "2009-09-02T00:00:00.000Z"
+    },
+    {
+      "id": "Elise",
+      "label": "Elise",
+      "faction": [
+        "shadow_isles"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Elise.png",
+      "roles": [
+        "Mage",
+        "Fighter"
+      ],
+      "release_date": "2012-10-26T00:00:00.000Z"
+    },
+    {
+      "id": "Evelynn",
+      "label": "Evelynn",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Evelynn.png",
+      "roles": [
+        "Assassin",
+        "Mage"
+      ],
+      "release_date": "2009-05-01T00:00:00.000Z"
+    },
+    {
+      "id": "Vayne",
+      "label": "Vayne",
+      "faction": [
+        "demacia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Vayne.png",
+      "roles": [
+        "Marksman",
+        "Assassin"
+      ],
+      "release_date": "2011-05-10T00:00:00.000Z"
+    },
+    {
+      "id": "Tahm Kench",
+      "label": "Tahm Kench",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/TahmKench.png",
+      "roles": [
+        "Support",
+        "Tank"
+      ],
+      "release_date": "2015-07-09T00:00:00.000Z"
+    },
+    {
+      "id": "Kassadin",
+      "label": "Kassadin",
+      "faction": [
+        "void"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Kassadin.png",
+      "roles": [
+        "Assassin",
+        "Mage"
+      ],
+      "release_date": "2009-08-07T00:00:00.000Z"
+    },
+    {
+      "id": "Lux",
+      "label": "Lux",
+      "faction": [
+        "demacia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Lux.png",
+      "roles": [
+        "Mage",
+        "Support"
+      ],
+      "release_date": "2010-10-19T00:00:00.000Z"
+    },
+    {
+      "id": "Rek'Sai",
+      "label": "Rek'Sai",
+      "faction": [
+        "void"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/RekSai.png",
+      "roles": [
+        "Fighter"
+      ],
+      "release_date": "2014-12-11T00:00:00.000Z"
+    },
+    {
+      "id": "Fiddlesticks",
+      "label": "Fiddlesticks",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Fiddlesticks.png",
+      "roles": [
+        "Mage",
+        "Support"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Nocturne",
+      "label": "Nocturne",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Nocturne.png",
+      "roles": [
+        "Assassin",
+        "Fighter"
+      ],
+      "release_date": "2011-03-15T00:00:00.000Z"
+    },
+    {
+      "id": "Shaco",
+      "label": "Shaco",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Shaco.png",
+      "roles": [
+        "Assassin"
+      ],
+      "release_date": "2009-10-10T00:00:00.000Z"
+    },
+    {
+      "id": "Fiora",
+      "label": "Fiora",
+      "faction": [
+        "demacia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Fiora.png",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "release_date": "2012-02-29T00:00:00.000Z"
+    },
+    {
+      "id": "Jarvan IV",
+      "label": "Jarvan IV",
+      "faction": [
+        "demacia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/JarvanIV.png",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "release_date": "2011-03-01T00:00:00.000Z"
+    },
+    {
+      "id": "Garen",
+      "label": "Garen",
+      "faction": [
+        "demacia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Garen.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2010-04-27T00:00:00.000Z"
+    },
+    {
+      "id": "Jax",
+      "label": "Jax",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Jax.png",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Fizz",
+      "label": "Fizz",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Fizz.png",
+      "roles": [
+        "Assassin",
+        "Fighter"
+      ],
+      "release_date": "2011-11-15T00:00:00.000Z"
+    },
+    {
+      "id": "Illaoi",
+      "label": "Illaoi",
+      "faction": [
+        "bilgewater"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Illaoi.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2015-11-24T00:00:00.000Z"
+    },
+    {
+      "id": "Nami",
+      "label": "Nami",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Nami.png",
+      "roles": [
+        "Support",
+        "Mage"
+      ],
+      "release_date": "2012-12-07T00:00:00.000Z"
+    },
+    {
+      "id": "Nautilus",
+      "label": "Nautilus",
+      "faction": [
+        "bilgewater"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Nautilus.png",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "release_date": "2012-02-14T00:00:00.000Z"
+    },
+    {
+      "id": "Galio",
+      "label": "Galio",
+      "faction": [
+        "demacia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Galio.png",
+      "roles": [
+        "Tank",
+        "Mage"
+      ],
+      "release_date": "2010-08-10T00:00:00.000Z"
+    },
+    {
+      "id": "Kayle",
+      "label": "Kayle",
+      "faction": [
+        "demacia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Kayle.png",
+      "roles": [
+        "Fighter",
+        "Support"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Morgana",
+      "label": "Morgana",
+      "faction": [
+        "demacia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Morgana.png",
+      "roles": [
+        "Mage",
+        "Support"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Sylas",
+      "label": "Sylas",
+      "faction": [
+        "demacia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Sylas.png",
+      "roles": [
+        "Mage",
+        "Support"
+      ],
+      "release_date": "2018-01-08T00:00:00.000Z"
+    },
+    {
+      "id": "Gangplank",
+      "label": "Gangplank",
+      "faction": [
+        "bilgewater"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Gangplank.png",
+      "roles": [
+        "Fighter"
+      ],
+      "release_date": "2009-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "Miss Fortune",
+      "label": "Miss Fortune",
+      "faction": [
+        "bilgewater"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/MissFortune.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2010-09-08T00:00:00.000Z"
+    },
+    {
+      "id": "Twisted Fate",
+      "label": "Twisted Fate",
+      "faction": [
+        "bilgewater"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/TwistedFate.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Graves",
+      "label": "Graves",
+      "faction": [
+        "bilgewater"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Graves.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2011-10-19T00:00:00.000Z"
+    },
+    {
+      "id": "Quinn",
+      "label": "Quinn",
+      "faction": [
+        "demacia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Quinn.png",
+      "roles": [
+        "Marksman",
+        "Fighter"
+      ],
+      "release_date": "2013-03-01T00:00:00.000Z"
+    },
+    {
+      "id": "Gnar",
+      "label": "Gnar",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Gnar.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2014-08-14T00:00:00.000Z"
+    },
+    {
+      "id": "Rengar",
+      "label": "Rengar",
+      "faction": [
+        "ixtal"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Rengar.png",
+      "roles": [
+        "Assassin",
+        "Fighter"
+      ],
+      "release_date": "2012-08-21T00:00:00.000Z"
+    },
+    {
+      "id": "Gragas",
+      "label": "Gragas",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Gragas.png",
+      "roles": [
+        "Fighter",
+        "Mage"
+      ],
+      "release_date": "2010-02-02T00:00:00.000Z"
+    },
+    {
+      "id": "Yorick",
+      "label": "Yorick",
+      "faction": [
+        "shadow_isles"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Yorick.png",
+      "roles": [
+        "Fighter",
+        "Mage"
+      ],
+      "release_date": "2011-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "Hecarim",
+      "label": "Hecarim",
+      "faction": [
+        "shadow_isles"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Hecarim.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2012-04-18T00:00:00.000Z"
+    },
+    {
+      "id": "Kalista",
+      "label": "Kalista",
+      "faction": [
+        "shadow_isles"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Kalista.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2014-11-20T00:00:00.000Z"
+    },
+    {
+      "id": "Thresh",
+      "label": "Thresh",
+      "faction": [
+        "shadow_isles"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Thresh.png",
+      "roles": [
+        "Support",
+        "Fighter"
+      ],
+      "release_date": "2013-01-23T00:00:00.000Z"
+    },
+    {
+      "id": "Ziggs",
+      "label": "Ziggs",
+      "faction": [
+        "zaun"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Ziggs.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2012-02-01T00:00:00.000Z"
+    },
+    {
+      "id": "Rumble",
+      "label": "Rumble",
+      "faction": [
+        "bandle_city"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Rumble.png",
+      "roles": [
+        "Fighter",
+        "Mage"
+      ],
+      "release_date": "2011-04-26T00:00:00.000Z"
+    },
+    {
+      "id": "Hwei",
+      "label": "Hwei",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Hwei.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2023-11-22T18:00:00.000Z"
+    },
+    {
+      "id": "Irelia",
+      "label": "Irelia",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Irelia.png",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "release_date": "2010-11-16T00:00:00.000Z"
+    },
+    {
+      "id": "Karma",
+      "label": "Karma",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Karma.png",
+      "roles": [
+        "Mage",
+        "Support"
+      ],
+      "release_date": "2011-02-01T00:00:00.000Z"
+    },
+    {
+      "id": "Ivern",
+      "label": "Ivern",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Ivern.png",
+      "roles": [
+        "Support",
+        "Mage"
+      ],
+      "release_date": "2016-10-05T00:00:00.000Z"
+    },
+    {
+      "id": "Urgot",
+      "label": "Urgot",
+      "faction": [
+        "zaun"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Urgot.png",
+      "roles": [
+        "Fighter",
+        "Juggernaut"
+      ],
+      "release_date": "2010-08-24T00:00:00.000Z"
+    },
+    {
+      "id": "Shyvana",
+      "label": "Shyvana",
+      "faction": [
+        "demacia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Shyvana.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2011-11-01T00:00:00.000Z"
+    },
+    {
+      "id": "Zilean",
+      "label": "Zilean",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Zilean.png",
+      "roles": [
+        "Support",
+        "Mage"
+      ],
+      "release_date": "2009-04-18T00:00:00.000Z"
+    },
+    {
+      "id": "Skarner",
+      "label": "Skarner",
+      "faction": [
+        "ixtal"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Skarner.png",
+      "roles": [
+        "Tank"
+      ],
+      "release_date": "2011-08-09T00:00:00.000Z"
+    },
+    {
+      "id": "Lee Sin",
+      "label": "Lee Sin",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/LeeSin.png",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "release_date": "2011-04-01T00:00:00.000Z"
+    },
+    {
+      "id": "Karthus",
+      "label": "Karthus",
+      "faction": [
+        "shadow_isles"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Karthus.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2009-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "Mordekaiser",
+      "label": "Mordekaiser",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Mordekaiser.png",
+      "roles": [
+        "Fighter"
+      ],
+      "release_date": "2010-02-24T00:00:00.000Z"
+    },
+    {
+      "id": "Kindred",
+      "label": "Kindred",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Kindred.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2015-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "Kled",
+      "label": "Kled",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Kled.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2016-08-10T00:00:00.000Z"
+    },
+    {
+      "id": "Tristana",
+      "label": "Tristana",
+      "faction": [
+        "bandle_city"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Tristana.png",
+      "roles": [
+        "Marksman",
+        "Assassin"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "K’Sante",
+      "label": "K’Sante",
+      "faction": [
+        "shurima"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/KSante.png",
+      "roles": [
+        "Tank"
+      ],
+      "release_date": "2022-10-18T15:00:00.000Z"
+    },
+    {
+      "id": "Olaf",
+      "label": "Olaf",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Olaf.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2010-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "Lulu",
+      "label": "Lulu",
+      "faction": [
+        "bandle_city"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Lulu.png",
+      "roles": [
+        "Support",
+        "Mage"
+      ],
+      "release_date": "2012-03-20T00:00:00.000Z"
+    },
+    {
+      "id": "Malphite",
+      "label": "Malphite",
+      "faction": [
+        "ixtal"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Malphite.png",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "release_date": "2009-09-02T00:00:00.000Z"
+    },
+    {
+      "id": "Qiyana",
+      "label": "Qiyana",
+      "faction": [
+        "ixtal"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Qiyana.png",
+      "roles": [
+        "Assassin"
+      ],
+      "release_date": "2019-06-07T00:00:00.000Z"
+    },
+    {
+      "id": "Maokai",
+      "label": "Maokai",
+      "faction": [
+        "shadow_isles"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Maokai.png",
+      "roles": [
+        "Tank",
+        "Mage"
+      ],
+      "release_date": "2011-02-16T00:00:00.000Z"
+    },
+    {
+      "id": "Zyra",
+      "label": "Zyra",
+      "faction": [
+        "ixtal"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Zyra.png",
+      "roles": [
+        "Mage",
+        "Support"
+      ],
+      "release_date": "2012-07-24T00:00:00.000Z"
+    },
+    {
+      "id": "Master Yi",
+      "label": "Master Yi",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/MasterYi.png",
+      "roles": [
+        "Assassin",
+        "Fighter"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Singed",
+      "label": "Singed",
+      "faction": [
+        "zaun"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Singed.png",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "release_date": "2009-04-18T00:00:00.000Z"
+    },
+    {
+      "id": "Milio",
+      "label": "Milio",
+      "faction": [
+        "ixtal"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Milio.png",
+      "roles": [
+        "Support"
+      ],
+      "release_date": "2023-03-04T18:00:00.000Z"
+    },
+    {
+      "id": "Neeko",
+      "label": "Neeko",
+      "faction": [
+        "ixtal"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Neeko.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2018-11-19T08:00:26.000Z"
+    },
+    {
+      "id": "Nidalee",
+      "label": "Nidalee",
+      "faction": [
+        "ixtal"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Nidalee.png",
+      "roles": [
+        "Assassin",
+        "Fighter"
+      ],
+      "release_date": "2009-12-17T00:00:00.000Z"
+    },
+    {
+      "id": "Naafiri",
+      "label": "Naafiri",
+      "faction": [
+        "shurima"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Naafiri.png",
+      "roles": [
+        "Assassin"
+      ],
+      "release_date": "2023-06-23T18:00:00.000Z"
+    },
+    {
+      "id": "Nilah",
+      "label": "Nilah",
+      "faction": [
+        "bilgewater"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Nilah.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2022-06-22T17:00:00.000Z"
+    },
+    {
+      "id": "Poppy",
+      "label": "Poppy",
+      "faction": [
+        "demacia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Poppy.png",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "release_date": "2010-01-13T00:00:00.000Z"
+    },
+    {
+      "id": "Pyke",
+      "label": "Pyke",
+      "faction": [
+        "bilgewater"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Pyke.png",
+      "roles": [
+        "Support"
+      ],
+      "release_date": "2018-05-31T00:00:00.000Z"
+    },
+    {
+      "id": "Sona",
+      "label": "Sona",
+      "faction": [
+        "demacia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Sona.png",
+      "roles": [
+        "Support",
+        "Mage"
+      ],
+      "release_date": "2010-09-21T00:00:00.000Z"
+    },
+    {
+      "id": "Rakan",
+      "label": "Rakan",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Rakan.png",
+      "roles": [
+        "Support",
+        "Tank"
+      ],
+      "release_date": "2017-04-11T19:43:26.000Z"
+    },
+    {
+      "id": "Xayah",
+      "label": "Xayah",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Xayah.png",
+      "roles": [
+        "Marksman",
+        "Tank"
+      ],
+      "release_date": "2017-04-11T19:43:26.000Z"
+    },
+    {
+      "id": "Rammus",
+      "label": "Rammus",
+      "faction": [
+        "shurima"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Rammus.png",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "release_date": "2009-07-10T00:00:00.000Z"
+    },
+    {
+      "id": "Rell",
+      "label": "Rell",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Rell.png",
+      "roles": [
+        "Support"
+      ],
+      "release_date": "2020-11-23T00:00:00.000Z"
+    },
+    {
+      "id": "Samira",
+      "label": "Samira",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Samira.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2020-09-21T00:00:00.000Z"
+    },
+    {
+      "id": "Renata Glasc",
+      "label": "Renata Glasc",
+      "faction": [
+        "zaun"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Renata.png",
+      "roles": [
+        "Support"
+      ],
+      "release_date": "2022-02-01T09:00:00.000Z"
+    },
+    {
+      "id": "Zeri",
+      "label": "Zeri",
+      "faction": [
+        "zaun"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Zeri.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2022-01-05T18:00:00.000Z"
+    },
+    {
+      "id": "Riven",
+      "label": "Riven",
+      "faction": [
+        "noxus"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Riven.png",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "release_date": "2011-09-14T00:00:00.000Z"
+    },
+    {
+      "id": "Teemo",
+      "label": "Teemo",
+      "faction": [
+        "bandle_city"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Teemo.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2009-02-21T00:00:00.000Z"
+    },
+    {
+      "id": "Trundle",
+      "label": "Trundle",
+      "faction": [
+        "freljord"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Trundle.png",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "release_date": "2010-12-01T00:00:00.000Z"
+    },
+    {
+      "id": "Seraphine",
+      "label": "Seraphine",
+      "faction": [
+        "piltover"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Seraphine.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2020-10-12T00:00:00.000Z"
+    },
+    {
+      "id": "Sett",
+      "label": "Sett",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Sett.png",
+      "roles": [
+        "Fighter"
+      ],
+      "release_date": "2019-12-18T00:00:00.000Z"
+    },
+    {
+      "id": "Smolder",
+      "label": "Smolder",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Smolder.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2024-01-31T18:00:00.000Z"
+    },
+    {
+      "id": "Syndra",
+      "label": "Syndra",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Syndra.png",
+      "roles": [
+        "Mage",
+        "Support"
+      ],
+      "release_date": "2012-09-13T00:00:00.000Z"
+    },
+    {
+      "id": "Twitch",
+      "label": "Twitch",
+      "faction": [
+        "zaun"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Twitch.png",
+      "roles": [
+        "Marksman",
+        "Assassin"
+      ],
+      "release_date": "2009-05-01T00:00:00.000Z"
+    },
+    {
+      "id": "Zac",
+      "label": "Zac",
+      "faction": [
+        "zaun"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Zac.png",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "release_date": "2013-03-29T00:00:00.000Z"
+    },
+    {
+      "id": "Vex",
+      "label": "Vex",
+      "faction": [
+        "shadow_isles"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Vex.png",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2021-09-08T19:43:26.000Z"
+    },
+    {
+      "id": "Yunara",
+      "label": "Yunara",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Yunara.png",
+      "roles": [
+        "Marksman"
+      ],
+      "release_date": "2025-07-16T18:00:00.000Z"
+    },
+    {
+      "id": "Yone",
+      "label": "Yone",
+      "faction": [
+        "ionia"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Yone.png",
+      "roles": [
+        "Assassin"
+      ],
+      "release_date": "2020-07-24T00:00:00.000Z"
+    },
+    {
+      "id": "Yuumi",
+      "label": "Yuumi",
+      "faction": [
+        "bandle_city"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Yuumi.png",
+      "roles": [
+        "Support",
+        "Mage"
+      ],
+      "release_date": "2019-04-25T00:00:00.000Z"
+    },
+    {
+      "id": "Norra",
+      "label": "Norra",
+      "faction": [
+        "bandle_city"
+      ],
+      "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/universe_live/11e3f6bb92001305252d12841d9c763454967118-1920x1080.jpg?accountingTag=LoL",
+      "roles": [
+        "Mage"
+      ],
+      "release_date": "2026-02-12T19:00:00.000Z"
+    },
+    {
+      "id": "Zaahen",
+      "label": "Zaahen",
+      "faction": [
+        "runeterra"
+      ],
+      "image": "https://ddragon.leagueoflegends.com/cdn/16.11.1/img/champion/Zaahen.png",
+      "roles": [
+        "Fighter"
+      ],
+      "release_date": "2025-11-19T18:00:00.000Z"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_Aatrox_Kayn",
+      "source": "Aatrox",
+      "target": "Kayn",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Aatrox_Varus",
+      "source": "Aatrox",
+      "target": "Varus",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Aatrox_Tryndamere",
+      "source": "Aatrox",
+      "target": "Tryndamere",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kayn_Aatrox",
+      "source": "Kayn",
+      "target": "Aatrox",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kayn_Varus",
+      "source": "Kayn",
+      "target": "Varus",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kayn_Zed",
+      "source": "Kayn",
+      "target": "Zed",
+      "type": "mutual",
+      "label": "mentor/mentee",
+      "title": "Zed took Kayn under his wing and trained him in the ways of the Order of Shadow"
+    },
+    {
+      "id": "edge_Kayn_Darius",
+      "source": "Kayn",
+      "target": "Darius",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Varus_Aatrox",
+      "source": "Varus",
+      "target": "Aatrox",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Varus_Kayn",
+      "source": "Varus",
+      "target": "Kayn",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Tryndamere_Ashe",
+      "source": "Tryndamere",
+      "target": "Ashe",
+      "type": "mutual",
+      "label": "in love",
+      "title": "Tryndamere is married to Ashe and is her bloodsworn"
+    },
+    {
+      "id": "edge_Tryndamere_Braum",
+      "source": "Tryndamere",
+      "target": "Braum",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Braum calmed Tryndamere down and helped him find a new path"
+    },
+    {
+      "id": "edge_Tryndamere_Aatrox",
+      "source": "Tryndamere",
+      "target": "Aatrox",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ahri_Yasuo",
+      "source": "Ahri",
+      "target": "Yasuo",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ahri_Lillia",
+      "source": "Ahri",
+      "target": "Lillia",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ahri_Wukong",
+      "source": "Ahri",
+      "target": "Wukong",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Yasuo_Yone",
+      "source": "Yasuo",
+      "target": "Yone",
+      "type": "mutual",
+      "label": "siblings",
+      "title": "Yone is Yasuo's half-brother"
+    },
+    {
+      "id": "edge_Yasuo_Taliyah",
+      "source": "Yasuo",
+      "target": "Taliyah",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Yasuo_Riven",
+      "source": "Yasuo",
+      "target": "Riven",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Lillia_Ivern",
+      "source": "Lillia",
+      "target": "Ivern",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Lillia_Ahri",
+      "source": "Lillia",
+      "target": "Ahri",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Lillia_Yasuo",
+      "source": "Lillia",
+      "target": "Yasuo",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Wukong_Master Yi",
+      "source": "Wukong",
+      "target": "Master Yi",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Master Yi guided Wukong and helped him find a new purpose"
+    },
+    {
+      "id": "edge_Wukong_Ahri",
+      "source": "Wukong",
+      "target": "Ahri",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Akali_Kennen",
+      "source": "Akali",
+      "target": "Kennen",
+      "type": "mutual",
+      "label": "mentor/mentee",
+      "title": "Kennen trained Akali since childhood"
+    },
+    {
+      "id": "edge_Akali_Shen",
+      "source": "Akali",
+      "target": "Shen",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Akali_Zed",
+      "source": "Akali",
+      "target": "Zed",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Akali_Jhin",
+      "source": "Akali",
+      "target": "Jhin",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kennen_Akali",
+      "source": "Kennen",
+      "target": "Akali",
+      "type": "mutual",
+      "label": "family",
+      "title": "Kennen taught Akali shuriken techniques and helped raise her within the Kinkou Order, emphasizing speed and agility over strength."
+    },
+    {
+      "id": "edge_Kennen_Shen",
+      "source": "Kennen",
+      "target": "Shen",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kennen_Zed",
+      "source": "Kennen",
+      "target": "Zed",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Shen_Kennen",
+      "source": "Shen",
+      "target": "Kennen",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Kennen guided Shen as he struggled to lead the Kinkou Order during a time of great turmoil"
+    },
+    {
+      "id": "edge_Shen_Akali",
+      "source": "Shen",
+      "target": "Akali",
+      "type": "mutual",
+      "label": "mentor",
+      "title": "Shen is a mentor and leader to Akali, but their relationship becomes strained as Akali questions the Kinkou's methods"
+    },
+    {
+      "id": "edge_Shen_Zed",
+      "source": "Shen",
+      "target": "Zed",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Shen and Zed were fellow students within the Kinkou Order, but Zed's coup led to a rift between them"
+    },
+    {
+      "id": "edge_Shen_Jhin",
+      "source": "Shen",
+      "target": "Jhin",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Shen participated in the hunt for the Golden Demon and disagreed with his father's decision to spare Jhin's life"
+    },
+    {
+      "id": "edge_Zed_Shen",
+      "source": "Zed",
+      "target": "Shen",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Zed was Shen's closest friend before abandoning the Kinkou Order"
+    },
+    {
+      "id": "edge_Zed_Akali",
+      "source": "Zed",
+      "target": "Akali",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Zed clashed violently with Akali's master, Great Master Kusho, and took over the Kinkou Order, transforming it into the Order of Shadow"
+    },
+    {
+      "id": "edge_Zed_Kennen",
+      "source": "Zed",
+      "target": "Kennen",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Zed is a significant threat to the balance and harmony that the Kinkou, led by Kennen, seeks to maintain"
+    },
+    {
+      "id": "edge_Zed_Gangplank",
+      "source": "Zed",
+      "target": "Gangplank",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Zed_Jhin",
+      "source": "Zed",
+      "target": "Jhin",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Zed resents Kusho's decision to spare Jhin's life and is haunted by the horrors he witnessed while hunting the Golden Demon"
+    },
+    {
+      "id": "edge_Zed_Kayn",
+      "source": "Zed",
+      "target": "Kayn",
+      "type": "mutual",
+      "label": "mentor",
+      "title": "Zed recognizes potential in young warriors like Kayn and trains them to become deadly assassins"
+    },
+    {
+      "id": "edge_Jhin_Shen",
+      "source": "Jhin",
+      "target": "Shen",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Shen was involved in Jhin's capture"
+    },
+    {
+      "id": "edge_Jhin_Zed",
+      "source": "Jhin",
+      "target": "Zed",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Zed was involved in Jhin's capture"
+    },
+    {
+      "id": "edge_Jhin_Akali",
+      "source": "Jhin",
+      "target": "Akali",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jhin_Hwei",
+      "source": "Jhin",
+      "target": "Hwei",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Jhin challenged Hwei to create a real performance, leading to the destruction of the Temple of Koyehn"
+    },
+    {
+      "id": "edge_Akshan_Lucian",
+      "source": "Akshan",
+      "target": "Lucian",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Akshan_Senna",
+      "source": "Akshan",
+      "target": "Senna",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Akshan_Viego",
+      "source": "Akshan",
+      "target": "Viego",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Akshan_Gwen",
+      "source": "Akshan",
+      "target": "Gwen",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Lucian_Thresh",
+      "source": "Lucian",
+      "target": "Thresh",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Lucian is driven by his desire for vengeance against Thresh, who he holds responsible for Senna's death and suffering."
+    },
+    {
+      "id": "edge_Lucian_Miss Fortune",
+      "source": "Lucian",
+      "target": "Miss Fortune",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Lucian_Olaf",
+      "source": "Lucian",
+      "target": "Olaf",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Lucian_Hecarim",
+      "source": "Lucian",
+      "target": "Hecarim",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Senna_Lucian",
+      "source": "Senna",
+      "target": "Lucian",
+      "type": "directed",
+      "label": "in love",
+      "title": "Senna is driven by her love for Lucian and fights alongside him"
+    },
+    {
+      "id": "edge_Senna_Thresh",
+      "source": "Senna",
+      "target": "Thresh",
+      "type": "directed",
+      "label": "rivalry",
+      "title": "Senna was imprisoned in Thresh's lantern but later escaped"
+    },
+    {
+      "id": "edge_Senna_Hecarim",
+      "source": "Senna",
+      "target": "Hecarim",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Viego_Hecarim",
+      "source": "Viego",
+      "target": "Hecarim",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Viego_Kalista",
+      "source": "Viego",
+      "target": "Kalista",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Viego_Senna",
+      "source": "Viego",
+      "target": "Senna",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Viego_Thresh",
+      "source": "Viego",
+      "target": "Thresh",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Viego_Vladimir",
+      "source": "Viego",
+      "target": "Vladimir",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Viego_Yorick",
+      "source": "Viego",
+      "target": "Yorick",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Gwen_Viego",
+      "source": "Gwen",
+      "target": "Viego",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Gwen_Senna",
+      "source": "Gwen",
+      "target": "Senna",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Gwen_Yorick",
+      "source": "Gwen",
+      "target": "Yorick",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Alistar_Xin Zhao",
+      "source": "Alistar",
+      "target": "Xin Zhao",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Xin Zhao_Jarvan IV",
+      "source": "Xin Zhao",
+      "target": "Jarvan IV",
+      "type": "mutual",
+      "label": "mentor",
+      "title": "Xin Zhao taught Prince Jarvan about the world's spiritual philosophies and the arts of war"
+    },
+    {
+      "id": "edge_Xin Zhao_Yunara",
+      "source": "Xin Zhao",
+      "target": "Yunara",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Xin Zhao_Sona",
+      "source": "Xin Zhao",
+      "target": "Sona",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ambessa_Mel",
+      "source": "Ambessa",
+      "target": "Mel",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ambessa_Caitlyn",
+      "source": "Ambessa",
+      "target": "Caitlyn",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ambessa_LeBlanc",
+      "source": "Ambessa",
+      "target": "LeBlanc",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Mel_Ambessa",
+      "source": "Mel",
+      "target": "Ambessa",
+      "type": "mutual",
+      "label": "mother-daughter",
+      "title": "Mel is Ambessa's daughter, sent away to Piltover and later reunited to learn about hextech"
+    },
+    {
+      "id": "edge_Mel_Jayce",
+      "source": "Mel",
+      "target": "Jayce",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Mel_LeBlanc",
+      "source": "Mel",
+      "target": "LeBlanc",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Caitlyn_Vi",
+      "source": "Caitlyn",
+      "target": "Vi",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Worked together to bring down Old Hungry's Scars and catch Jinx"
+    },
+    {
+      "id": "edge_Caitlyn_Jinx",
+      "source": "Caitlyn",
+      "target": "Jinx",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Tries to catch Jinx as part of Piltover's law enforcement"
+    },
+    {
+      "id": "edge_LeBlanc_Vladimir",
+      "source": "LeBlanc",
+      "target": "Vladimir",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Formed a pact and wove dark magic together"
+    },
+    {
+      "id": "edge_LeBlanc_Mel",
+      "source": "LeBlanc",
+      "target": "Mel",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_LeBlanc_Mordekaiser",
+      "source": "LeBlanc",
+      "target": "Mordekaiser",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Anivia_Ornn",
+      "source": "Anivia",
+      "target": "Ornn",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Anivia_Volibear",
+      "source": "Anivia",
+      "target": "Volibear",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Volibear's desire to destroy the Three Sisters differs from Anivia's inclination to work with them"
+    },
+    {
+      "id": "edge_Anivia_Ashe",
+      "source": "Anivia",
+      "target": "Ashe",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Anivia_Nunu & Willump",
+      "source": "Anivia",
+      "target": "Nunu & Willump",
+      "type": "mutual",
+      "label": "neutral",
+      "title": "Anivia's wings bring frost to the Freljord, symbolizing the harsh environment of the region"
+    },
+    {
+      "id": "edge_Ornn_Volibear",
+      "source": "Ornn",
+      "target": "Volibear",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Ornn and Volibear are brothers, but they had a fight due to Ornn's refusal to arm Volibear's warriors"
+    },
+    {
+      "id": "edge_Ornn_Anivia",
+      "source": "Ornn",
+      "target": "Anivia",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ornn_Braum",
+      "source": "Ornn",
+      "target": "Braum",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Ornn possibly created Braum's shield, indicating a past collaboration or favor"
+    },
+    {
+      "id": "edge_Volibear_Ornn",
+      "source": "Volibear",
+      "target": "Ornn",
+      "type": "mutual",
+      "label": "siblings",
+      "title": "Had a catastrophic battle at the mountain's peak, resulting in the destruction of the Hearthblood and their accomplishments"
+    },
+    {
+      "id": "edge_Volibear_Anivia",
+      "source": "Volibear",
+      "target": "Anivia",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Volibear_Lissandra",
+      "source": "Volibear",
+      "target": "Lissandra",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ashe_Sejuani",
+      "source": "Ashe",
+      "target": "Sejuani",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Ashe is the only person Sejuani considers a friend, but they are also opponents in their conquests"
+    },
+    {
+      "id": "edge_Ashe_Tryndamere",
+      "source": "Ashe",
+      "target": "Tryndamere",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Ashe seeks to strengthen her position, possibly opposing Tryndamere's interests"
+    },
+    {
+      "id": "edge_Ashe_Braum",
+      "source": "Ashe",
+      "target": "Braum",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Braum sees Ashe as a leader who may be able to end the feuding among the Freljord's tribes"
+    },
+    {
+      "id": "edge_Ashe_Lissandra",
+      "source": "Ashe",
+      "target": "Lissandra",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nunu & Willump_Lissandra",
+      "source": "Nunu & Willump",
+      "target": "Lissandra",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nunu & Willump_Anivia",
+      "source": "Nunu & Willump",
+      "target": "Anivia",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Aphelios_Diana",
+      "source": "Aphelios",
+      "target": "Diana",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Aphelios_Leona",
+      "source": "Aphelios",
+      "target": "Leona",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Diana_Leona",
+      "source": "Diana",
+      "target": "Leona",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Differing beliefs and ideologies, specifically regarding the Solari and Lunari"
+    },
+    {
+      "id": "edge_Diana_Taric",
+      "source": "Diana",
+      "target": "Taric",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Diana_Zoe",
+      "source": "Diana",
+      "target": "Zoe",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Diana_Pantheon",
+      "source": "Diana",
+      "target": "Pantheon",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Leona_Diana",
+      "source": "Leona",
+      "target": "Diana",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Leona is a friend of Diana, but they have differing views on the Lunari and the Solari"
+    },
+    {
+      "id": "edge_Leona_Taric",
+      "source": "Leona",
+      "target": "Taric",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Leona_Aurelion Sol",
+      "source": "Leona",
+      "target": "Aurelion Sol",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Leona_Pantheon",
+      "source": "Leona",
+      "target": "Pantheon",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Sejuani_Ashe",
+      "source": "Sejuani",
+      "target": "Ashe",
+      "type": "mutual",
+      "label": "family",
+      "title": "Separated when their tribes' fellowship ended"
+    },
+    {
+      "id": "edge_Sejuani_Lissandra",
+      "source": "Sejuani",
+      "target": "Lissandra",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Sejuani_Olaf",
+      "source": "Sejuani",
+      "target": "Olaf",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Sejuani offers Olaf a deal to join her campaign in exchange for a glorious death"
+    },
+    {
+      "id": "edge_Braum_Ashe",
+      "source": "Braum",
+      "target": "Ashe",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Braum_Tryndamere",
+      "source": "Braum",
+      "target": "Tryndamere",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Braum_Lissandra",
+      "source": "Braum",
+      "target": "Lissandra",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Braum_Ornn",
+      "source": "Braum",
+      "target": "Ornn",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Braum wields a shield made by Ornn, indicating a connection between the two"
+    },
+    {
+      "id": "edge_Lissandra_Ashe",
+      "source": "Lissandra",
+      "target": "Ashe",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Lissandra_Sejuani",
+      "source": "Lissandra",
+      "target": "Sejuani",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Lissandra_Nunu & Willump",
+      "source": "Lissandra",
+      "target": "Nunu & Willump",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Aurelion Sol_Soraka",
+      "source": "Aurelion Sol",
+      "target": "Soraka",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Aurelion Sol_Leona",
+      "source": "Aurelion Sol",
+      "target": "Leona",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Aurelion Sol_Diana",
+      "source": "Aurelion Sol",
+      "target": "Diana",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Soraka_Aurelion Sol",
+      "source": "Soraka",
+      "target": "Aurelion Sol",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Soraka_Syndra",
+      "source": "Soraka",
+      "target": "Syndra",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Soraka_Warwick",
+      "source": "Soraka",
+      "target": "Warwick",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Aurora_Ornn",
+      "source": "Aurora",
+      "target": "Ornn",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Aurora_Udyr",
+      "source": "Aurora",
+      "target": "Udyr",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Aurora_Anivia",
+      "source": "Aurora",
+      "target": "Anivia",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Aurora_Volibear",
+      "source": "Aurora",
+      "target": "Volibear",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Udyr_Lee Sin",
+      "source": "Udyr",
+      "target": "Lee Sin",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Udyr formed a bond with Lee Sin and joined him on his journey back to Ionia"
+    },
+    {
+      "id": "edge_Udyr_Sejuani",
+      "source": "Udyr",
+      "target": "Sejuani",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Udyr_Volibear",
+      "source": "Udyr",
+      "target": "Volibear",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Azir_Nasus",
+      "source": "Azir",
+      "target": "Nasus",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Both are key figures in Shuriman history and share a common goal of restoring Shurima to its former glory"
+    },
+    {
+      "id": "edge_Azir_Sivir",
+      "source": "Azir",
+      "target": "Sivir",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Sivir's blood helped revive Azir"
+    },
+    {
+      "id": "edge_Azir_Xerath",
+      "source": "Azir",
+      "target": "Xerath",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Xerath betrayed and killed Azir during the Ascension ritual"
+    },
+    {
+      "id": "edge_Azir_Renekton",
+      "source": "Azir",
+      "target": "Renekton",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Both are connected to the downfall of the Shuriman empire and the failure of the Sun Disc"
+    },
+    {
+      "id": "edge_Azir_Taliyah",
+      "source": "Azir",
+      "target": "Taliyah",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Azir_Cassiopeia",
+      "source": "Azir",
+      "target": "Cassiopeia",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nasus_Renekton",
+      "source": "Nasus",
+      "target": "Renekton",
+      "type": "mutual",
+      "label": "siblings",
+      "title": "Nasus is Renekton's older brother"
+    },
+    {
+      "id": "edge_Nasus_Azir",
+      "source": "Nasus",
+      "target": "Azir",
+      "type": "mutual",
+      "label": "siblings",
+      "title": "Nasus is Azir's brother"
+    },
+    {
+      "id": "edge_Nasus_Xerath",
+      "source": "Nasus",
+      "target": "Xerath",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Nasus and Renekton fought Xerath and sealed him within the Tomb of Emperors"
+    },
+    {
+      "id": "edge_Nasus_Sivir",
+      "source": "Nasus",
+      "target": "Sivir",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Nasus helped Sivir survive an encounter with Xerath"
+    },
+    {
+      "id": "edge_Sivir_Azir",
+      "source": "Sivir",
+      "target": "Azir",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Sivir_Nasus",
+      "source": "Sivir",
+      "target": "Nasus",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Sivir_Taliyah",
+      "source": "Sivir",
+      "target": "Taliyah",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Xerath_Renekton",
+      "source": "Xerath",
+      "target": "Renekton",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Xerath has been battling Renekton in the Tomb of the Emperors for centuries"
+    },
+    {
+      "id": "edge_Xerath_Cassiopeia",
+      "source": "Xerath",
+      "target": "Cassiopeia",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Xerath_Nasus",
+      "source": "Xerath",
+      "target": "Nasus",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Nasus is aware of Xerath's malevolent nature and his betrayal of Azir"
+    },
+    {
+      "id": "edge_Xerath_Azir",
+      "source": "Xerath",
+      "target": "Azir",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Xerath was once Azir's right-hand man but betrayed him to gain power for himself"
+    },
+    {
+      "id": "edge_Xerath_Sivir",
+      "source": "Xerath",
+      "target": "Sivir",
+      "type": "directed",
+      "label": "rivalry",
+      "title": "Xerath poses a threat to Sivir as he seeks to end Azir's bloodline"
+    },
+    {
+      "id": "edge_Xerath_Taliyah",
+      "source": "Xerath",
+      "target": "Taliyah",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Xerath_Brand",
+      "source": "Xerath",
+      "target": "Brand",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Renekton_Nasus",
+      "source": "Renekton",
+      "target": "Nasus",
+      "type": "mutual",
+      "label": "siblings",
+      "title": "Renekton is the younger brother of Nasus, with whom he has a complicated relationship due to their differing approaches to combat and morality"
+    },
+    {
+      "id": "edge_Renekton_Azir",
+      "source": "Renekton",
+      "target": "Azir",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Renekton was tasked with teaching Azir the ways of combat, indicating a past alliance or mentorship"
+    },
+    {
+      "id": "edge_Renekton_Xerath",
+      "source": "Renekton",
+      "target": "Xerath",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Renekton fought against Xerath and sealed him within the Tomb of Emperors, and was later influenced by Xerath's power, leading to a struggle with his sanity and savagery"
+    },
+    {
+      "id": "edge_Renekton_Sivir",
+      "source": "Renekton",
+      "target": "Sivir",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Taliyah_Yasuo",
+      "source": "Taliyah",
+      "target": "Yasuo",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Yasuo trained Taliyah in elemental magic and gave her a treasured maple seed as a symbol of their bond"
+    },
+    {
+      "id": "edge_Taliyah_Azir",
+      "source": "Taliyah",
+      "target": "Azir",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Taliyah_Nasus",
+      "source": "Taliyah",
+      "target": "Nasus",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Taliyah_Sivir",
+      "source": "Taliyah",
+      "target": "Sivir",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Taliyah assisted Sivir in her struggle against Xerath"
+    },
+    {
+      "id": "edge_Taliyah_Xerath",
+      "source": "Taliyah",
+      "target": "Xerath",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Taliyah assisted Sivir in her struggle against Xerath, indicating opposition to Xerath"
+    },
+    {
+      "id": "edge_Cassiopeia_Katarina",
+      "source": "Cassiopeia",
+      "target": "Katarina",
+      "type": "mutual",
+      "label": "siblings",
+      "title": "Younger sister"
+    },
+    {
+      "id": "edge_Cassiopeia_Renekton",
+      "source": "Cassiopeia",
+      "target": "Renekton",
+      "type": "directed",
+      "label": "rivalry",
+      "title": "Freed him from the Tomb of Emperors, but their goals and values likely conflict"
+    },
+    {
+      "id": "edge_Cassiopeia_Nasus",
+      "source": "Cassiopeia",
+      "target": "Nasus",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Cassiopeia_Xerath",
+      "source": "Cassiopeia",
+      "target": "Xerath",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Freed him from the Tomb of Emperors, but their goals and values likely conflict"
+    },
+    {
+      "id": "edge_Cassiopeia_Sivir",
+      "source": "Cassiopeia",
+      "target": "Sivir",
+      "type": "directed",
+      "label": "rivalry",
+      "title": "Former ally in an expedition, later betrayed by her father"
+    },
+    {
+      "id": "edge_Cassiopeia_Azir",
+      "source": "Cassiopeia",
+      "target": "Azir",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Cassiopeia_Talon",
+      "source": "Cassiopeia",
+      "target": "Talon",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Bard_Aurelion Sol",
+      "source": "Bard",
+      "target": "Aurelion Sol",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Bard_Ryze",
+      "source": "Bard",
+      "target": "Ryze",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ryze_Brand",
+      "source": "Ryze",
+      "target": "Brand",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ryze_Miss Fortune",
+      "source": "Ryze",
+      "target": "Miss Fortune",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ryze_Trundle",
+      "source": "Ryze",
+      "target": "Trundle",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ryze_Sona",
+      "source": "Ryze",
+      "target": "Sona",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ryze_Nasus",
+      "source": "Ryze",
+      "target": "Nasus",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ryze_Galio",
+      "source": "Ryze",
+      "target": "Galio",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ryze_Malzahar",
+      "source": "Ryze",
+      "target": "Malzahar",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Bel’Veth_Kai'Sa",
+      "source": "Bel’Veth",
+      "target": "Kai'Sa",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Bel’Veth_Lissandra",
+      "source": "Bel’Veth",
+      "target": "Lissandra",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Bel’Veth_Malzahar",
+      "source": "Bel’Veth",
+      "target": "Malzahar",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Bel’Veth_Vel'Koz",
+      "source": "Bel’Veth",
+      "target": "Vel'Koz",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kai'Sa_Malzahar",
+      "source": "Kai'Sa",
+      "target": "Malzahar",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Malzahar_Kassadin",
+      "source": "Malzahar",
+      "target": "Kassadin",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Malzahar_Kai'Sa",
+      "source": "Malzahar",
+      "target": "Kai'Sa",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vel'Koz_Kha'Zix",
+      "source": "Vel'Koz",
+      "target": "Kha'Zix",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vel'Koz_Cho'Gath",
+      "source": "Vel'Koz",
+      "target": "Cho'Gath",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vel'Koz_Kog'Maw",
+      "source": "Vel'Koz",
+      "target": "Kog'Maw",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vel'Koz_Rek'Sai",
+      "source": "Vel'Koz",
+      "target": "Rek'Sai",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Blitzcrank_Orianna",
+      "source": "Blitzcrank",
+      "target": "Orianna",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Blitzcrank_Viktor",
+      "source": "Blitzcrank",
+      "target": "Viktor",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Orianna_Blitzcrank",
+      "source": "Orianna",
+      "target": "Blitzcrank",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Orianna_Camille",
+      "source": "Orianna",
+      "target": "Camille",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Orianna_Skarner",
+      "source": "Orianna",
+      "target": "Skarner",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Viktor_Jayce",
+      "source": "Viktor",
+      "target": "Jayce",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Viktor and Jayce were once friends and colleagues, but Viktor's obsession with the Glorious Evolution led to a complicated and antagonistic past between them"
+    },
+    {
+      "id": "edge_Viktor_Heimerdinger",
+      "source": "Viktor",
+      "target": "Heimerdinger",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Viktor_Blitzcrank",
+      "source": "Viktor",
+      "target": "Blitzcrank",
+      "type": "mutual",
+      "label": "creator/owner",
+      "title": "Viktor introduced a hextech crystal to Blitzcrank, leading to its development of self-awareness"
+    },
+    {
+      "id": "edge_Brand_Ryze",
+      "source": "Brand",
+      "target": "Ryze",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Brand_Anivia",
+      "source": "Brand",
+      "target": "Anivia",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Brand_Lissandra",
+      "source": "Brand",
+      "target": "Lissandra",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Brand_Nasus",
+      "source": "Brand",
+      "target": "Nasus",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Brand_Renekton",
+      "source": "Brand",
+      "target": "Renekton",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Brand_Xerath",
+      "source": "Brand",
+      "target": "Xerath",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Briar_Sion",
+      "source": "Briar",
+      "target": "Sion",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Briar_Swain",
+      "source": "Briar",
+      "target": "Swain",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Briar_Talon",
+      "source": "Briar",
+      "target": "Talon",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Briar_Vladimir",
+      "source": "Briar",
+      "target": "Vladimir",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Sion_Swain",
+      "source": "Sion",
+      "target": "Swain",
+      "type": "directed",
+      "label": "rivalry",
+      "title": "Opposing Noxian leader with differing ideologies"
+    },
+    {
+      "id": "edge_Sion_Jarvan IV",
+      "source": "Sion",
+      "target": "Jarvan IV",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Sion_LeBlanc",
+      "source": "Sion",
+      "target": "LeBlanc",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Swain_LeBlanc",
+      "source": "Swain",
+      "target": "LeBlanc",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Swain_Darius",
+      "source": "Swain",
+      "target": "Darius",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Swain_Katarina",
+      "source": "Swain",
+      "target": "Katarina",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Swain_Draven",
+      "source": "Swain",
+      "target": "Draven",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Swain_Vladimir",
+      "source": "Swain",
+      "target": "Vladimir",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Talon_Katarina",
+      "source": "Talon",
+      "target": "Katarina",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Talon_Quinn",
+      "source": "Talon",
+      "target": "Quinn",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Talon_Cassiopeia",
+      "source": "Talon",
+      "target": "Cassiopeia",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vladimir_Swain",
+      "source": "Vladimir",
+      "target": "Swain",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "As a master of dark magic, Vladimir's interests and methods may conflict with those of Swain, the Grandmaster of the Noxian High Command."
+    },
+    {
+      "id": "edge_Vladimir_LeBlanc",
+      "source": "Vladimir",
+      "target": "LeBlanc",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vladimir_Elise",
+      "source": "Vladimir",
+      "target": "Elise",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vladimir_Kayn",
+      "source": "Vladimir",
+      "target": "Kayn",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vi_Caitlyn",
+      "source": "Vi",
+      "target": "Caitlyn",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Partners in the Wardens"
+    },
+    {
+      "id": "edge_Vi_Jinx",
+      "source": "Vi",
+      "target": "Jinx",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Tasked with catching Jinx and stopping her chaotic crimes"
+    },
+    {
+      "id": "edge_Vi_Ekko",
+      "source": "Vi",
+      "target": "Ekko",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jinx_Caitlyn",
+      "source": "Jinx",
+      "target": "Caitlyn",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jinx_Vi",
+      "source": "Jinx",
+      "target": "Vi",
+      "type": "mutual",
+      "label": "siblings",
+      "title": "Jinx and Vi are sisters, with a complicated and often antagonistic relationship"
+    },
+    {
+      "id": "edge_Jinx_Ekko",
+      "source": "Jinx",
+      "target": "Ekko",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Camille_Caitlyn",
+      "source": "Camille",
+      "target": "Caitlyn",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Camille_Ezreal",
+      "source": "Camille",
+      "target": "Ezreal",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Camille_Jayce",
+      "source": "Camille",
+      "target": "Jayce",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Camille_Viktor",
+      "source": "Camille",
+      "target": "Viktor",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Camille_Vi",
+      "source": "Camille",
+      "target": "Vi",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Camille_Ekko",
+      "source": "Camille",
+      "target": "Ekko",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Camille_Orianna",
+      "source": "Camille",
+      "target": "Orianna",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Camille_Warwick",
+      "source": "Camille",
+      "target": "Warwick",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ezreal_Kassadin",
+      "source": "Ezreal",
+      "target": "Kassadin",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ezreal_Lux",
+      "source": "Ezreal",
+      "target": "Lux",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ezreal_Rek'Sai",
+      "source": "Ezreal",
+      "target": "Rek'Sai",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jayce_Ezreal",
+      "source": "Jayce",
+      "target": "Ezreal",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jayce_Camille",
+      "source": "Jayce",
+      "target": "Camille",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jayce_Caitlyn",
+      "source": "Jayce",
+      "target": "Caitlyn",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jayce_Vi",
+      "source": "Jayce",
+      "target": "Vi",
+      "type": "directed",
+      "label": "rivalry",
+      "title": "Jayce and Vi have a complicated past, with Jayce viewing Vi as a troublemaker and Vi seeing Jayce as arrogant and dismissive."
+    },
+    {
+      "id": "edge_Jayce_Viktor",
+      "source": "Jayce",
+      "target": "Viktor",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jayce_Skarner",
+      "source": "Jayce",
+      "target": "Skarner",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ekko_Jinx",
+      "source": "Ekko",
+      "target": "Jinx",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ekko_Camille",
+      "source": "Ekko",
+      "target": "Camille",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ekko_Vi",
+      "source": "Ekko",
+      "target": "Vi",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ekko_Viktor",
+      "source": "Ekko",
+      "target": "Viktor",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ekko_Caitlyn",
+      "source": "Ekko",
+      "target": "Caitlyn",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ekko_Jayce",
+      "source": "Ekko",
+      "target": "Jayce",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ekko_Janna",
+      "source": "Ekko",
+      "target": "Janna",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Warwick_Camille",
+      "source": "Warwick",
+      "target": "Camille",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Warwick_Singed",
+      "source": "Warwick",
+      "target": "Singed",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Warwick_Vayne",
+      "source": "Warwick",
+      "target": "Vayne",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Katarina_Cassiopeia",
+      "source": "Katarina",
+      "target": "Cassiopeia",
+      "type": "mutual",
+      "label": "siblings",
+      "title": "Katarina is the sister of Cassiopeia"
+    },
+    {
+      "id": "edge_Katarina_Sion",
+      "source": "Katarina",
+      "target": "Sion",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Katarina_Talon",
+      "source": "Katarina",
+      "target": "Talon",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Katarina_Garen",
+      "source": "Katarina",
+      "target": "Garen",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Katarina_Swain",
+      "source": "Katarina",
+      "target": "Swain",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Katarina_Darius",
+      "source": "Katarina",
+      "target": "Darius",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Cho'Gath_Kog'Maw",
+      "source": "Cho'Gath",
+      "target": "Kog'Maw",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Cho'Gath_Kha'Zix",
+      "source": "Cho'Gath",
+      "target": "Kha'Zix",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Cho'Gath_Vel'Koz",
+      "source": "Cho'Gath",
+      "target": "Vel'Koz",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kog'Maw_Malzahar",
+      "source": "Kog'Maw",
+      "target": "Malzahar",
+      "type": "directed",
+      "label": "rivalry",
+      "title": "Kog'Maw is drawn towards Malzahar with an insatiable appetite that leads to destruction"
+    },
+    {
+      "id": "edge_Kog'Maw_Kha'Zix",
+      "source": "Kog'Maw",
+      "target": "Kha'Zix",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kog'Maw_Cho'Gath",
+      "source": "Kog'Maw",
+      "target": "Cho'Gath",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kog'Maw_Vel'Koz",
+      "source": "Kog'Maw",
+      "target": "Vel'Koz",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kha'Zix_Cho'Gath",
+      "source": "Kha'Zix",
+      "target": "Cho'Gath",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kha'Zix_Kog'Maw",
+      "source": "Kha'Zix",
+      "target": "Kog'Maw",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kha'Zix_Rengar",
+      "source": "Kha'Zix",
+      "target": "Rengar",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Kha'Zix and Rengar are equal predators and have a history of conflict, with Kha'Zix having ripped out one of Rengar's eyes and escaped"
+    },
+    {
+      "id": "edge_Kha'Zix_Vel'Koz",
+      "source": "Kha'Zix",
+      "target": "Vel'Koz",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Corki_Heimerdinger",
+      "source": "Corki",
+      "target": "Heimerdinger",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Corki_Veigar",
+      "source": "Corki",
+      "target": "Veigar",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Heimerdinger_Corki",
+      "source": "Heimerdinger",
+      "target": "Corki",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Colleague and possibly a friend"
+    },
+    {
+      "id": "edge_Heimerdinger_Gnar",
+      "source": "Heimerdinger",
+      "target": "Gnar",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Heimerdinger_Ziggs",
+      "source": "Heimerdinger",
+      "target": "Ziggs",
+      "type": "mutual",
+      "label": "mentor",
+      "title": "Ziggs aspires to be like Heimerdinger"
+    },
+    {
+      "id": "edge_Heimerdinger_Rumble",
+      "source": "Heimerdinger",
+      "target": "Rumble",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Rumble sees Heimerdinger as a 'sellout'"
+    },
+    {
+      "id": "edge_Heimerdinger_Veigar",
+      "source": "Heimerdinger",
+      "target": "Veigar",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Veigar_Mordekaiser",
+      "source": "Veigar",
+      "target": "Mordekaiser",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Mordekaiser captured Veigar and forced him to use his magic for dark purposes"
+    },
+    {
+      "id": "edge_Veigar_LeBlanc",
+      "source": "Veigar",
+      "target": "LeBlanc",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Darius_Draven",
+      "source": "Darius",
+      "target": "Draven",
+      "type": "mutual",
+      "label": "siblings",
+      "title": "Darius is Draven's older brother"
+    },
+    {
+      "id": "edge_Darius_Katarina",
+      "source": "Darius",
+      "target": "Katarina",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Darius_Swain",
+      "source": "Darius",
+      "target": "Swain",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Darius_Vladimir",
+      "source": "Darius",
+      "target": "Vladimir",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Draven_Darius",
+      "source": "Draven",
+      "target": "Darius",
+      "type": "mutual",
+      "label": "siblings",
+      "title": "Draven is Darius's brother, both being warriors from Noxus"
+    },
+    {
+      "id": "edge_Draven_Swain",
+      "source": "Draven",
+      "target": "Swain",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Taric_Garen",
+      "source": "Taric",
+      "target": "Garen",
+      "type": "directed",
+      "label": "friends",
+      "title": "Both are champions of Demacia, working together for the kingdom's protection"
+    },
+    {
+      "id": "edge_Taric_Leona",
+      "source": "Taric",
+      "target": "Leona",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Taric_Diana",
+      "source": "Taric",
+      "target": "Diana",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Taric_Zoe",
+      "source": "Taric",
+      "target": "Zoe",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Zoe_Aurelion Sol",
+      "source": "Zoe",
+      "target": "Aurelion Sol",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Zoe_Pantheon",
+      "source": "Zoe",
+      "target": "Pantheon",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Pantheon_Aatrox",
+      "source": "Pantheon",
+      "target": "Aatrox",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Pantheon_Aurelion Sol",
+      "source": "Pantheon",
+      "target": "Aurelion Sol",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Pantheon_Leona",
+      "source": "Pantheon",
+      "target": "Leona",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Dr. Mundo_Ekko",
+      "source": "Dr. Mundo",
+      "target": "Ekko",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Janna_Ekko",
+      "source": "Janna",
+      "target": "Ekko",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Janna_Jinx",
+      "source": "Janna",
+      "target": "Jinx",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Janna_Vi",
+      "source": "Janna",
+      "target": "Vi",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Janna_Urgot",
+      "source": "Janna",
+      "target": "Urgot",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Elise_LeBlanc",
+      "source": "Elise",
+      "target": "LeBlanc",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Elise_Vladimir",
+      "source": "Elise",
+      "target": "Vladimir",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Evelynn_Vayne",
+      "source": "Evelynn",
+      "target": "Vayne",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Evelynn_Tahm Kench",
+      "source": "Evelynn",
+      "target": "Tahm Kench",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Evelynn_Ryze",
+      "source": "Evelynn",
+      "target": "Ryze",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vayne_Evelynn",
+      "source": "Vayne",
+      "target": "Evelynn",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vayne_Shaco",
+      "source": "Vayne",
+      "target": "Shaco",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vayne_Fiddlesticks",
+      "source": "Vayne",
+      "target": "Fiddlesticks",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Tahm Kench_Evelynn",
+      "source": "Tahm Kench",
+      "target": "Evelynn",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Tahm Kench_Fizz",
+      "source": "Tahm Kench",
+      "target": "Fizz",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Tahm Kench_Nautilus",
+      "source": "Tahm Kench",
+      "target": "Nautilus",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Tahm Kench_Pyke",
+      "source": "Tahm Kench",
+      "target": "Pyke",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kassadin_Malzahar",
+      "source": "Kassadin",
+      "target": "Malzahar",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kassadin_Ezreal",
+      "source": "Kassadin",
+      "target": "Ezreal",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Lux_Garen",
+      "source": "Lux",
+      "target": "Garen",
+      "type": "mutual",
+      "label": "siblings",
+      "title": "Lux is Garen's younger sister, and he struggles with the idea of her having magic due to Demacia's laws against it."
+    },
+    {
+      "id": "edge_Lux_Jarvan IV",
+      "source": "Lux",
+      "target": "Jarvan IV",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Lux_Galio",
+      "source": "Lux",
+      "target": "Galio",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Rek'Sai_Skarner",
+      "source": "Rek'Sai",
+      "target": "Skarner",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Fiddlesticks_Nocturne",
+      "source": "Fiddlesticks",
+      "target": "Nocturne",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Fiddlesticks_Shaco",
+      "source": "Fiddlesticks",
+      "target": "Shaco",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nocturne_Evelynn",
+      "source": "Nocturne",
+      "target": "Evelynn",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nocturne_Tahm Kench",
+      "source": "Nocturne",
+      "target": "Tahm Kench",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nocturne_Zed",
+      "source": "Nocturne",
+      "target": "Zed",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Shaco_Fiddlesticks",
+      "source": "Shaco",
+      "target": "Fiddlesticks",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Shaco_Nocturne",
+      "source": "Shaco",
+      "target": "Nocturne",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Fiora_Jarvan IV",
+      "source": "Fiora",
+      "target": "Jarvan IV",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Fiora_Garen",
+      "source": "Fiora",
+      "target": "Garen",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Fiora_Jax",
+      "source": "Fiora",
+      "target": "Jax",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jarvan IV_Garen",
+      "source": "Jarvan IV",
+      "target": "Garen",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Close friend and comrade, fought together in many battles"
+    },
+    {
+      "id": "edge_Jarvan IV_Shyvana",
+      "source": "Jarvan IV",
+      "target": "Shyvana",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jarvan IV_Xin Zhao",
+      "source": "Jarvan IV",
+      "target": "Xin Zhao",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jarvan IV_Lux",
+      "source": "Jarvan IV",
+      "target": "Lux",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Garen_Lux",
+      "source": "Garen",
+      "target": "Lux",
+      "type": "mutual",
+      "label": "siblings",
+      "title": "Garen is Lux's older brother"
+    },
+    {
+      "id": "edge_Garen_Jarvan IV",
+      "source": "Garen",
+      "target": "Jarvan IV",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Garen is a close friend of Prince Jarvan"
+    },
+    {
+      "id": "edge_Garen_Quinn",
+      "source": "Garen",
+      "target": "Quinn",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jax_Aatrox",
+      "source": "Jax",
+      "target": "Aatrox",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jax_Fiora",
+      "source": "Jax",
+      "target": "Fiora",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jax_Kassadin",
+      "source": "Jax",
+      "target": "Kassadin",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Jax_Zilean",
+      "source": "Jax",
+      "target": "Zilean",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Fizz_Illaoi",
+      "source": "Fizz",
+      "target": "Illaoi",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Fizz_Nami",
+      "source": "Fizz",
+      "target": "Nami",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Fizz_Nautilus",
+      "source": "Fizz",
+      "target": "Nautilus",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Illaoi_Gangplank",
+      "source": "Illaoi",
+      "target": "Gangplank",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Illaoi_Miss Fortune",
+      "source": "Illaoi",
+      "target": "Miss Fortune",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Illaoi_Hecarim",
+      "source": "Illaoi",
+      "target": "Hecarim",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nami_Fizz",
+      "source": "Nami",
+      "target": "Fizz",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nami_Nautilus",
+      "source": "Nami",
+      "target": "Nautilus",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nautilus_Fizz",
+      "source": "Nautilus",
+      "target": "Fizz",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nautilus_Illaoi",
+      "source": "Nautilus",
+      "target": "Illaoi",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nautilus_Nami",
+      "source": "Nautilus",
+      "target": "Nami",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nautilus_Tahm Kench",
+      "source": "Nautilus",
+      "target": "Tahm Kench",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Galio_Kayle",
+      "source": "Galio",
+      "target": "Kayle",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Galio_Morgana",
+      "source": "Galio",
+      "target": "Morgana",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Galio_Lux",
+      "source": "Galio",
+      "target": "Lux",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Galio_Sylas",
+      "source": "Galio",
+      "target": "Sylas",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kayle_Galio",
+      "source": "Kayle",
+      "target": "Galio",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kayle_Morgana",
+      "source": "Kayle",
+      "target": "Morgana",
+      "type": "mutual",
+      "label": "siblings",
+      "title": "Kayle and Morgana are twin sisters, but have differing ideologies, with Kayle being a strong advocate for justice and Morgana having a more extreme and opposing view."
+    },
+    {
+      "id": "edge_Kayle_Taric",
+      "source": "Kayle",
+      "target": "Taric",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Morgana_Kayle",
+      "source": "Morgana",
+      "target": "Kayle",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Morgana and Kayle are twin sisters with opposing views on justice, leading to a complex and often antagonistic relationship."
+    },
+    {
+      "id": "edge_Morgana_Galio",
+      "source": "Morgana",
+      "target": "Galio",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Morgana_Taric",
+      "source": "Morgana",
+      "target": "Taric",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Sylas_Lux",
+      "source": "Sylas",
+      "target": "Lux",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Sylas_Galio",
+      "source": "Sylas",
+      "target": "Galio",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Gangplank_Miss Fortune",
+      "source": "Gangplank",
+      "target": "Miss Fortune",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Killed Abigale Fortune and was overthrown by Miss Fortune"
+    },
+    {
+      "id": "edge_Gangplank_Swain",
+      "source": "Gangplank",
+      "target": "Swain",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Gangplank_Zed",
+      "source": "Gangplank",
+      "target": "Zed",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Gangplank_Illaoi",
+      "source": "Gangplank",
+      "target": "Illaoi",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Gangplank_Twisted Fate",
+      "source": "Gangplank",
+      "target": "Twisted Fate",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Involved in a power struggle after Gangplank's death"
+    },
+    {
+      "id": "edge_Gangplank_Graves",
+      "source": "Gangplank",
+      "target": "Graves",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Involved in an ongoing conflict with Graves as a rival ship captain"
+    },
+    {
+      "id": "edge_Miss Fortune_Gangplank",
+      "source": "Miss Fortune",
+      "target": "Gangplank",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "She brought Gangplank down by destroying his ship and killing his crew, driven by a desire for vengeance"
+    },
+    {
+      "id": "edge_Miss Fortune_Illaoi",
+      "source": "Miss Fortune",
+      "target": "Illaoi",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Miss Fortune_Twisted Fate",
+      "source": "Miss Fortune",
+      "target": "Twisted Fate",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Miss Fortune_Graves",
+      "source": "Miss Fortune",
+      "target": "Graves",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Miss Fortune_Lucian",
+      "source": "Miss Fortune",
+      "target": "Lucian",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Miss Fortune_Olaf",
+      "source": "Miss Fortune",
+      "target": "Olaf",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Miss Fortune_Hecarim",
+      "source": "Miss Fortune",
+      "target": "Hecarim",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Miss Fortune_Ryze",
+      "source": "Miss Fortune",
+      "target": "Ryze",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Twisted Fate_Graves",
+      "source": "Twisted Fate",
+      "target": "Graves",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Formed a lucrative partnership, stealing from the rich and swindling the foolish"
+    },
+    {
+      "id": "edge_Twisted Fate_Gangplank",
+      "source": "Twisted Fate",
+      "target": "Gangplank",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Twisted Fate_Miss Fortune",
+      "source": "Twisted Fate",
+      "target": "Miss Fortune",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Graves_Twisted Fate",
+      "source": "Graves",
+      "target": "Twisted Fate",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Graves has a history of partnership and rivalry with Twisted Fate"
+    },
+    {
+      "id": "edge_Graves_Gangplank",
+      "source": "Graves",
+      "target": "Gangplank",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Graves_Miss Fortune",
+      "source": "Graves",
+      "target": "Miss Fortune",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Quinn_Jarvan IV",
+      "source": "Quinn",
+      "target": "Jarvan IV",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Quinn_Garen",
+      "source": "Quinn",
+      "target": "Garen",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Quinn_Sona",
+      "source": "Quinn",
+      "target": "Sona",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Gnar_Nunu & Willump",
+      "source": "Gnar",
+      "target": "Nunu & Willump",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Gnar_Rengar",
+      "source": "Gnar",
+      "target": "Rengar",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Rengar_Kha'Zix",
+      "source": "Rengar",
+      "target": "Kha'Zix",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Kha'Zix considers Rengar his equal and hungers to conquer and consume him"
+    },
+    {
+      "id": "edge_Rengar_Nidalee",
+      "source": "Rengar",
+      "target": "Nidalee",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Rengar_Gnar",
+      "source": "Rengar",
+      "target": "Gnar",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Gragas_Tryndamere",
+      "source": "Gragas",
+      "target": "Tryndamere",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Gragas_Braum",
+      "source": "Gragas",
+      "target": "Braum",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Gragas_Jax",
+      "source": "Gragas",
+      "target": "Jax",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Gragas_Ashe",
+      "source": "Gragas",
+      "target": "Ashe",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Yorick_Hecarim",
+      "source": "Yorick",
+      "target": "Hecarim",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Yorick_Kalista",
+      "source": "Yorick",
+      "target": "Kalista",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Yorick_Thresh",
+      "source": "Yorick",
+      "target": "Thresh",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Yorick_Karthus",
+      "source": "Yorick",
+      "target": "Karthus",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Yorick_Maokai",
+      "source": "Yorick",
+      "target": "Maokai",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Yorick_Kindred",
+      "source": "Yorick",
+      "target": "Kindred",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Hecarim_Kalista",
+      "source": "Hecarim",
+      "target": "Kalista",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Hecarim betrayed and killed Kalista, driving his spear through her armored back."
+    },
+    {
+      "id": "edge_Hecarim_Thresh",
+      "source": "Hecarim",
+      "target": "Thresh",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Hecarim and Thresh were both affected by the Black Mist, but Thresh grew in power while Hecarim was trapped and weakened."
+    },
+    {
+      "id": "edge_Hecarim_Yorick",
+      "source": "Hecarim",
+      "target": "Yorick",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kalista_Hecarim",
+      "source": "Kalista",
+      "target": "Hecarim",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Kalista was betrayed and killed by Hecarim, now seeking revenge as a specter"
+    },
+    {
+      "id": "edge_Kalista_Thresh",
+      "source": "Kalista",
+      "target": "Thresh",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kalista_Yorick",
+      "source": "Kalista",
+      "target": "Yorick",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Thresh_Hecarim",
+      "source": "Thresh",
+      "target": "Hecarim",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Thresh_Karthus",
+      "source": "Thresh",
+      "target": "Karthus",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Thresh_Lucian",
+      "source": "Thresh",
+      "target": "Lucian",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Thresh killed Senna and is hunted by Lucian"
+    },
+    {
+      "id": "edge_Thresh_Kalista",
+      "source": "Thresh",
+      "target": "Kalista",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Thresh_Yorick",
+      "source": "Thresh",
+      "target": "Yorick",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ziggs_Heimerdinger",
+      "source": "Ziggs",
+      "target": "Heimerdinger",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Fellow yordle inventor and competitor in the field of science and innovation"
+    },
+    {
+      "id": "edge_Ziggs_Rumble",
+      "source": "Ziggs",
+      "target": "Rumble",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ziggs_Veigar",
+      "source": "Ziggs",
+      "target": "Veigar",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Rumble_Tristana",
+      "source": "Rumble",
+      "target": "Tristana",
+      "type": "mutual",
+      "label": "seeking approval",
+      "title": "Rumble seeks to win Tristana's approval by creating advanced technology and weapons"
+    },
+    {
+      "id": "edge_Rumble_Ziggs",
+      "source": "Rumble",
+      "target": "Ziggs",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Rumble_Heimerdinger",
+      "source": "Rumble",
+      "target": "Heimerdinger",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Rumble_Teemo",
+      "source": "Rumble",
+      "target": "Teemo",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Rumble_Veigar",
+      "source": "Rumble",
+      "target": "Veigar",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Hwei_Jhin",
+      "source": "Hwei",
+      "target": "Jhin",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Hwei_Shen",
+      "source": "Hwei",
+      "target": "Shen",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Hwei_Zed",
+      "source": "Hwei",
+      "target": "Zed",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Irelia_Karma",
+      "source": "Irelia",
+      "target": "Karma",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Irelia_Swain",
+      "source": "Irelia",
+      "target": "Swain",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Karma_Irelia",
+      "source": "Karma",
+      "target": "Irelia",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Karma's actions and teachings may have influenced Irelia's own path"
+    },
+    {
+      "id": "edge_Karma_Lee Sin",
+      "source": "Karma",
+      "target": "Lee Sin",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Ivern_Lillia",
+      "source": "Ivern",
+      "target": "Lillia",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Connected through the Dreaming Tree and the descendants of Omikayalan"
+    },
+    {
+      "id": "edge_Urgot_Swain",
+      "source": "Urgot",
+      "target": "Swain",
+      "type": "directed",
+      "label": "rivalry",
+      "title": "As a former Noxian, Urgot may have a rivalry with Swain, the Grandmaster of the Noxian High Command"
+    },
+    {
+      "id": "edge_Urgot_Ekko",
+      "source": "Urgot",
+      "target": "Ekko",
+      "type": "directed",
+      "label": "rivalry",
+      "title": "As a ruler of the Dredge, Urgot may see Ekko, the Boy Who Shattered Time, as a potential threat to his authority"
+    },
+    {
+      "id": "edge_Urgot_Camille",
+      "source": "Urgot",
+      "target": "Camille",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Urgot_Darius",
+      "source": "Urgot",
+      "target": "Darius",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Shyvana_Jarvan IV",
+      "source": "Shyvana",
+      "target": "Jarvan IV",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Saved Prince Jarvan's life and became his ally and friend"
+    },
+    {
+      "id": "edge_Shyvana_Quinn",
+      "source": "Shyvana",
+      "target": "Quinn",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Shyvana_Sona",
+      "source": "Shyvana",
+      "target": "Sona",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Zilean_Aatrox",
+      "source": "Zilean",
+      "target": "Aatrox",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Zilean_Jax",
+      "source": "Zilean",
+      "target": "Jax",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Zilean_Vel'Koz",
+      "source": "Zilean",
+      "target": "Vel'Koz",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Skarner_Malphite",
+      "source": "Skarner",
+      "target": "Malphite",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Skarner_Qiyana",
+      "source": "Skarner",
+      "target": "Qiyana",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Skarner_Milio",
+      "source": "Skarner",
+      "target": "Milio",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Lee Sin_Karma",
+      "source": "Lee Sin",
+      "target": "Karma",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Lee Sin_Udyr",
+      "source": "Lee Sin",
+      "target": "Udyr",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Close friend and training partner, helped Udyr master his powers"
+    },
+    {
+      "id": "edge_Karthus_Mordekaiser",
+      "source": "Karthus",
+      "target": "Mordekaiser",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Karthus_Thresh",
+      "source": "Karthus",
+      "target": "Thresh",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Both serve the Shadow Isles"
+    },
+    {
+      "id": "edge_Karthus_Yorick",
+      "source": "Karthus",
+      "target": "Yorick",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Karthus_Soraka",
+      "source": "Karthus",
+      "target": "Soraka",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Karthus_Kindred",
+      "source": "Karthus",
+      "target": "Kindred",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Mordekaiser_LeBlanc",
+      "source": "Mordekaiser",
+      "target": "LeBlanc",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Mordekaiser was betrayed by LeBlanc, a pale sorceress who once aided him"
+    },
+    {
+      "id": "edge_Mordekaiser_Veigar",
+      "source": "Mordekaiser",
+      "target": "Veigar",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Mordekaiser captured Veigar to use his magic for dark purposes"
+    },
+    {
+      "id": "edge_Mordekaiser_Vladimir",
+      "source": "Mordekaiser",
+      "target": "Vladimir",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kindred_Karthus",
+      "source": "Kindred",
+      "target": "Karthus",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kindred_Mordekaiser",
+      "source": "Kindred",
+      "target": "Mordekaiser",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kindred_Yorick",
+      "source": "Kindred",
+      "target": "Yorick",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kled_Swain",
+      "source": "Kled",
+      "target": "Swain",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kled_Darius",
+      "source": "Kled",
+      "target": "Darius",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kled_Tristana",
+      "source": "Kled",
+      "target": "Tristana",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Kled_Elise",
+      "source": "Kled",
+      "target": "Elise",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Tristana_Teemo",
+      "source": "Tristana",
+      "target": "Teemo",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Tristana is a friend and admirer of the Bandle Scouts, which Teemo is a part of"
+    },
+    {
+      "id": "edge_Tristana_Rumble",
+      "source": "Tristana",
+      "target": "Rumble",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_K’Sante_Azir",
+      "source": "K’Sante",
+      "target": "Azir",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_K’Sante_Renekton",
+      "source": "K’Sante",
+      "target": "Renekton",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_K’Sante_Xerath",
+      "source": "K’Sante",
+      "target": "Xerath",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Olaf_Sejuani",
+      "source": "Olaf",
+      "target": "Sejuani",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Olaf_Volibear",
+      "source": "Olaf",
+      "target": "Volibear",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Olaf_Miss Fortune",
+      "source": "Olaf",
+      "target": "Miss Fortune",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Olaf_Lucian",
+      "source": "Olaf",
+      "target": "Lucian",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Lulu_Veigar",
+      "source": "Lulu",
+      "target": "Veigar",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Lulu_Gnar",
+      "source": "Lulu",
+      "target": "Gnar",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Malphite_Ezreal",
+      "source": "Malphite",
+      "target": "Ezreal",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Malphite_Kassadin",
+      "source": "Malphite",
+      "target": "Kassadin",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Malphite_Qiyana",
+      "source": "Malphite",
+      "target": "Qiyana",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Malphite_Taliyah",
+      "source": "Malphite",
+      "target": "Taliyah",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Qiyana_Malphite",
+      "source": "Qiyana",
+      "target": "Malphite",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Qiyana_Rengar",
+      "source": "Qiyana",
+      "target": "Rengar",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Qiyana_Zyra",
+      "source": "Qiyana",
+      "target": "Zyra",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Maokai_Malphite",
+      "source": "Maokai",
+      "target": "Malphite",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Maokai_Zyra",
+      "source": "Maokai",
+      "target": "Zyra",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Maokai_Yorick",
+      "source": "Maokai",
+      "target": "Yorick",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Maokai battles to banish the scourge of unlife, which Yorick is a part of"
+    },
+    {
+      "id": "edge_Zyra_Ivern",
+      "source": "Zyra",
+      "target": "Ivern",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Zyra_Nidalee",
+      "source": "Zyra",
+      "target": "Nidalee",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Master Yi_Wukong",
+      "source": "Master Yi",
+      "target": "Wukong",
+      "type": "mutual",
+      "label": "mentor",
+      "title": "Master Yi is Wukong's mentor, teaching him patience and discipline"
+    },
+    {
+      "id": "edge_Master Yi_Singed",
+      "source": "Master Yi",
+      "target": "Singed",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Singed_Warwick",
+      "source": "Singed",
+      "target": "Warwick",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Singed conducted agonizing experiments on Warwick, seeking to transmute him into a deadly beast"
+    },
+    {
+      "id": "edge_Singed_Riven",
+      "source": "Singed",
+      "target": "Riven",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Singed_Master Yi",
+      "source": "Singed",
+      "target": "Master Yi",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Milio_Neeko",
+      "source": "Milio",
+      "target": "Neeko",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Milio_Nidalee",
+      "source": "Milio",
+      "target": "Nidalee",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Milio_Qiyana",
+      "source": "Milio",
+      "target": "Qiyana",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Neeko_Nidalee",
+      "source": "Neeko",
+      "target": "Nidalee",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Neeko and Nidalee are friends who explored the jungle together"
+    },
+    {
+      "id": "edge_Neeko_Rengar",
+      "source": "Neeko",
+      "target": "Rengar",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Neeko_Ezreal",
+      "source": "Neeko",
+      "target": "Ezreal",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nidalee_Neeko",
+      "source": "Nidalee",
+      "target": "Neeko",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Shared connection to the vastayan race and friendship in the hinterlands"
+    },
+    {
+      "id": "edge_Nidalee_Rengar",
+      "source": "Nidalee",
+      "target": "Rengar",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Naafiri_Aatrox",
+      "source": "Naafiri",
+      "target": "Aatrox",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Naafiri_Kayn",
+      "source": "Naafiri",
+      "target": "Kayn",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Naafiri_Varus",
+      "source": "Naafiri",
+      "target": "Varus",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nilah_Graves",
+      "source": "Nilah",
+      "target": "Graves",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nilah_Illaoi",
+      "source": "Nilah",
+      "target": "Illaoi",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nilah_Viego",
+      "source": "Nilah",
+      "target": "Viego",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Nilah_Fiddlesticks",
+      "source": "Nilah",
+      "target": "Fiddlesticks",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Poppy_Galio",
+      "source": "Poppy",
+      "target": "Galio",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Poppy_Shyvana",
+      "source": "Poppy",
+      "target": "Shyvana",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Pyke_Gangplank",
+      "source": "Pyke",
+      "target": "Gangplank",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Pyke_Miss Fortune",
+      "source": "Pyke",
+      "target": "Miss Fortune",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Sona_Taric",
+      "source": "Sona",
+      "target": "Taric",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Sona_Xin Zhao",
+      "source": "Sona",
+      "target": "Xin Zhao",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Sona_Ryze",
+      "source": "Sona",
+      "target": "Ryze",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Rakan_Xayah",
+      "source": "Rakan",
+      "target": "Xayah",
+      "type": "mutual",
+      "label": "in love",
+      "title": "Rakan and Xayah work together to reclaim the First Lands for the vastaya, and their relationship is built on trust and mutual understanding."
+    },
+    {
+      "id": "edge_Rakan_Zed",
+      "source": "Rakan",
+      "target": "Zed",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Xayah_Rakan",
+      "source": "Xayah",
+      "target": "Rakan",
+      "type": "mutual",
+      "label": "in love",
+      "title": "Xayah is Rakan's partner and they are part of the same rebellion"
+    },
+    {
+      "id": "edge_Xayah_Zed",
+      "source": "Xayah",
+      "target": "Zed",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Rell_LeBlanc",
+      "source": "Rell",
+      "target": "LeBlanc",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Rell_Samira",
+      "source": "Rell",
+      "target": "Samira",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Samira_Darius",
+      "source": "Samira",
+      "target": "Darius",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Samira_LeBlanc",
+      "source": "Samira",
+      "target": "LeBlanc",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Renata Glasc_Camille",
+      "source": "Renata Glasc",
+      "target": "Camille",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Renata Glasc_Ekko",
+      "source": "Renata Glasc",
+      "target": "Ekko",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Renata Glasc_Viktor",
+      "source": "Renata Glasc",
+      "target": "Viktor",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Renata Glasc_Zeri",
+      "source": "Renata Glasc",
+      "target": "Zeri",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Zeri_Ekko",
+      "source": "Zeri",
+      "target": "Ekko",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Riven_LeBlanc",
+      "source": "Riven",
+      "target": "LeBlanc",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Riven_Yasuo",
+      "source": "Riven",
+      "target": "Yasuo",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Riven's past actions had a significant impact on Yasuo's journey, and her role in Elder Souma's death is a point of contention between them"
+    },
+    {
+      "id": "edge_Teemo_Tristana",
+      "source": "Teemo",
+      "target": "Tristana",
+      "type": "mutual",
+      "label": "friends",
+      "title": "Both are Yordles and share a connection through their species and possibly through the Bandle Scouts"
+    },
+    {
+      "id": "edge_Teemo_Lulu",
+      "source": "Teemo",
+      "target": "Lulu",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Teemo_Corki",
+      "source": "Teemo",
+      "target": "Corki",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Trundle_Lissandra",
+      "source": "Trundle",
+      "target": "Lissandra",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Trundle_Ashe",
+      "source": "Trundle",
+      "target": "Ashe",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Trundle_Sejuani",
+      "source": "Trundle",
+      "target": "Sejuani",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Trundle_Ryze",
+      "source": "Trundle",
+      "target": "Ryze",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Seraphine_Skarner",
+      "source": "Seraphine",
+      "target": "Skarner",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Sett_Alistar",
+      "source": "Sett",
+      "target": "Alistar",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Sett_Draven",
+      "source": "Sett",
+      "target": "Draven",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Smolder_Viego",
+      "source": "Smolder",
+      "target": "Viego",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Smolder_Shyvana",
+      "source": "Smolder",
+      "target": "Shyvana",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Smolder_Aurelion Sol",
+      "source": "Smolder",
+      "target": "Aurelion Sol",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Syndra_Irelia",
+      "source": "Syndra",
+      "target": "Irelia",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Syndra_Karma",
+      "source": "Syndra",
+      "target": "Karma",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Twitch_Zac",
+      "source": "Twitch",
+      "target": "Zac",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Zac_Twitch",
+      "source": "Zac",
+      "target": "Twitch",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vex_Lucian",
+      "source": "Vex",
+      "target": "Lucian",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vex_Senna",
+      "source": "Vex",
+      "target": "Senna",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vex_Thresh",
+      "source": "Vex",
+      "target": "Thresh",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Vex_Viego",
+      "source": "Vex",
+      "target": "Viego",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Yunara_Xin Zhao",
+      "source": "Yunara",
+      "target": "Xin Zhao",
+      "type": "mutual",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Yunara_Kennen",
+      "source": "Yunara",
+      "target": "Kennen",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Yone_Yasuo",
+      "source": "Yone",
+      "target": "Yasuo",
+      "type": "mutual",
+      "label": "rivalry",
+      "title": "Yone is Yasuo's older half-brother and they had a duel where Yone was fatally wounded"
+    },
+    {
+      "id": "edge_Yone_Lillia",
+      "source": "Yone",
+      "target": "Lillia",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Yuumi_Norra",
+      "source": "Yuumi",
+      "target": "Norra",
+      "type": "directed",
+      "label": "master and apprentice",
+      "title": "Yuumi lives with and is on a mission to rescue her missing master Norra"
+    },
+    {
+      "id": "edge_Yuumi_Lulu",
+      "source": "Yuumi",
+      "target": "Lulu",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Yuumi_Tristana",
+      "source": "Yuumi",
+      "target": "Tristana",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Yuumi_Teemo",
+      "source": "Yuumi",
+      "target": "Teemo",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Zaahen_Xin Zhao",
+      "source": "Zaahen",
+      "target": "Xin Zhao",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Zaahen_Yunara",
+      "source": "Zaahen",
+      "target": "Yunara",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Zaahen_Kayn",
+      "source": "Zaahen",
+      "target": "Kayn",
+      "type": "directed",
+      "label": "connected"
+    },
+    {
+      "id": "edge_Zaahen_Varus",
+      "source": "Zaahen",
+      "target": "Varus",
+      "type": "directed",
+      "label": "connected"
+    }
+  ]
+}

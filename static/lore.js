@@ -22,10 +22,12 @@ const factionColors = {
   bandle_city: "#1E824C",
 };
 
+const edgeLabelFontColor = "#aaaaaa";
+
 function initLoreGraph() {
   window.isGraphInitialized = true;
 
-  fetch("/static/relationship_modelv2.json")
+  fetch("/static/relationship_model_v3.json")
     .then((response) => {
       if (!response.ok) throw new Error("Model Data not found.");
       return response.json();
@@ -127,21 +129,35 @@ function initLoreGraph() {
           targetNode &&
           sourceNode.faction.some((f) => targetNode.faction.includes(f));
 
+        const hasCustomLabel = edge.label && edge.label !== "connected";
+
         return {
           id: edge.id,
           from: edge.source,
           to: edge.target,
           arrows: edge.type === "directed" ? "to" : "",
+          label: hasCustomLabel ? edge.label : "",
+          title:
+            edge.title ||
+            (hasCustomLabel ? `Relation: ${edge.label}` : "Connection"),
           color: {
             color: edgeColor,
             highlight: "#007bff",
             hover: "#666666",
-            opacity: hasSharedFaction ? 0.4 : 0.15,
+            opacity: hasSharedFaction ? 0.45 : 0.2,
           },
-          width: edge.type === "mutual" ? 2 : 1,
+          width: hasCustomLabel ? 3 : edge.type === "mutual" ? 2 : 1,
           physics: true,
           length: undefined,
           springConstant: undefined,
+
+          font: {
+            color: edgeLabelFontColor,
+            size: 10,
+            strokeWidth: 3,
+            strokeColor: "#121212",
+            align: "top",
+          },
         };
       });
 
@@ -188,7 +204,8 @@ function initLoreGraph() {
           },
         },
         interaction: {
-          hover: false,
+          hover: true,
+          tooltipDelay: 250,
           dragNodes: true,
           zoomView: true,
           dragView: true,
@@ -208,8 +225,10 @@ function initLoreGraph() {
         const currentZoom = network.getScale();
         if (currentZoom < 0.5) {
           network.setOptions({ nodes: { font: { size: 0 } } });
+          network.setOptions({ edges: { font: { size: 0 } } });
         } else {
           network.setOptions({ nodes: { font: { size: 11 } } });
+          network.setOptions({ edges: { font: { size: 10 } } });
         }
       });
 
@@ -267,7 +286,7 @@ function initLoreGraph() {
     })
     .catch((error) => {
       // ⚡ REPARIERT: Kein print() mehr, sondern sauberes Logging!
-      console.error("Fehler beim Laden des Beziehungsmodells:", error);
+      console.error("Error loading relationship model:", error);
     });
 }
 
