@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>LoL Theorycrafter</title>
+    <title>LoLore</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='styles.css') }}"
@@ -19,7 +19,9 @@
     ></script>
   </head>
   <body>
-    <h1>LoL Mastery & Theorycrafting</h1>
+    <header class="main-header">
+      <h1>League of Legends Lore Connections and Mastery Overview</h1>
+    </header>
 
     <div class="tab-navigation">
       <button
@@ -27,55 +29,50 @@
         class="tab-button active"
         onclick="openTab('relations-tab', this)"
       >
-        Factions & Lore
+        Relationship Graph
       </button>
       <button
         id="btn-mastery-tab"
         class="tab-button"
         onclick="openTab('mastery-tab', this)"
       >
-        My Mastery
-      </button>
-      <button
-        id="btn-builds-tab"
-        class="tab-button"
-        onclick="openTab('builds-tab', this)"
-      >
-        Alternative Picks
+        Mastery Overview
       </button>
     </div>
 
     <div id="relations-tab" class="tab-content active">
-      <div class="search-box filter-bar">
-        <div>
-          <label for="filterFaction">Filter by Faction:</label>
-          <select id="filterFaction" onchange="applyFilters()">
-            <option value="all">All Factions</option>
-          </select>
-        </div>
-        <div>
-          <label for="filterConnections"
-            >Min. Connections: <span id="connValue">0</span></label
-          >
-          <input
-            type="range"
-            id="filterConnections"
-            min="0"
-            max="10"
-            value="0"
-            oninput="
-              document.getElementById('connValue').innerText = this.value;
-              applyFilters();
-            "
-          />
-        </div>
-      </div>
-
       <div id="lore-network-container">
         <div class="graph-legend">
           <h3>LoL Lore Netzwerk</h3>
+
+          <div class="filter-section">
+            <label for="filterFaction">Filter by Faction:</label>
+            <select id="filterFaction" onchange="applyFilters()">
+              <option value="all">All Factions</option>
+            </select>
+          </div>
+
+          <div class="filter-section">
+            <label for="filterConnections"
+              >Min. Connections: <span id="connValue">0</span></label
+            >
+            <input
+              type="range"
+              id="filterConnections"
+              min="0"
+              max="10"
+              value="0"
+              oninput="
+                document.getElementById('connValue').innerText = this.value;
+                applyFilters();
+              "
+            />
+          </div>
+
+          <hr style="border: 0; border-top: 1px solid #333; margin: 10px 0" />
           <div id="dynamicLegend"></div>
         </div>
+
         <div id="mynetwork"></div>
       </div>
     </div>
@@ -152,11 +149,6 @@
           </table>
         </div>
       </div>
-    </div>
-
-    <div id="builds-tab" class="tab-content">
-      <h3>Off-Meta Challenges</h3>
-      <p>Unconventional setup suggestions will appear here soon.</p>
     </div>
 
     <div

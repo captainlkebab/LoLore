@@ -1,5 +1,6 @@
 // Am Anfang global definieren, damit app.js es sicher sieht
 window.isGraphInitialized = false;
+window.networkInstance = null;
 let networkNodes = null;
 let networkEdges = null;
 let rawNodesData = [];
@@ -219,10 +220,10 @@ function initLoreGraph() {
         },
       };
 
-      const network = new vis.Network(container, graphData, options);
+      window.networkInstance = new vis.Network(container, graphData, options);
 
-      network.on("zoom", function (params) {
-        const currentZoom = network.getScale();
+      window.networkInstance.on("zoom", function (params) {
+        const currentZoom = window.networkInstance.getScale();
         if (currentZoom < 0.5) {
           network.setOptions({ nodes: { font: { size: 0 } } });
           network.setOptions({ edges: { font: { size: 0 } } });
@@ -232,7 +233,7 @@ function initLoreGraph() {
         }
       });
 
-      network.on("click", function (params) {
+      window.networkInstance.on("click", function (params) {
         if (params.nodes.length > 0) {
           const nodeId = params.nodes[0];
 
@@ -407,7 +408,6 @@ function generateRandomColor() {
   return color;
 }
 
-// Globaler machen für den Fallback-Zugriff
 window.getColorByFaction = getColorByFaction;
 
 function getColorByFaction(faction) {
